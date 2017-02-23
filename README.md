@@ -1,0 +1,1 @@
+Streptomyces_coelicolor
