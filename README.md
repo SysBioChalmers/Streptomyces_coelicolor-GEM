@@ -22,7 +22,7 @@ TBA
 
 | Taxonomy | Template Model | Reactions | Metabolites| Genes |
 | ------------- |:-------------:|:-------------:|:-------------:|-----:|
-| _Streptomyces coelicolor_ | Sco4 | 2291 | 1924 |	1507 |
+| _Streptomyces coelicolor_ | Sco4 | 2304 | 1927 | 1522 |
 
 This repository is administered by Hao Wang ([@SysBioChalmers](https://github.com/SysBioChalmers)), Division of Systems and Synthetic Biology, Department of Biology and Biological Engineering, Chalmers University of Technology
 
