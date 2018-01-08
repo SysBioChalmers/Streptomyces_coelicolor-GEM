@@ -1,6 +1,6 @@
 % FILE NAME:    Sco4ReconstrctionByRaven2.m
 % 
-% DATE CREATED: 2017-12-20
+% DATE CREATED: 2018-01-08
 % 
 % PROGRAMMER:   Hao Wang
 %               Department of Biology and Biological Engineering
@@ -26,10 +26,10 @@ ScoKEGGAnnotation=getKEGGModelForOrganism('sco','','','',0,0);
 ScoKEGGAnnotation.id='ScoKEGGAnnotation';
 
 % b. Draft GEM reconstructed from homology with HMMs traind from KEGG
-% KO orthologs using the default  cut-off values
+% KO orthologs using the default cut-off values
 
 % Define the folder of KEGG KOs data folder
-dataDir = '/Users/haowa/Documents/Sysbio/KEGG_update/201705/prok90_kegg82';
+dataDir = 'prok90_kegg82';
 
 ScoKEGGHomology=getKEGGModelForOrganism('ScoKEGGHMMs',....
 'Sco_all_protein.faa',dataDir,'',false,false);
@@ -75,11 +75,11 @@ for k=1:numel(newRxnSubModel.rxns)
 end
 newRxnSubModel.genes=unique(newRxnSubModel.genes);
 % f. Regenerate the rxnGeneMat, and only 'or' relationship was considered
-newRxnSubModel.rxnGeneMat=sparse(numel(newRxnSubModel.rxns),numel(newRxnSubModel.genes)); % row: rxn, column: genes
+newRxnSubModel.rxnGeneMat=sparse(numel(newRxnSubModel.rxns),numel(newRxnSubModel.genes));
 for i=1:numel(newRxnSubModel.rxns)
    %newRxnSubModel.genes=[newRxnSubModel.genes;transpose(strsplit(newRxnSubModel.grRules{k},' or '))];
    rxnGenes=strsplit(newRxnSubModel.grRules{i},' or ');
-   [crap, indexes]=ismember(rxnGenes,newRxnSubModel.genes);
+   [~, indexes]=ismember(rxnGenes,newRxnSubModel.genes);
    newRxnSubModel.rxnGeneMat(i,indexes)=1;
 end
 % g. Manually convert remaining KEGG mets to MetaCyc counterparts
@@ -104,16 +104,16 @@ exportToExcelFormat(newRxnSubModel,'newRxnSubModel.xlsx');
 %newRxnSubModel: #Rxns 398, #Mets 650(187), #Gene 404(106)
 
 
-% 5. Generate the subModel of Retrieve spontaneous reactions
+% 5. Generate the subModel of retrieved spontaneous reactions
 % a. Read in the mapped MetaCyc reactions in iMK1208
-[numericData, textData]=xlsread('SupplementaryTables.xlsx','TableS3');
-metaCycRxnsIniMK=textData(4:end,3);
-metaCycRxnsIniMK=metaCycRxnsIniMK(~cellfun(@isempty, metaCycRxnsIniMK));
-% b. Read in the mapped MetaCyc metabolites in iMK1208
 [~, textData]=xlsread('SupplementaryTables.xlsx','TableS4');
+metaCycRxnsIniMK=textData(4:end,8);
+metaCycRxnsIniMK=metaCycRxnsIniMK(~cellfun(@isempty, metaCycRxnsIniMK));  %Remove empty elements
+% b. Read in the mapped MetaCyc metabolites in iMK1208
+[~, textData]=xlsread('SupplementaryTables.xlsx','TableS5');
 metaCycMetsIniMK=textData(3:end,4);
 keggMetsIniMK=textData(3:end,3);
-%metaCycMetsIniMK=metaCycMetsIniMK(~cellfun(@isempty, metaCycMetsIniMK));
+metaCycMetsIniMK=metaCycMetsIniMK(~cellfun(@isempty, metaCycMetsIniMK));  %Remove empty elements
 % c. Retrieve associated spontaneous reactions and obtain the submodel
 % Get the list of all MetaCyc reactions
 rxnList=unique([metaCycRxnsIniMK;newRxnSubModel.rxns]);
@@ -179,7 +179,7 @@ spRxnModel4Merge.metComps=ones(numel(spRxnModel4Merge.mets),1);
 Sco4=mergeModels({model newRxnModel4Merge spRxnModel4Merge});
 
 
-% 8. Gap-filling based on RAVEN 2 reconstructions
+% 8. Gap-filling based on RAVEN2 reconstructions
 % a. New gene-association from RAVEN2 reconstruction
 [~, textData]=xlsread('SupplementaryTables.xlsx','TableS7');
 gapfilling.rxns=textData(4:end,2);
@@ -188,7 +188,7 @@ gapfilling.grRules=textData(4:end,4);
 [~, textData]=xlsread('SupplementaryTables.xlsx','TableS9');
 gapfilling.rxns=[gapfilling.rxns;textData(3:7,2)];
 gapfilling.grRules=[gapfilling.grRules;textData(3:7,3)];
-% c. Use new grRules from RAVEN 2 reconstruction to fill gaps in iMK1208
+% c. Use new grRules from RAVEN2 reconstruction to fill gaps in iMK1208
 [~, index]=ismember(gapfilling.rxns,Sco4.rxns);
 Sco4.grRules(index)=gapfilling.grRules;
 % d. Regenerate the rxnGeneMat
@@ -241,7 +241,7 @@ for i=1:length(rxnToAdd.rxns)
 end
 Sco4=addGenes(Sco4,geneToAdd);
 % d. Add the structure of new transport reactions
-% Several places of addRxns were commented off to avoid format checking
+% Several places of addRxns were commented off to skip format checking
 Sco4=addRxns(Sco4,rxnToAdd,1,'',0);
 
 
@@ -270,5 +270,15 @@ Sco4.metMetaCycID=[metaCycMetsIniMK;newMets.metacyc];
 Sco4.rxnConfidenceScores(1860:end)={Sco4.rxnConfidenceScores{1859}};
 
 
-save('Sco4_ver5.mat','Sco4');
-exportToExcelFormat(Sco4,'Sco4_ver5.xlsx');
+% 12. Add model information
+Sco4.id='Sco4';
+Sco4.description='Streptomyces coelicolor genome-scale model';
+% Annotation
+annotation.defaultLB=-1000;
+annotation.defaultUB=1000;
+annotation.givenName='Hao';
+annotation.familyName='Wang';
+annotation.email='hao.wang@chalmers.se';
+annotation.organization='Chalmers University of Technology';
+annotation.taxonomy='100226';
+Sco4.annotation=annotation;
