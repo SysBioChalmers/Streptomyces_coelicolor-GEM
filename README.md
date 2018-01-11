@@ -32,10 +32,10 @@ This repository is administered by Hao Wang ([@SysBioChalmers](https://github.co
 
 ### Required Software:
 
-* A functional Matlab installation (MATLAB 7.3 or higher)
+* A functional Matlab installation (MATLAB 7.3 or higher).
 * The model was developed and also recommended to be used with the [RAVEN](https://github.com/SysBioChalmers/RAVEN) Toolbox ver 2.0 for MATLAB. 
 * An up-to-date version from COBRA GitHub repository is strongly recommended.
-* Add the directories to your Matlab path, instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com)
+* Add the directories to your Matlab path, instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com).
 
 ### Dependencies - Recommended Software:
 * libSBML MATLAB API ([version 5.13.0](https://sourceforge.net/projects/sbml/files/libsbml/5.13.0/stable/MATLAB%20interface/)  is recommended).
@@ -43,8 +43,8 @@ This repository is administered by Hao Wang ([@SysBioChalmers](https://github.co
 
 
 ### Installation Instructions
-* Clone [Streptomyces_coelicolor](https://github.com/SysBioChalmers/Streptomyces_coelicolor-GEM) from [SysBioChalmers GitHub](https://github.com/SysBioChalmers)
-* Add the directory to your Matlab path, instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com)
+* Clone the [master](https://github.com/SysBioChalmers/Streptomyces_coelicolor-GEM) branch from [SysBioChalmers GitHub](https://github.com/SysBioChalmers).
+* Add the directory to your Matlab path, instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com).
 
 
 ## Contributors
