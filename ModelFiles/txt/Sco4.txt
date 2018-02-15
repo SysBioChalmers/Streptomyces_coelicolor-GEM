@@ -168,7 +168,7 @@ CBPS	h2o_c + 2 atp_c + gln-L_c + hco3_c  -> 2 h_c + glu-L_c + 2 adp_c + pi_c + c
 CPTRCA	2 h_c + h2o_c + cptrc_c  -> co2_c + nh4_c + ptrc_c 	SCO6414	  0.00	1000.00	  0.00
 DDPGA	4h2oglt_c  <=> pyr_c + glx_c 	( SCO0852 or SCO2298 or SCO3473 or SCO3495 )	-1000.00	1000.00	  0.00
 EHGLAT	akg_c + e4hglu_c  -> glu-L_c + 4h2oglt_c 	( SCO4645 or SCO3658 )	  0.00	1000.00	  0.00
-G5SADs	glu5sa_c  -> h_c + h2o_c + 1pyr5c_c 	s0001	  0.00	1000.00	  0.00
+G5SADs	glu5sa_c  -> h_c + h2o_c + 1pyr5c_c 		  0.00	1000.00	  0.00
 G5SD	nadph_c + h_c + glu5p_c  -> nadp_c + pi_c + glu5sa_c 	SCO2585	  0.00	1000.00	  0.00
 GLU5K	glu-L_c + atp_c  -> adp_c + glu5p_c 	SCO2587	  0.00	1000.00	  0.00
 HPROb	nadph_c + 2 h_c + 1p3h5c_c  -> nadp_c + 4hpro-LT_c 	SCO3337	  0.00	1000.00	  0.00
@@ -180,7 +180,7 @@ ORNTAC	glu-L_c + acorn_c  <=> acglu_c + orn_c 	SCO1579	-1000.00	1000.00	  0.00
 P5CD	2 h2o_c + nad_c + 1pyr5c_c  -> h_c + nadh_c + glu-L_c 	SCO5520	  0.00	1000.00	  0.00
 P5CR	nadph_c + 2 h_c + 1pyr5c_c  -> nadp_c + pro-L_c 	SCO3337	  0.00	1000.00	  0.00
 PHCD	2 h2o_c + nad_c + 1p3h5c_c  -> h_c + nadh_c + e4hglu_c 	SCO5520	  0.00	1000.00	  0.00
-PHCHGS	h_c + h2o_c + 1p3h5c_c  <=> 4hglusa_c 	s0001	-1000.00	1000.00	  0.00
+PHCHGS	h_c + h2o_c + 1p3h5c_c  <=> 4hglusa_c 		-1000.00	1000.00	  0.00
 PROD2	pro-L_c + fad_c  -> h_c + 1pyr5c_c + fadh2_c 	SCO5519	  0.00	1000.00	  0.00
 PTRCTA	akg_c + ptrc_c  -> glu-L_c + 4abutn_c 	SCO1284	  0.00	1000.00	  0.00
 PUTA3	h2o_c + nad_c + glu5sa_c  -> 2 h_c + nadh_c + glu-L_c 	SCO5520	  0.00	1000.00	  0.00
@@ -550,8 +550,8 @@ EPMEACPR	nadph_c + h_c + epmeACP_c  -> nadp_c + pmeACP_c 	SCO1814	  0.00	1000.00
 FADRx2	nadph_c + h_c + fad_c  -> nadp_c + fadh2_c 	SCO6102	  0.00	1000.00	  0.00
 FCLT	fe2_c + ppp9_c  -> 2 h_c + pheme_c 	SCO5859	  0.00	1000.00	  0.00
 FE3Ri	fadh2_c + 2 fe3_c  -> 2 h_c + fad_c + 2 fe2_c 		  0.00	1000.00	  0.00
-FESD1s	2 h_c + h2o2_c + 2 4fe4s_c  -> 2 h2o_c + 2 fe3_c + 2 3fe4s_c 	s0001	  0.00	1000.00	  0.00
-FESD2s	2 h_c + 2 4fe4s_c + 2 no_c  -> h2o_c + 2 fe3_c + 2 3fe4s_c + n2o_c 	s0001	  0.00	1000.00	  0.00
+FESD1s	2 h_c + h2o2_c + 2 4fe4s_c  -> 2 h2o_c + 2 fe3_c + 2 3fe4s_c 		  0.00	1000.00	  0.00
+FESD2s	2 h_c + 2 4fe4s_c + 2 no_c  -> h2o_c + 2 fe3_c + 2 3fe4s_c + n2o_c 		  0.00	1000.00	  0.00
 FESR	fe2_c + 3fe4s_c  -> 4fe4s_c 		  0.00	1000.00	  0.00
 FLVR	nadph_c + h_c + ribflv_c  -> nadp_c + rbflvrd_c 	SCO6102	  0.00	1000.00	  0.00
 FMNAT	h_c + atp_c + fmn_c  -> ppi_c + fad_c 	SCO5711	  0.00	1000.00	  0.00
@@ -1199,7 +1199,7 @@ CLt3_2	h_c + 2 cl_e  -> h_e + 2 cl_c 	( SCO5964 or SCO6320 )	  0.00	1000.00	  0.
 COBALT2t	cobalt2_e  -> cobalt2_c 	( SCO1667 or SCO5157 )	  0.00	1000.00	  0.00
 COBALT2t3	h_e + cobalt2_c  -> h_c + cobalt2_e 	( SCO0776 or SCO1310 or SCO2772 or SCO6751 )	  0.00	1000.00	  0.00
 COELICHELINabc	h2o_c + atp_c + ferricoelichelin_e  -> h_c + adp_c + pi_c + ferricoelichelin_c 	(( SCO0495 and SCO0496 and SCO0497 and SCO0494 ) or ( SCO7398 and SCO7399 and SCO7400 ))	  0.00	1000.00	  0.00
-COELICHELINexs	coelichelin_e + fe3_e  -> ferricoelichelin_e 	s0001	  0.00	1000.00	  0.00
+COELICHELINexs	coelichelin_e + fe3_e  -> ferricoelichelin_e 		  0.00	1000.00	  0.00
 COELICHELINR1	fadh2_c + 2 ferricoelichelin_c  -> 2 h_c + fad_c + 2 fe2_c + 2 coelichelin_c 		  0.00	1000.00	  0.00
 COELICHELINR2	fmnh2_c + 2 ferricoelichelin_c  -> 2 h_c + 2 fe2_c + fmn_c + 2 coelichelin_c 		  0.00	1000.00	  0.00
 COELICHELINR3	rbflvrd_c + 2 ferricoelichelin_c  -> 2 h_c + 2 fe2_c + ribflv_c + 2 coelichelin_c 		  0.00	1000.00	  0.00
@@ -1213,19 +1213,19 @@ FE2t2	h_e + fe2_e  -> h_c + fe2_c 	SCO4993	  0.00	1000.00	  0.00
 FE2t3	h_e + fe2_c  -> h_c + fe2_e 	( SCO0776 or SCO1310 or SCO2772 or SCO6751 )	  0.00	1000.00	  0.00
 FE3abc	h2o_c + atp_c + fe3_e  -> h_c + adp_c + pi_c + fe3_c 	( SCO5923 and SCO5924 and SCO5925 )	  0.00	1000.00	  0.00
 FEOXAMBabc	h2o_c + atp_c + ferrioxamB_e  -> h_c + adp_c + pi_c + ferrioxamB_c 	(( SCO7398 and SCO7399 and SCO7400 ) or SCO2780 )	  0.00	1000.00	  0.00
-FEOXAMBexs	desferrioxamB_e + fe3_e  -> ferrioxamB_e 	s0001	  0.00	1000.00	  0.00
+FEOXAMBexs	desferrioxamB_e + fe3_e  -> ferrioxamB_e 		  0.00	1000.00	  0.00
 FEOXAMBR1	fadh2_c + 2 ferrioxamB_c  -> 2 h_c + fad_c + 2 fe2_c + 2 desferrioxamB_c 		  0.00	1000.00	  0.00
 FEOXAMBR2	fmnh2_c + 2 ferrioxamB_c  -> 2 h_c + 2 fe2_c + fmn_c + 2 desferrioxamB_c 		  0.00	1000.00	  0.00
 FEOXAMBR3	rbflvrd_c + 2 ferrioxamB_c  -> 2 h_c + 2 fe2_c + ribflv_c + 2 desferrioxamB_c 		  0.00	1000.00	  0.00
 FEOXAMBUt	h_e + desferrioxamB_c  -> h_c + desferrioxamB_e 		  0.00	1000.00	  0.00
 FEOXAMEabc	h2o_c + atp_c + ferrioxamE_e  -> h_c + adp_c + pi_c + ferrioxamE_c 	SCO2780	  0.00	1000.00	  0.00
-FEOXAMEexs	desferrioxamE_e + fe3_e  -> ferrioxamE_e 	s0001	  0.00	1000.00	  0.00
+FEOXAMEexs	desferrioxamE_e + fe3_e  -> ferrioxamE_e 		  0.00	1000.00	  0.00
 FEOXAMER1	fadh2_c + 2 ferrioxamE_c  -> 2 h_c + fad_c + 2 fe2_c + 2 desferrioxamE_c 		  0.00	1000.00	  0.00
 FEOXAMER2	fmnh2_c + 2 ferrioxamE_c  -> 2 h_c + 2 fe2_c + fmn_c + 2 desferrioxamE_c 		  0.00	1000.00	  0.00
 FEOXAMER3	rbflvrd_c + 2 ferrioxamE_c  -> 2 h_c + 2 fe2_c + ribflv_c + 2 desferrioxamE_c 		  0.00	1000.00	  0.00
 FEOXAMEUt	h_e + desferrioxamE_c  -> h_c + desferrioxamE_e 		  0.00	1000.00	  0.00
 FERO	4 h_c + o2_c + 4 fe2_c  -> 2 h2o_c + 4 fe3_c 	(( SCO3439 and SCO3440 ) and SCO6712 )	  0.00	1000.00	  0.00
-H2SO	2 o2_c + h2s_c  -> 2 h_c + so4_c 	s0001	  0.00	1000.00	  0.00
+H2SO	2 o2_c + h2s_c  -> 2 h_c + so4_c 		  0.00	1000.00	  0.00
 Kabc	h2o_c + atp_c + k_e  -> h_c + adp_c + pi_c + k_c 	( SCO3716 and SCO3717 and SCO3718 )	  0.00	1000.00	  0.00
 Kt2	h_e + k_e  -> h_c + k_c 	SCO3826	  0.00	1000.00	  0.00
 Kt3	h_e + k_c  -> h_c + k_e 	SCO1962	  0.00	1000.00	  0.00
@@ -1235,14 +1235,14 @@ MN2t3	h_e + mn2_c  -> h_c + mn2_e 	( SCO0776 or SCO1310 or SCO2772 or SCO6751 )	
 MOBDabc	h2o_c + atp_c + mobd_e  -> h_c + adp_c + pi_c + mobd_c 	( SCO3706 and SCO3705 and SCO3704 )	  0.00	1000.00	  0.00
 NAt3	h_e + na1_c  -> h_c + na1_e 	SCO1962	  0.00	1000.00	  0.00
 NAt3_2	2 h_e + na1_c  -> 2 h_c + na1_e 	( SCO0015 or SCO0285 or SCO3564 or SCO7832 )	  0.00	1000.00	  0.00
-NH4t	nh4_e  <=> nh4_c 	( SCO5583 or s0001 )	-1000.00	1000.00	  0.00
+NH4t	nh4_e  <=> nh4_c 	( SCO5583 )	-1000.00	1000.00	  0.00
 NI2t	ni2_e  -> ni2_c 	( SCO1667 or SCO5157 )	  0.00	1000.00	  0.00
 NI2t3	h_e + ni2_c  -> h_c + ni2_e 	( SCO0776 or SCO1310 or SCO2772 or SCO6751 )	  0.00	1000.00	  0.00
 NI2uabc	h2o_c + atp_c + ni2_e  -> h_c + adp_c + pi_c + ni2_c 	(( SCO6454 and SCO6452 and SCO6453 and SCO6451 ) or SCO2499 )	  0.00	1000.00	  0.00
 NO2t2r	h_e + no2_e  <=> h_c + no2_c 	( SCO2959 or SCO0213 )	-1000.00	1000.00	  0.00
 NO3t7	no3_e + no2_c  -> no2_e + no3_c 	( SCO2959 or SCO0213 )	  0.00	1000.00	  0.00
-NOt	no_e  <=> no_c 	s0001	-1000.00	1000.00	  0.00
-O2t	o2_e  <=> o2_c 	s0001	-1000.00	1000.00	  0.00
+NOt	no_e  <=> no_c 		-1000.00	1000.00	  0.00
+O2t	o2_e  <=> o2_c 		-1000.00	1000.00	  0.00
 PIt2r	h_e + pi_e  <=> h_c + pi_c 	( SCO4138 or SCO1845 )	-1000.00	1000.00	  0.00
 Piuabc	h2o_c + atp_c + pi_e  -> h_c + adp_c + 2 pi_c 	(( SCO4139 and SCO4140 and SCO4141 and SCO4142 ) or SCO2428 or ( SCO6814 and SCO6815 and SCO6816 ))	  0.00	1000.00	  0.00
 SO4t2	h_e + so4_e  -> h_c + so4_c 	SCO3276	  0.00	1000.00	  0.00
@@ -1310,8 +1310,8 @@ HCYSMT	amet_c + hcys-L_c  -> h_c + ahcys_c + met-L_c 	SCO6137	  0.00	1000.00	  0
 HSST	succoa_c + hom-L_c  -> coa_c + suchms_c 		  0.00	1000.00	  0.00
 METAT	h2o_c + atp_c + met-L_c  -> ppi_c + pi_c + amet_c 	SCO1476	  0.00	1000.00	  0.00
 METB1r	cys-L_c + achms_c  <=> h_c + ac_c + cyst-L_c 	( SCO1294 or SCO4958 )	-1000.00	1000.00	  0.00
-METOX1s	h2o2_c + met-L_c  -> h2o_c + metsox-S-L_c 	s0001	  0.00	1000.00	  0.00
-METOX2s	h2o2_c + met-L_c  -> h2o_c + metsox-R-L_c 	s0001	  0.00	1000.00	  0.00
+METOX1s	h2o2_c + met-L_c  -> h2o_c + metsox-S-L_c 		  0.00	1000.00	  0.00
+METOX2s	h2o2_c + met-L_c  -> h2o_c + metsox-R-L_c 		  0.00	1000.00	  0.00
 METS	5mthf_c + hcys-L_c  -> h_c + thf_c + met-L_c 	SCO1657	  0.00	1000.00	  0.00
 METSOXR1	trdrd_c + metsox-S-L_c  -> h2o_c + met-L_c + trdox_c 	( SCO4956 and ( SCO0885 or SCO3889 or SCO5419 or SCO5438 ))	  0.00	1000.00	  0.00
 METSOXR2	trdrd_c + metsox-R-L_c  -> h2o_c + met-L_c + trdox_c 	( SCO6061 and ( SCO0885 or SCO3889 or SCO5419 or SCO5438 ))	  0.00	1000.00	  0.00
@@ -1367,14 +1367,14 @@ ADNCYC	atp_c  -> ppi_c + camp_c 	SCO4928	  0.00	1000.00	  0.00
 ADNK1	atp_c + adn_c  -> h_c + amp_c + adp_c 	SCO2158	  0.00	1000.00	  0.00
 ADPRDP	h2o_c + adprib_c  -> 2 h_c + amp_c + r5p_c 	SCO1775	  0.00	1000.00	  0.00
 ADPT	ade_c + prpp_c  -> amp_c + ppi_c 	SCO1514	  0.00	1000.00	  0.00
-ATPHs	h_c + h2o_c + atp_c  -> nh4_c + itp_c 	s0001	  0.00	1000.00	  0.00
+ATPHs	h_c + h2o_c + atp_c  -> nh4_c + itp_c 		  0.00	1000.00	  0.00
 CSND	h_c + h2o_c + csn_c  -> nh4_c + ura_c 	SCO4634	  0.00	1000.00	  0.00
 CYTD	h_c + h2o_c + cytd_c  -> nh4_c + uri_c 	( SCO4889 or SCO5680 )	  0.00	1000.00	  0.00
 CYTK1	atp_c + cmp_c  <=> adp_c + cdp_c 	SCO1760	-1000.00	1000.00	  0.00
 CYTK2	atp_c + dcmp_c  <=> adp_c + dcdp_c 	SCO1760	-1000.00	1000.00	  0.00
 DADA	h_c + h2o_c + dad-2_c  -> nh4_c + din_c 	( SCO2546 or SCO4644 or SCO4901 or SCO5662 or SCO7268 )	  0.00	1000.00	  0.00
 DADK	atp_c + damp_c  <=> adp_c + dadp_c 	SCO4723	-1000.00	1000.00	  0.00
-DATPHs	h_c + h2o_c + datp_c  -> nh4_c + ditp_c 	s0001	  0.00	1000.00	  0.00
+DATPHs	h_c + h2o_c + datp_c  -> nh4_c + ditp_c 		  0.00	1000.00	  0.00
 DCTPD	h_c + h2o_c + dctp_c  -> nh4_c + dutp_c 	SCO3678	  0.00	1000.00	  0.00
 DCTPD2	h_c + h2o_c + ctp_c  -> nh4_c + utp_c 	SCO3678	  0.00	1000.00	  0.00
 DCYTD	h_c + h2o_c + dcyt_c  -> nh4_c + duri_c 	( SCO4889 or SCO5680 )	  0.00	1000.00	  0.00
@@ -1385,7 +1385,7 @@ DURIPP	pi_c + duri_c  <=> 2dr1p_c + ura_c 	SCO4890	-1000.00	1000.00	  0.00
 DUTPDP	h2o_c + dutp_c  -> h_c + ppi_c + dump_c 	SCO5868	  0.00	1000.00	  0.00
 GK1i	atp_c + gmp_c  -> adp_c + gdp_c 	SCO1479	  0.00	1000.00	  0.00
 GK2i	gmp_c + datp_c  -> gdp_c + dadp_c 	SCO1479	  0.00	1000.00	  0.00
-GTPHs	h_c + h2o_c + gtp_c  -> nh4_c + xtp_c 	s0001	  0.00	1000.00	  0.00
+GTPHs	h_c + h2o_c + gtp_c  -> nh4_c + xtp_c 		  0.00	1000.00	  0.00
 GUACYC	gtp_c  -> ppi_c + 35cgmp_c 	SCO4928	  0.00	1000.00	  0.00
 GUAPRT	prpp_c + gua_c  -> ppi_c + gmp_c 	SCO3405	  0.00	1000.00	  0.00
 HXAND	h2o_c + nad_c + hxan_c  -> h_c + nadh_c + xan_c 	(( SCO4971 and SCO4972 ) or ( SCO0689 and SCO0690 and SCO0691 ) or ( SCO1132 and SCO1133 and SCO1134 ))	  0.00	1000.00	  0.00
@@ -1467,7 +1467,7 @@ NADTRHD	nadph_c + nad_c  -> nadp_c + nadh_c 	( SCO7622 and SCO7623 )	  0.00	1000
 NTRIR2x	5 h_c + 3 nadh_c + no2_c  -> 2 h2o_c + 3 nad_c + nh4_c 	( SCO2487 and SCO2488 )	  0.00	1000.00	  0.00
 POX3	h2o_c + pyr_c + fad_c  -> co2_c + ac_c + fadh2_c 	( SCO6155 or SCO7412 )	  0.00	1000.00	  0.00
 PPK2r	atp_c + ppi_c  <=> adp_c + pppi_c 	SCO4145	-1000.00	1000.00	  0.00
-QMO3	2 o2_c + mql9_c  -> 2 h_c + mqn9_c + 2 o2s_c 	s0001	  0.00	1000.00	  0.00
+QMO3	2 o2_c + mql9_c  -> 2 h_c + mqn9_c + 2 o2s_c 		  0.00	1000.00	  0.00
 SUCD3	mqn9_c + succ_c + 2 h_e  -> 2 h_c + mql9_c + fum_c 	(( SCO4856 or SCO5107 or SCO7109 ) and ( SCO4855 or SCO5106 ) and SCO4858 and SCO4857 )	  0.00	1000.00	  0.00
 THD2	nadp_c + nadh_c + 2 h_e  -> nadph_c + 2 h_c + nad_c 	( SCO7622 and SCO7623 )	  0.00	1000.00	  0.00
 TRDR	nadph_c + h_c + trdox_c  -> nadp_c + trdrd_c 	(( SCO3890 or SCO6834 or SCO7298 ) and ( SCO0885 or SCO3889 or SCO5419 or SCO5438 ))	  0.00	1000.00	  0.00
@@ -1526,7 +1526,7 @@ TECA1S	acgam_c + uacmam_c + 25 cdpglyc_c  -> 26 h_c + udp_c + 25 cmp_c + gtca1_c
 TECA2S	25 ala-D_c + 25 atp_c + acgam_c + uacmam_c + 25 cdpglyc_c  -> 26 h_c + 25 amp_c + 25 ppi_c + udp_c + 25 cmp_c + gtca2_c 		  0.00	1000.00	  0.00
 TECA3S	acgam_c + 25 udpg_c + uacmam_c + 25 cdpglyc_c  -> 51 h_c + 26 udp_c + 25 cmp_c + gtca3_c 		  0.00	1000.00	  0.00
 2OXOADOX	coa_c + nad_c + 2oxoadp_c  -> nadh_c + co2_c + glutcoa_c 	( SCO5281 and ( SCO2181 or SCO7123 ) and ( SCO0884 or SCO2180 or SCO4919 ))	  0.00	1000.00	  0.00
-AOBUTDs	h_c + 2aobut_c  -> co2_c + aact_c 	s0001	  0.00	1000.00	  0.00
+AOBUTDs	h_c + 2aobut_c  -> co2_c + aact_c 		  0.00	1000.00	  0.00
 APTNAT	akg_c + 5aptn_c  <=> glu-L_c + oxptn_c 		-1000.00	1000.00	  0.00
 ASAD	nadp_c + pi_c + aspsa_c  <=> nadph_c + h_c + 4pasp_c 	( SCO2640 or SCO3614 )	-1000.00	1000.00	  0.00
 ASPK	asp-L_c + atp_c  <=> adp_c + 4pasp_c 	SCO3615	-1000.00	1000.00	  0.00
@@ -1554,7 +1554,7 @@ THRS	h2o_c + phom_c  -> pi_c + thr-L_c 	( SCO4293 or SCO5355 )	  0.00	1000.00	  
 5MTRt	h_c + 5mtr_c  -> h_e + 5mtr_e 		  0.00	1000.00	  0.00
 ABTabc	h2o_c + atp_c + abt-D_e  -> h_c + abt-D_c + adp_c + pi_c 	( SCO1899 and SCO1900 and SCO1898 and SCO4240 )	  0.00	1000.00	  0.00
 ABUTt2	h_e + 4abut_e  -> h_c + 4abut_c 	( SCO2628 or SCO2631 )	  0.00	1000.00	  0.00
-ACALDt	acald_e  <=> acald_c 	s0001	-1000.00	1000.00	  0.00
+ACALDt	acald_e  <=> acald_c 		-1000.00	1000.00	  0.00
 ACGApts	pep_c + acgam_e  -> pyr_c + acgam6p_c 	( SCO2905 and SCO2906 and SCO2907 and SCO1391 and SCO5841 )	  0.00	1000.00	  0.00
 ACSERt	acser_c  <=> acser_e 	SCO2756	-1000.00	1000.00	  0.00
 ACt4	ac_e + na1_e  -> ac_c + na1_c 	SCO1822	  0.00	1000.00	  0.00
@@ -1589,7 +1589,7 @@ CHLt2	h_e + chol_e  -> h_c + chol_c 	SCO6739	  0.00	1000.00	  0.00
 CHTBSabc	h2o_c + atp_c + chtbs_e  -> h_c + chtbs_c + adp_c + pi_c 	(( SCO5232 and SCO5233 and SCO5234 and SCO4240 ) or ( SCO6005 and SCO6006 and SCO6007 and SCO4240 ))	  0.00	1000.00	  0.00
 CITt3	h_e + cit_c  -> h_c + cit_e 		  0.00	1000.00	  0.00
 CITt7	succ_c + cit_e  -> cit_c + succ_e 	SCO2144	  0.00	1000.00	  0.00
-CO2t	co2_e  <=> co2_c 	s0001	-1000.00	1000.00	  0.00
+CO2t	co2_e  <=> co2_c 		-1000.00	1000.00	  0.00
 CSNt2	h_e + csn_e  -> h_c + csn_c 	SCO0572	  0.00	1000.00	  0.00
 CSNt2r	h_e + csn_e  <=> h_c + csn_c 	( SCO5524 or SCO5579 )	-1000.00	1000.00	  0.00
 CYSabc	h2o_c + atp_c + cys-L_e  -> h_c + adp_c + pi_c + cys-L_c 	SCO3947	  0.00	1000.00	  0.00
@@ -1609,9 +1609,9 @@ DRIBt	drib_e  <=> drib_c 		-1000.00	1000.00	  0.00
 DURIt2	h_e + duri_e  -> h_c + duri_c 		  0.00	1000.00	  0.00
 EPMt2	h_e + epm_e  -> h_c + epm_c 		  0.00	1000.00	  0.00
 ETHAt2	h_e + etha_e  -> h_c + etha_c 		  0.00	1000.00	  0.00
-ETOHtr	etoh_e  <=> etoh_c 	s0001	-1000.00	1000.00	  0.00
-FALDt	fald_e  <=> fald_c 	s0001	-1000.00	1000.00	  0.00
-FORti	for_c  -> for_e 	s0001	  0.00	1000.00	  0.00
+ETOHtr	etoh_e  <=> etoh_c 		-1000.00	1000.00	  0.00
+FALDt	fald_e  <=> fald_c 		-1000.00	1000.00	  0.00
+FORti	for_c  -> for_e 		  0.00	1000.00	  0.00
 FRUpts	pep_c + fru_e  -> pyr_c + f1p_c 	( SCO3196 and SCO1391 and SCO5841 )	  0.00	1000.00	  0.00
 FUMt2_2	2 h_e + fum_e  -> 2 h_c + fum_c 	SCO5436	  0.00	1000.00	  0.00
 GALCTNt2	h_e + galctn-D_e  -> h_c + galctn-D_c 	SCO0313	  0.00	1000.00	  0.00
@@ -1636,9 +1636,9 @@ GLYt4	gly_e + na1_e  -> gly_c + na1_c 	SCO7197	  0.00	1000.00	  0.00
 GSNt2	h_e + gsn_e  -> h_c + gsn_c 	SCO3915 or SCO0079	  0.00	1000.00	  0.00
 GUAt	gua_e  <=> gua_c 		-1000.00	1000.00	  0.00
 GUAt2	h_e + gua_e  -> h_c + gua_c 	( SCO6212 or SCO6214 )	  0.00	1000.00	  0.00
-H2O2t	h2o2_e  <=> h2o2_c 	s0001	-1000.00	1000.00	  0.00
-H2Ot	h2o_e  <=> h2o_c 	s0001	-1000.00	1000.00	  0.00
-H2St1	h2s_e  <=> h2s_c 	s0001	-1000.00	1000.00	  0.00
+H2O2t	h2o2_e  <=> h2o2_c 		-1000.00	1000.00	  0.00
+H2Ot	h2o_e  <=> h2o_c 		-1000.00	1000.00	  0.00
+H2St1	h2s_e  <=> h2s_c 		-1000.00	1000.00	  0.00
 HISt2r	h_e + his-L_e  <=> h_c + his-L_c 	SCO2914	-1000.00	1000.00	  0.00
 HOMt2	h_e + hom-L_c  -> h_c + hom-L_e 	( SCO4374 or SCO3362 )	  0.00	1000.00	  0.00
 IDONt2r	h_e + idon-L_e  <=> h_c + idon-L_c 	( SCO1680 or SCO4991 )	-1000.00	1000.00	  0.00
@@ -1665,11 +1665,11 @@ MALTTTRabc	h2o_c + atp_c + maltttr_e  -> h_c + maltttr_c + adp_c + pi_c 	( SCO22
 MANt2	h_e + man_e  -> h_c + man_c 		  0.00	1000.00	  0.00
 MELIBt2	h_e + melib_e  -> h_c + melib_c 		  0.00	1000.00	  0.00
 MELTt2	h_e + melt_e  -> h_c + melt_c 		  0.00	1000.00	  0.00
-MEOHtr	meoh_e  <=> meoh_c 	s0001	-1000.00	1000.00	  0.00
+MEOHtr	meoh_e  <=> meoh_c 		-1000.00	1000.00	  0.00
 METabc	h2o_c + atp_c + met-L_e  -> h_c + adp_c + pi_c + met-L_c 	( SCO1559 and SCO1558 and SCO1557 )	  0.00	1000.00	  0.00
 MNLabc	h2o_c + atp_c + mnl_e  -> h_c + adp_c + pi_c + mnl_c 	( SCO1899 and SCO1900 and SCO1898 and SCO4240 )	  0.00	1000.00	  0.00
 MNt2	h_e + mn2_e  -> h_c + mn2_c 	SCO4993	  0.00	1000.00	  0.00
-N2Ot	n2o_e  <=> n2o_c 	s0001	-1000.00	1000.00	  0.00
+N2Ot	n2o_e  <=> n2o_c 		-1000.00	1000.00	  0.00
 NACt	nac_e  -> nac_c 		  0.00	1000.00	  0.00
 NMNPt	nmn_e  -> nmn_c 	SCO1442	  0.00	1000.00	  0.00
 ORNabc	h2o_c + atp_c + orn_e  -> h_c + adp_c + pi_c + orn_c 	( SCO2831 and SCO2829 and SCO2830 and SCO2828 )	  0.00	1000.00	  0.00
@@ -1767,7 +1767,7 @@ TRPS1	ser-L_c + 3ig3p_c  -> h2o_c + g3p_c + trp-L_c 	( SCO2036 and SCO2037 )	  0
 TRPS2	ser-L_c + indole_c  -> h2o_c + trp-L_c 	( SCO2036 and SCO2037 )	  0.00	1000.00	  0.00
 TRPS3	3ig3p_c  -> g3p_c + indole_c 	( SCO2036 and SCO2037 )	  0.00	1000.00	  0.00
 TYRTA	akg_c + tyr-L_c  <=> glu-L_c + 34hpp_c 	( SCO1859 or SCO2053 or SCO3944 or SCO4645 or SCO3658 )	-1000.00	1000.00	  0.00
-ACONIs	acon-T_c  <=> acon-C_c 	s0001	-1000.00	1000.00	  0.00
+ACONIs	acon-T_c  <=> acon-C_c 		-1000.00	1000.00	  0.00
 ACONMT	amet_c + acon-T_c  -> ahcys_c + aconm_c 	SCO3132	  0.00	1000.00	  0.00
 ATPM	h2o_c + atp_c  -> h_c + adp_c + pi_c 		  2.65	1000.00	  0.00
 BETALDHx	h2o_c + nad_c + betald_c  -> 2 h_c + nadh_c + glyb_c 	SCO4828	  0.00	1000.00	  0.00
@@ -1854,7 +1854,7 @@ OCOAT1	succoa_c + acac_c  -> succ_c + aacoa_c 	( SCO6702 and SCO6703 )	  0.00	10
 OIVD1	coa_c + nad_c + 4mop_c  -> nadh_c + co2_c + ivcoa_c 	((( SCO3816 and SCO3817 ) or ( SCO3830 and SCO3831 )) and ( SCO3815 or SCO3829 ) and ( SCO0884 or SCO2180 or SCO4919 ))	  0.00	1000.00	  0.00
 OIVD2	coa_c + nad_c + 3mob_c  -> nadh_c + co2_c + ibcoa_c 	((( SCO3816 and SCO3817 ) or ( SCO3830 and SCO3831 )) and ( SCO3815 or SCO3829 ) and ( SCO0884 or SCO2180 or SCO4919 ))	  0.00	1000.00	  0.00
 OIVD3	coa_c + nad_c + 3mop_c  -> nadh_c + co2_c + 2mbcoa_c 	((( SCO3816 and SCO3817 ) or ( SCO3830 and SCO3831 )) and ( SCO3815 or SCO3829 ) and ( SCO0884 or SCO2180 or SCO4919 ))	  0.00	1000.00	  0.00
-OMCDC	h_c + 3c4mop_c  -> co2_c + 4mop_c 	s0001	  0.00	1000.00	  0.00
+OMCDC	h_c + 3c4mop_c  -> co2_c + 4mop_c 		  0.00	1000.00	  0.00
 THRD_L	thr-L_c  -> nh4_c + 2obut_c 	( SCO0821 or SCO4962 )	  0.00	1000.00	  0.00
 VALDxi	h2o_c + nad_c + val-L_c  -> h_c + nadh_c + nh4_c + 3mob_c 	SCO4089	  0.00	1000.00	  0.00
 VALTA	akg_c + val-L_c  <=> glu-L_c + 3mob_c 	( SCO1546 or SCO5523 )	-1000.00	1000.00	  0.00
@@ -2256,40 +2256,40 @@ R01785	CPD0-1115_c  <=> dhap_c + gcald_c 	SCO0813	-1000.00	1000.00	  0.00
 R02252	nad_c + 3-PHENYLPROPIONATE_c  <=> h_c + nadh_c + CPD-674_c 	SCO4297 or SCO7066	-1000.00	1000.00	  0.00
 R03391	h_c + nadh_c + CPD-658_c  -> h2o_c + nad_c + CPD-1078_c 	SCO0103	 -0.00	1000.00	  0.00
 R04215	ctp_c + CPD-273_c  <=> ppi_c + CPD-262_c 	SCO4880	-1000.00	1000.00	  0.00
-RXN-15356	rml_c  -> CPD-16567_c 	s0001	 -0.00	1000.00	  0.00
-RXN-12753	h2o_c + nadh_c  -> CPD-653_c 	s0001	 -0.00	1000.00	  0.00
-RXN-6423	4abutn_c  <=> h2o_c + CPD-6124_c 	s0001	-1000.00	1000.00	  0.00
-RXN-8406	Donor-H2_c + 2 CPD-8214_c  -> 2 h_c + 2 cl_c + Acceptor_c + 2 CPD-8225_c 	s0001	 -0.00	1000.00	  0.00
-RXN-7593	h2o_c + o2_c + 4izp_c + Donor-H2_c  -> nh4_c + for_c + Acceptor_c + 4-OXOGLUTARAMATE_c 	s0001	 -0.00	1000.00	  0.00
-RXN-12943	h_c + CPD-13380_c  -> CPD-13952_c 	s0001	 -0.00	1000.00	  0.00
-RXN-12440	h_c + h2o2_c + ASCORBATE_c  -> 2 h2o_c + L-DEHYDRO-ASCORBATE_c 	s0001	 -0.00	1000.00	  0.00
-RXN-13530	CPD-14523_c  <=> CPD-14524_c 	s0001	-1000.00	1000.00	  0.00
-RXN-12876	ASCORBATE_c + 2 Cytochromes-C-Oxidized_c  -> h_c + 2 Cytochromes-C-Reduced_c + L-DEHYDRO-ASCORBATE_c 	s0001	 -0.00	1000.00	  0.00
-RXN-12540	h2o2_c + fe2_c  -> fe3_c + CPD-12377_c + OH_c 	s0001	 -0.00	1000.00	  0.00
-RXN-15999	CPD-13430_c  <=> CPD-8938_c 	s0001	-1000.00	1000.00	  0.00
-RXN-8461	CPD-253_c  -> h_c + h2o_c + CPD-8651_c 	s0001	 -0.00	1000.00	  0.00
-RXN-6268	BETAINE-ALDEHYDE-HYDRATE_c  <=> h2o_c + betald_c 	s0001	-1000.00	1000.00	  0.00
-RXN-12754	h2o_c + nadh_c  -> CPD0-2472_c 	s0001	 -0.00	1000.00	  0.00
-RXN-6081	h_c + alac-S_c + Acceptor_c  -> co2_c + Donor-H2_c + DIACETYL_c 	s0001	 -0.00	1000.00	  0.00
-RXN-2881	fald_c + thf_c  -> h2o_c + mlthf_c 	s0001	 -0.00	1000.00	  0.00
-RXN-15124	2-AMINOACRYLATE_c  -> CPD-16015_c 	s0001	 -0.00	1000.00	  0.00
-RXN-13068	2 Acceptor_c + 2 CPD-14083_c  -> 2 Donor-H2_c + CPD-14081_c 	s0001	 -0.00	1000.00	  0.00
-RXN-9193	GERANIAL_c  <=> CPD-9762_c 	s0001	-1000.00	1000.00	  0.00
-RXN0-5222	2 h_c + CARBAMATE_c  -> co2_c + nh4_c 	s0001	 -0.00	1000.00	  0.00
-RXN-9930	o2_c + TETRAHYD-CPD_c  -> h_c + h2o_c + CPD-10679_c 	s0001	 -0.00	1000.00	  0.00
-RXN-5721	2-AMINO-3-3-OXOPROP-2-ENYL-BUT-2-ENEDI_c  -> h2o_c + quln_c 	s0001	 -0.00	1000.00	  0.00
-RXN-2961	S-HYDROXYMETHYLGLUTATHIONE_c  -> fald_c + gthrd_c 	s0001	 -0.00	1000.00	  0.00
-RXN-6581	fald_c + CPD1G-2_c  -> S-HYDROXYMETHYLMYCOTHIOL_c 	s0001	 -0.00	1000.00	  0.00
-RXN-4821	h_c + h2o_c + thdp_c  <=> L-ALPHA-AMINO-EPSILON-KETO-PIMELATE_c 	s0001	-1000.00	1000.00	  0.00
-RXN-10723	2-AMINOMUCONATE_SEMIALDEHYDE_c  -> h2o_c + PICOLINATE_c 	s0001	 -0.00	1000.00	  0.00
-RXN-16992	tag6p-D_c  <=> CPD-15826_c 	s0001	-1000.00	1000.00	  0.00
-RXN-7587	h2o_c + 4izp_c  -> FORMYL-ISOGLUTAMINE_c 	s0001	 -0.00	1000.00	  0.00
-RXN-14500	CPD-15373_c  <=> man_c 	s0001	-1000.00	1000.00	  0.00
-RXN-14809	L-arabinofuranose_c  <=> arab-L_c 	s0001	-1000.00	1000.00	  0.00
-RXN-12541	2 o2_c + 2 fe2_c  -> 2 fe3_c + 2 o2s_c 	s0001	 -0.00	1000.00	  0.00
-RXN-14515	fru_c  -> BETA-D-FRUCTOSE_c 	s0001	 -0.00	1000.00	  0.00
-RXN-13463	CPD-14447_c  <=> OXOPENTENOATE_c 	s0001	-1000.00	1000.00	  0.00
-RXN-15905	CPD-12595_c  -> CPD-17141_c 	s0001	 -0.00	1000.00	  0.00
+RXN-15356	rml_c  -> CPD-16567_c 		 -0.00	1000.00	  0.00
+RXN-12753	h2o_c + nadh_c  -> CPD-653_c 		 -0.00	1000.00	  0.00
+RXN-6423	4abutn_c  <=> h2o_c + CPD-6124_c 		-1000.00	1000.00	  0.00
+RXN-8406	Donor-H2_c + 2 CPD-8214_c  -> 2 h_c + 2 cl_c + Acceptor_c + 2 CPD-8225_c 		 -0.00	1000.00	  0.00
+RXN-7593	h2o_c + o2_c + 4izp_c + Donor-H2_c  -> nh4_c + for_c + Acceptor_c + 4-OXOGLUTARAMATE_c 		 -0.00	1000.00	  0.00
+RXN-12943	h_c + CPD-13380_c  -> CPD-13952_c 		 -0.00	1000.00	  0.00
+RXN-12440	h_c + h2o2_c + ASCORBATE_c  -> 2 h2o_c + L-DEHYDRO-ASCORBATE_c 		 -0.00	1000.00	  0.00
+RXN-13530	CPD-14523_c  <=> CPD-14524_c 		-1000.00	1000.00	  0.00
+RXN-12876	ASCORBATE_c + 2 Cytochromes-C-Oxidized_c  -> h_c + 2 Cytochromes-C-Reduced_c + L-DEHYDRO-ASCORBATE_c 		 -0.00	1000.00	  0.00
+RXN-12540	h2o2_c + fe2_c  -> fe3_c + CPD-12377_c + OH_c 		 -0.00	1000.00	  0.00
+RXN-15999	CPD-13430_c  <=> CPD-8938_c 		-1000.00	1000.00	  0.00
+RXN-8461	CPD-253_c  -> h_c + h2o_c + CPD-8651_c 		 -0.00	1000.00	  0.00
+RXN-6268	BETAINE-ALDEHYDE-HYDRATE_c  <=> h2o_c + betald_c 		-1000.00	1000.00	  0.00
+RXN-12754	h2o_c + nadh_c  -> CPD0-2472_c 		 -0.00	1000.00	  0.00
+RXN-6081	h_c + alac-S_c + Acceptor_c  -> co2_c + Donor-H2_c + DIACETYL_c 		 -0.00	1000.00	  0.00
+RXN-2881	fald_c + thf_c  -> h2o_c + mlthf_c 		 -0.00	1000.00	  0.00
+RXN-15124	2-AMINOACRYLATE_c  -> CPD-16015_c 		 -0.00	1000.00	  0.00
+RXN-13068	2 Acceptor_c + 2 CPD-14083_c  -> 2 Donor-H2_c + CPD-14081_c 		 -0.00	1000.00	  0.00
+RXN-9193	GERANIAL_c  <=> CPD-9762_c 		-1000.00	1000.00	  0.00
+RXN0-5222	2 h_c + CARBAMATE_c  -> co2_c + nh4_c 		 -0.00	1000.00	  0.00
+RXN-9930	o2_c + TETRAHYD-CPD_c  -> h_c + h2o_c + CPD-10679_c 		 -0.00	1000.00	  0.00
+RXN-5721	2-AMINO-3-3-OXOPROP-2-ENYL-BUT-2-ENEDI_c  -> h2o_c + quln_c 		 -0.00	1000.00	  0.00
+RXN-2961	S-HYDROXYMETHYLGLUTATHIONE_c  -> fald_c + gthrd_c 		 -0.00	1000.00	  0.00
+RXN-6581	fald_c + CPD1G-2_c  -> S-HYDROXYMETHYLMYCOTHIOL_c 		 -0.00	1000.00	  0.00
+RXN-4821	h_c + h2o_c + thdp_c  <=> L-ALPHA-AMINO-EPSILON-KETO-PIMELATE_c 		-1000.00	1000.00	  0.00
+RXN-10723	2-AMINOMUCONATE_SEMIALDEHYDE_c  -> h2o_c + PICOLINATE_c 		 -0.00	1000.00	  0.00
+RXN-16992	tag6p-D_c  <=> CPD-15826_c 		-1000.00	1000.00	  0.00
+RXN-7587	h2o_c + 4izp_c  -> FORMYL-ISOGLUTAMINE_c 		 -0.00	1000.00	  0.00
+RXN-14500	CPD-15373_c  <=> man_c 		-1000.00	1000.00	  0.00
+RXN-14809	L-arabinofuranose_c  <=> arab-L_c 		-1000.00	1000.00	  0.00
+RXN-12541	2 o2_c + 2 fe2_c  -> 2 fe3_c + 2 o2s_c 		 -0.00	1000.00	  0.00
+RXN-14515	fru_c  -> BETA-D-FRUCTOSE_c 		 -0.00	1000.00	  0.00
+RXN-13463	CPD-14447_c  <=> OXOPENTENOATE_c 		-1000.00	1000.00	  0.00
+RXN-15905	CPD-12595_c  -> CPD-17141_c 		 -0.00	1000.00	  0.00
 RXN-18029	h2o_c + atp_c + gtca3_c  -> h_c + adp_c + pi_c + gtca3_e 	SCO6758 or SCO2996	  0.00	1000.00	  0.00
 TRANS-RXN0-575	malt_e  -> malt_c 	SCO0434	  0.00	1000.00	  0.00
 TRANS-RXN0-496	ENTEROBACTIN_c  -> ENTEROBACTIN_e 	SCO2264	  0.00	1000.00	  0.00
