@@ -1912,7 +1912,7 @@ RXN-8582	h2o_c + nad_c + CPD-8773_c  -> 2 h_c + nadh_c + 4-TOLUENECARBOXYLATE_c 
 RXN0-308	cys-L_c + Cysteine-Desulfurase-L-cysteine_c  -> ala-L_c + L-Cysteine-Desulfurase-persulfide_c 	SCO2157	 -0.00	1000.00	  0.00
 AMINO-CARBOXYMUCONATE-SEMIALDEHYDE-RXN	h_c + 2-AMINO-3-3-OXOPROP-2-ENYL-BUT-2-ENEDI_c  -> co2_c + 2-AMINOMUCONATE_SEMIALDEHYDE_c 	SCO6305	 -0.00	1000.00	  0.00
 PYRIDOXINE-4-DEHYDROGENASE-RXN	nadp_c + pydxn_c  <=> nadph_c + h_c + pydx_c 	SCO7264 or SCO0299 or SCO0429 or SCO3730 or SCO7654	-1000.00	1000.00	  0.00
-RXN-8024	Acceptor_c + CPD-7408_c  -> CPD1F-98_c + Donor-H2_c 	SCO0186	 -0.00	1000.00	  0.00
+RXN-8024_NADPH	nadp_c + CPD-7408_c  -> nadph_c + CPD1F-98_c 	SCO0186	 -0.00	1000.00	  0.00
 RXN-663	h2o_c + nad_c + CPD-1003_c  -> 2 h_c + nadh_c + CPD-1004_c 	SCO1612 or SCO1706 or SCO7139	 -0.00	1000.00	  0.00
 LINC-RXN	nad_c + 25-DDOL_c  <=> h_c + nadh_c + 25-DICHLOROHYDROQUINONE_c 	SCO4169	-1000.00	1000.00	  0.00
 RXN0-6727	adp_c + CPD-653_c  -> h_c + nadh_c + amp_c + pi_c 	SCO4742	 -0.00	1000.00	  0.00
@@ -1921,7 +1921,7 @@ RXN0-5224	h_c + hco3_c  <=> h2o_c + co2_c 	SCO3562 or SCO6055	-1000.00	1000.00	 
 1.2.1.66-RXN	nad_c + S-HYDROXYMETHYLMYCOTHIOL_c  -> h_c + nadh_c + CPD1G-121_c 	SCO1705 or SCO0741	 -0.00	1000.00	  0.00
 RXN-16308	2 h_c + CPD-17565_c + Reduced-Factor-F420_c  -> CPD-17568_c + Oxidized-Factor-F420_c 	SCO1453	 -0.00	1000.00	  0.00
 DARABALDOL-RXN	D-RIBULOSE-1-P_c  <=> dhap_c + gcald_c 	SCO1844	-1000.00	1000.00	  0.00
-RXN-8003	o2_c + CIS-4-HYDROXY-D-PROLINE_c + Donor-H2_c  -> h_c + 2 h2o_c + Acceptor_c + CPD-1128_c 	SCO6289	 -0.00	1000.00	  0.00
+RXN-8003_NADPH	nadph_c + o2_c + CIS-4-HYDROXY-D-PROLINE_c  -> h_c + nadp_c + 2 h2o_c + CPD-1128_c 	SCO6289	 -0.00	1000.00	  0.00
 XYLONATE-DEHYDRATASE-RXN	D-XYLONATE_c  -> h2o_c + 2-DH-3-DO-D-ARABINONATE_c 	SCO2401	 -0.00	1000.00	  0.00
 RXN-15264	h2o_c + amet_c + CPD-16467_c  -> h_c + hco3_c + met-L_c + CPD-13324_c 	SCO4494	 -0.00	1000.00	  0.00
 RXNARA-8002	CPD-464_c  -> ppi_c + CPD-12321_c 	SCO6760 or SCO0187	 -0.00	1000.00	  0.00
@@ -1941,7 +1941,7 @@ RXN-8959	h_c + mscoa-S_c + ETF-Oxidized_c  -> CPD-9408_c + ETF-Reduced_c 	SCO646
 RXN0-1134	h_c + pyr_c + Pyruvate-dehydrogenase-lipoate_c  -> co2_c + Pyruvate-dehydrogenase-acetylDHlipoyl_c 	SCO2183 or SCO2371 or SCO1269 or SCO1270 or SCO7124	 -0.00	1000.00	  0.00
 RXN-15131	cyst-L_c  -> h_c + hcys-L_c + 2-AMINOACRYLATE_c 	SCO0435	 -0.00	1000.00	  0.00
 CHOLESTEROL-OXIDASE-RXN	o2_c + CHOLESTEROL_c  -> h2o2_c + CPD-323_c 	SCO4781	 -0.00	1000.00	  0.00
-RXN-12707	Acceptor_c + CPD-13696_c  -> CPD-13697_c + Donor-H2_c 	SCO1198	 -0.00	1000.00	  0.00
+RXN-12707_NADPH	nadp_c + CPD-13696_c  -> nadph_c + CPD-13697_c 	SCO1198	 -0.00	1000.00	  0.00
 RXN-18036	udcpp_c + uacgam_c  -> udp_c + CPD-19317_c 	SCO6374 or SCO4658 or SCO4875	 -0.00	1000.00	  0.00
 2.1.1.137-RXN	amet_c + aso3_c  -> h_c + ahcys_c + METHYLARSONATE_c 	SCO3452	 -0.00	1000.00	  0.00
 THIOSULFATE-SULFURTRANSFERASE-RXN	HCN_c + S2O3_c  -> 2 h_c + so3_c + HSCN_c 	SCO5854 or SCO4164	 -0.00	1000.00	  0.00
@@ -1981,7 +1981,7 @@ RXN-16310	CPD-17567_c + Reduced-Factor-F420_c  -> CPD-17570_c + Oxidized-Factor-
 URPHOS-RXN	pi_c + uri_c  <=> r1p_c + ura_c 	SCO4890	-1000.00	1000.00	  0.00
 RXN0-1132	nad_c + Pyruvate-dehydrogenase-dihydrolipoate_c  -> h_c + nadh_c + Pyruvate-dehydrogenase-lipoate_c 	SCO3443 or SCO3460 or SCO0884 or SCO4919	 -0.00	1000.00	  0.00
 RXN-9933	nadph_c + h_c + o2_c + 2 CPD-10679_c  -> nadp_c + 2 h2o_c + CPD-10681_c 	SCO6998 or SCO1207	 -0.00	1000.00	  0.00
-RXN-8023	Acceptor_c + CPD-12321_c  -> CPD-7408_c + Donor-H2_c 	SCO0186	 -0.00	1000.00	  0.00
+RXN-8023_NADPH	nadp_c + CPD-12321_c  -> nadph_c + CPD-7408_c 	SCO0186	 -0.00	1000.00	  0.00
 RXN0-1862	10fthf_c + UDP-4-AMINO-4-DEOXY-L-ARABINOSE_c  -> h_c + thf_c + UDP-L-ARA4-FORMYL-N_c 	SCO0499	 -0.00	1000.00	  0.00
 MALYL-COA-LYASE-RXN	CPD-208_c  <=> accoa_c + glx_c 	SCO6471	-1000.00	1000.00	  0.00
 RXN-8964	succoa_c + mal-L_c  <=> succ_c + CPD-208_c 	SCO2032	-1000.00	1000.00	  0.00
@@ -1992,7 +1992,7 @@ RXN0-1861	nad_c + udpglcur_c  -> nadh_c + co2_c + 5-BETA-L-THREO-PENTAPYRANOSYL-
 2.3.1.168-RXN	ibcoa_c + BCAA-dehydrogenase-DH-lipoyl_c  <=> coa_c + BCAA-dehydrogenase-2MP-DH-lipoyl_c 	SCO3815 or SCO2181 or SCO7123	-1000.00	1000.00	  0.00
 6.3.5.7-RXN	h2o_c + atp_c + gln-L_c + L-glutamyl-tRNAGln_c  -> h_c + glu-L_c + adp_c + pi_c + Charged-GLN-tRNAs_c 	SCO6344 or SCO5499 or SCO5501 or SCO2825	 -0.00	1000.00	  0.00
 GLU6PDEHYDROG-RXN	nadp_c + g6p_c  -> nadph_c + h_c + 6pgl_c 	SCO6661 or SCO1937	 -0.00	1000.00	  0.00
-RXN-8781	Acceptor_c + CPD-9055_c  -> h_c + ASCORBATE_c + Donor-H2_c 	SCO5508	 -0.00	1000.00	  0.00
+RXN-8781_NADPH	nadp_c + CPD-9055_c  -> nadph_c + h_c + ASCORBATE_c 	SCO5508	 -0.00	1000.00	  0.00
 RXN-10898	nad_c + CPD-11867_c  -> h_c + nadh_c + CPD-11872_c 	SCO3954	 -0.00	1000.00	  0.00
 GDP-MANNOSE-6-DEHYDROGENASE-RXN	h2o_c + 2 nad_c + gdpmann_c  -> 3 h_c + 2 nadh_c + CPD-1828_c 	SCO0382	 -0.00	1000.00	  0.00
 RXN-13129	nadph_c + o2_c + CPD-10598_c  -> nadp_c + h2o_c + 4-HYDROXYPHENYLACETATE_c 	SCO3172	 -0.00	1000.00	  0.00
@@ -2076,10 +2076,10 @@ RXN-10998	atp_c + CPD-11956_c  -> h_c + amp_c + ppi_c + CPD-11957_c 	SCO2785	 -0
 RXN-12345	chor_c  -> h2o_c + CPD-16467_c 	SCO4506	 -0.00	1000.00	  0.00
 RXN-10997	atp_c + 3 CPD-11955_c  -> h_c + h2o_c + amp_c + ppi_c + CPD-11956_c 	SCO2785	 -0.00	1000.00	  0.00
 GLUTCYSLIG-RXN	glu-L_c + atp_c + cys-L_c  -> h_c + adp_c + pi_c + L-GAMMA-GLUTAMYLCYSTEINE_c 	SCO0910	 -0.00	1000.00	  0.00
-RXN-12225	2 h2o_c + 2 Acceptor_c + CPD-13150_c  -> 2 h_c + CPD-13151_c + 2 Donor-H2_c 	SCO6793	 -0.00	1000.00	  0.00
+RXN-12225_NADPH	2 nadp_c + 2 h2o_c + CPD-13150_c  -> 2 nadph_c + 2 h_c + CPD-13151_c 	SCO6793	 -0.00	1000.00	  0.00
 7-ALPHA-HYDROXYSTEROID-DEH-RXN	nad_c + CHOLATE_c  -> h_c + nadh_c + CHOLANATE2_c 	SCO0737	 -0.00	1000.00	  0.00
 RXN-17572	h2o_c + METHYL-ACETATE_c  -> h_c + ac_c + meoh_c 	SCO6656	 -0.00	1000.00	  0.00
-RXN-12223	4 o2_c + CPD-13149_c + 4 Donor-H2_c  -> 6 h2o_c + 4 Acceptor_c + CPD-13150_c 	SCO2101	 -0.00	1000.00	  0.00
+RXN-12223_NADPH	4 nadph_c + 4 o2_c + CPD-13149_c  -> 4 nadp_c + 6 h2o_c + CPD-13150_c 	SCO2101	 -0.00	1000.00	  0.00
 RXN-17571	nad_c + ISO-PROPANOL_c  <=> h_c + nadh_c + ACETONE_c 	SCO6706 or SCO0179 or SCO1174 or SCO7362 or SCO4055 or SCO0259	-1000.00	1000.00	  0.00
 RXN0-6274	dmpp_c + tRNA-Adenosines-37_c  -> ppi_c + 6-Dimethylallyladenosine37-tRNAs_c 	SCO5791	 -0.00	1000.00	  0.00
 6-HEXANOLIDE-HYDROLYSIS-RXN	h2o_c + CPD-101_c  -> h_c + CPD-102_c 	SCO3415	 -0.00	1000.00	  0.00
@@ -2088,7 +2088,7 @@ HYDROXYBENZALDEHYDE-OXIDATION-NADP-RXN	nadp_c + h2o_c + 4-HYDROXYBENZALDEHYDE_c 
 RXN-8675	amet_c + CPD-9038_c  -> ahcys_c + dscl_c 	SCO3317 or SCO1553	 -0.00	1000.00	  0.00
 2.5.1.32-RXN	2 ggdp_c  -> ppi_c + CPD-464_c 	SCO6760 or SCO0187	 -0.00	1000.00	  0.00
 RXN-8648	h2o_c + frdp_c  -> ppi_c + CPD-10159_c 	SCO6073	 -0.00	1000.00	  0.00
-RXN-13528	amet_c + Donor-H2_c + HOP-2229-ENE_c  -> h_c + met-L_c + Acceptor_c + CPD-14522_c 	SCO6766	 -0.00	1000.00	  0.00
+RXN-13528_NADPH	nadph_c + amet_c + HOP-2229-ENE_c  -> h_c + nadp_c + met-L_c + CPD-14522_c 	SCO6766	 -0.00	1000.00	  0.00
 2.5.1.68-RXN	ipdp_c + grdp_c  -> ppi_c + CPD-9444_c 	SCO3858	 -0.00	1000.00	  0.00
 RXN0-4301	s7p_c  -> D-ALPHABETA-D-HEPTOSE-7-PHOSPHATE_c 	SCO6186	 -0.00	1000.00	  0.00
 RXN-8081	glu-L_c + gtp_c + CPD-7607_c  -> h_c + pi_c + gdp_c + OX-COENZYME-F420_c 	SCO3037	 -0.00	1000.00	  0.00
@@ -2096,7 +2096,7 @@ SORBITOL-6-PHOSPHATASE-RXN	h2o_c + D-SORBITOL-6-P_c  -> sbt-D_c + pi_c 	SCO2346	
 2.4.1.216-RXN	pi_c + tre6p_c  <=> CPD-448_c + GLC-6-P_c 	SCO0616	-1000.00	1000.00	  0.00
 RXN-9476	h2o_c + CPD-10160_c  -> CPD-10158_c 	SCO6073	 -0.00	1000.00	  0.00
 RXN-8080	glu-L_c + gtp_c + CPD-10333_c  -> h_c + pi_c + gdp_c + CPD-7607_c 	SCO3037	 -0.00	1000.00	  0.00
-RXN-10995	o2_c + 15dap_c + Donor-H2_c  -> h_c + h2o_c + Acceptor_c + CPD-11953_c 	SCO2016 or SCO2783	 -0.00	1000.00	  0.00
+RXN-10995_NADPH	nadph_c + o2_c + 15dap_c  -> h_c + nadp_c + h2o_c + CPD-11953_c 	SCO2016 or SCO2783	 -0.00	1000.00	  0.00
 RXN-12400	2 h2o_c + CPD-13378_c  -> 2 gal_c + CPD-13375_c 	SCO2430	 -0.00	1000.00	  0.00
 RXN-9475	CPD-10159_c  -> ACETONE_c + CPD-10160_c 	SCO6073	 -0.00	1000.00	  0.00
 UTPHEXPURIDYLYLTRANS-RXN	h_c + gal1p_c + utp_c  <=> ppi_c + udpgal_c 	SCO3138	-1000.00	1000.00	  0.00
@@ -2107,7 +2107,7 @@ UREA-CARBOXYLASE-RXN	h2o_c + co2_c + atp_c + urea_c  -> 2 h_c + adp_c + pi_c + C
 RXN-9353	nadph_c + h_c + o2_c + CPD-9961_c  -> nadp_c + 2 h2o_c + CPD-9962_c 	SCO5223	 -0.00	1000.00	  0.00
 RXN-10040	h_c + o2_c + nadh_c + CPD-10797_c  -> h2o_c + nad_c + CPD-10796_c 	SCO5773	 -0.00	1000.00	  0.00
 RXN-9909	nad_c + CPD-10659_c  -> h_c + nadh_c + CPD-10660_c 	SCO6442	 -0.00	1000.00	  0.00
-RXN-12703	Acceptor_c + CPD-13691_c  -> CPD-13692_c + Donor-H2_c 	SCO1197	 -0.00	1000.00	  0.00
+RXN-12703_NADPH	nadp_c + CPD-13691_c  -> nadph_c + CPD-13692_c 	SCO1197	 -0.00	1000.00	  0.00
 RXN-11728	nadp_c + CPD-12693_c  -> nadph_c + h_c + CPD-12694_c 	SCO1012	 -0.00	1000.00	  0.00
 GLUTAMATESYN-RXN	nadph_c + h_c + akg_c + gln-L_c  -> nadp_c + 2 glu-L_c 	SCO1977 or SCO2025 or SCO2026	 -0.00	1000.00	  0.00
 METHYL-GLYOXAL-DEHYDROG-RXN	h2o_c + nad_c + METHYL-GLYOXAL_c  -> 2 h_c + nadh_c + pyr_c 	SCO3486 or SCO6441	 -0.00	1000.00	  0.00
@@ -2150,7 +2150,7 @@ RXN-8529	CPD-13339_c  <=> CPD-8742_c 	SCO4682	-1000.00	1000.00	  0.00
 5.3.3.10-RXN	CPD-784_c  -> CPD-785_c 	SCO2225	 -0.00	1000.00	  0.00
 6.3.2.10-RXN	atp_c + alaala_c + CPD-209_c  -> h_c + adp_c + pi_c + C3_c 	SCO2088	 -0.00	1000.00	  0.00
 RXN-7908	CPD-5881_c  -> h2o_c + BIOPTERIN_c 	SCO6540	 -0.00	1000.00	  0.00
-RXN-8022	Acceptor_c + CPD1F-98_c  -> Donor-H2_c + NEUROSPORENE_c 	SCO0186 or SCO2101	 -0.00	1000.00	  0.00
+RXN-8022_NADPH	nadp_c + CPD1F-98_c  -> nadph_c + NEUROSPORENE_c 	SCO0186 or SCO2101	 -0.00	1000.00	  0.00
 3-OCTAPRENYL-4-OHBENZOATE-DECARBOX-RXN	h_c + 3-OCTAPRENYL-4-HYDROXYBENZOATE_c  -> co2_c + 2-OCTAPRENYLPHENOL_c 	SCO4490 or SCO4492	 -0.00	1000.00	  0.00
 RXN-37	h2o_c + nad_c + CPD-30_c  -> 2 h_c + nadh_c + CPD-35_c 	SCO1612 or SCO1706 or SCO3420 or SCO4780 or SCO4913 or SCO5666 or SCO5679 or SCO6441 or SCO6793 or SCO7139	 -0.00	1000.00	  0.00
 LAUROYLACYLTRAN-RXN	ddcaACP_c + KDO2-LIPID-IVA_c  -> ACP_c + KDO2-LAUROYL-LIPID-IVA_c 	SCO1526	 -0.00	1000.00	  0.00
@@ -2248,9 +2248,9 @@ R03105	3-MERCAPTO-PYRUVATE_c + H2SO3_c  <=> pyr_c + S2O3_c 	SCO4164 or SCO5854	-
 R03998	2 h_c + o2_c + 2 nadh_c + 2-AMINOBENZOYL-COA_c  <=> h2o_c + 2 nad_c + 2-AMINO-5-OXOCYCLOHEX-1-ENECARBOXYL-COA_c 	SCO1109 or SCO5980 or SCO7285	-1000.00	1000.00	  0.00
 R03999	2 nadph_c + 2 h_c + o2_c + 2-AMINOBENZOYL-COA_c  <=> 2 nadp_c + h2o_c + 2-AMINO-5-OXOCYCLOHEX-1-ENECARBOXYL-COA_c 	SCO1109 or SCO5980 or SCO7285	-1000.00	1000.00	  0.00
 R04221	o2_c + CIS-4-HYDROXY-D-PROLINE_c  -> h2o2_c + CPD-1128_c 	SCO6740	 -0.00	1000.00	  0.00
-R04800	o2_c + Donor-H2_c + NEUROSPORENE_c  <=> 2 h2o_c + Acceptor_c + CPD1F-114_c 	SCO0186 or SCO2101	-1000.00	1000.00	  0.00
+R04800_NADPH	nadph_c + o2_c + NEUROSPORENE_c  <=> nadp_c + 2 h2o_c + CPD1F-114_c 	SCO0186 or SCO2101	-1000.00	1000.00	  0.00
 R05590	h2o_c + CPD-17683_c  <=> AMMONIA_c + BENZOATE_c 	SCO6344 or SCO7601	-1000.00	1000.00	  0.00
-R09692	Acceptor_c + CPD-12321_c  <=> CPD-7408_c + Donor-H2_c 	SCO0186 or SCO2101	-1000.00	1000.00	  0.00
+R09692_NADPH	nadp_c + CPD-12321_c  <=> nadph_c + CPD-7408_c 	SCO0186 or SCO2101	-1000.00	1000.00	  0.00
 R01176	coa_c + atp_c + BUTYRIC_ACID_c  <=> amp_c + ppi_c + btcoa_c 	SCO6195	-1000.00	1000.00	  0.00
 R01785	CPD0-1115_c  <=> dhap_c + gcald_c 	SCO0813	-1000.00	1000.00	  0.00
 R02252	nad_c + 3-PHENYLPROPIONATE_c  <=> h_c + nadh_c + CPD-674_c 	SCO4297 or SCO7066	-1000.00	1000.00	  0.00
@@ -2259,8 +2259,8 @@ R04215	ctp_c + CPD-273_c  <=> ppi_c + CPD-262_c 	SCO4880	-1000.00	1000.00	  0.00
 RXN-15356	rml_c  -> CPD-16567_c 		 -0.00	1000.00	  0.00
 RXN-12753	h2o_c + nadh_c  -> CPD-653_c 		 -0.00	1000.00	  0.00
 RXN-6423	4abutn_c  <=> h2o_c + CPD-6124_c 		-1000.00	1000.00	  0.00
-RXN-8406	Donor-H2_c + 2 CPD-8214_c  -> 2 h_c + 2 cl_c + Acceptor_c + 2 CPD-8225_c 		 -0.00	1000.00	  0.00
-RXN-7593	h2o_c + o2_c + 4izp_c + Donor-H2_c  -> nh4_c + for_c + Acceptor_c + 4-OXOGLUTARAMATE_c 		 -0.00	1000.00	  0.00
+RXN-8406_NADPH	nadph_c + 2 CPD-8214_c  -> 2 h_c + nadp_c + 2 cl_c + 2 CPD-8225_c 		 -0.00	1000.00	  0.00
+RXN-7593_NADPH	nadph_c + h2o_c + o2_c + 4izp_c  -> nadp_c + nh4_c + for_c + 4-OXOGLUTARAMATE_c 		 -0.00	1000.00	  0.00
 RXN-12943	h_c + CPD-13380_c  -> CPD-13952_c 		 -0.00	1000.00	  0.00
 RXN-12440	h_c + h2o2_c + ASCORBATE_c  -> 2 h2o_c + L-DEHYDRO-ASCORBATE_c 		 -0.00	1000.00	  0.00
 RXN-13530	CPD-14523_c  <=> CPD-14524_c 		-1000.00	1000.00	  0.00
@@ -2270,10 +2270,10 @@ RXN-15999	CPD-13430_c  <=> CPD-8938_c 		-1000.00	1000.00	  0.00
 RXN-8461	CPD-253_c  -> h_c + h2o_c + CPD-8651_c 		 -0.00	1000.00	  0.00
 RXN-6268	BETAINE-ALDEHYDE-HYDRATE_c  <=> h2o_c + betald_c 		-1000.00	1000.00	  0.00
 RXN-12754	h2o_c + nadh_c  -> CPD0-2472_c 		 -0.00	1000.00	  0.00
-RXN-6081	h_c + alac-S_c + Acceptor_c  -> co2_c + Donor-H2_c + DIACETYL_c 		 -0.00	1000.00	  0.00
+RXN-6081_NADPH	h_c + nadp_c + alac-S_c  -> nadph_c + co2_c + DIACETYL_c 		 -0.00	1000.00	  0.00
 RXN-2881	fald_c + thf_c  -> h2o_c + mlthf_c 		 -0.00	1000.00	  0.00
 RXN-15124	2-AMINOACRYLATE_c  -> CPD-16015_c 		 -0.00	1000.00	  0.00
-RXN-13068	2 Acceptor_c + 2 CPD-14083_c  -> 2 Donor-H2_c + CPD-14081_c 		 -0.00	1000.00	  0.00
+RXN-13068_NADPH	2 nadp_c + 2 CPD-14083_c  -> 2 nadph_c + CPD-14081_c 		 -0.00	1000.00	  0.00
 RXN-9193	GERANIAL_c  <=> CPD-9762_c 		-1000.00	1000.00	  0.00
 RXN0-5222	2 h_c + CARBAMATE_c  -> co2_c + nh4_c 		 -0.00	1000.00	  0.00
 RXN-9930	o2_c + TETRAHYD-CPD_c  -> h_c + h2o_c + CPD-10679_c 		 -0.00	1000.00	  0.00
@@ -2315,3 +2315,20 @@ R364-RXN_NADH	2 h_c + 2 nadh_c + CPD-704_c  -> h2o_c + 2 nad_c + CPD-705_c 	SCO0
 RXN-2962_NADH	nad_c + S-HYDROXYMETHYLGLUTATHIONE_c  -> h_c + nadh_c + CPD-548_c 	SCO1705	 -0.00	1000.00	  0.00
 1.17.1.1-RXN_NADH	h_c + nadh_c + CPD-658_c  -> h2o_c + nad_c + CPD-1078_c 	SCO0103	 -0.00	1000.00	  0.00
 1.14.13.84-RXN_NADH	o2_c + nadh_c + CPD-10598_c  -> h2o_c + nad_c + 4-HYDROXYPHENYLACETATE_c 	SCO3172	 -0.00	1000.00	  0.00
+RXN-8024_NADH	nad_c + CPD-7408_c  -> nadh_c + CPD1F-98_c 	SCO0186	 -0.00	1000.00	  0.00
+RXN-8003_NADH	o2_c + nadh_c + CIS-4-HYDROXY-D-PROLINE_c  -> h_c + 2 h2o_c + nad_c + CPD-1128_c 	SCO6289	 -0.00	1000.00	  0.00
+RXN-12707_NADH	nad_c + CPD-13696_c  -> nadh_c + CPD-13697_c 	SCO1198	 -0.00	1000.00	  0.00
+RXN-8023_NADH	nad_c + CPD-12321_c  -> nadh_c + CPD-7408_c 	SCO0186	 -0.00	1000.00	  0.00
+RXN-8781_NADH	nad_c + CPD-9055_c  -> h_c + nadh_c + ASCORBATE_c 	SCO5508	 -0.00	1000.00	  0.00
+RXN-12225_NADH	2 h2o_c + 2 nad_c + CPD-13150_c  -> 2 h_c + 2 nadh_c + CPD-13151_c 	SCO6793	 -0.00	1000.00	  0.00
+RXN-12223_NADH	4 o2_c + 4 nadh_c + CPD-13149_c  -> 6 h2o_c + 4 nad_c + CPD-13150_c 	SCO2101	 -0.00	1000.00	  0.00
+RXN-13528_NADH	nadh_c + amet_c + HOP-2229-ENE_c  -> h_c + nad_c + met-L_c + CPD-14522_c 	SCO6766	 -0.00	1000.00	  0.00
+RXN-10995_NADH	o2_c + nadh_c + 15dap_c  -> h_c + h2o_c + nad_c + CPD-11953_c 	SCO2016 or SCO2783	 -0.00	1000.00	  0.00
+RXN-12703_NADH	nad_c + CPD-13691_c  -> nadh_c + CPD-13692_c 	SCO1197	 -0.00	1000.00	  0.00
+RXN-8022_NADH	nad_c + CPD1F-98_c  -> nadh_c + NEUROSPORENE_c 	SCO0186 or SCO2101	 -0.00	1000.00	  0.00
+R04800_NADH	o2_c + nadh_c + NEUROSPORENE_c  <=> 2 h2o_c + nad_c + CPD1F-114_c 	SCO0186 or SCO2101	-1000.00	1000.00	  0.00
+R09692_NADH	nad_c + CPD-12321_c  <=> nadh_c + CPD-7408_c 	SCO0186 or SCO2101	-1000.00	1000.00	  0.00
+RXN-8406_NADH	nadh_c + 2 CPD-8214_c  -> 2 h_c + nad_c + 2 cl_c + 2 CPD-8225_c 		 -0.00	1000.00	  0.00
+RXN-7593_NADH	h2o_c + o2_c + nadh_c + 4izp_c  -> nad_c + nh4_c + for_c + 4-OXOGLUTARAMATE_c 		 -0.00	1000.00	  0.00
+RXN-6081_NADH	h_c + nad_c + alac-S_c  -> nadh_c + co2_c + DIACETYL_c 		 -0.00	1000.00	  0.00
+RXN-13068_NADH	2 nad_c + 2 CPD-14083_c  -> 2 nadh_c + CPD-14081_c 		 -0.00	1000.00	  0.00
