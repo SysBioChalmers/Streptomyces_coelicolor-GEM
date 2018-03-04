@@ -1938,7 +1938,6 @@ ANTHRANILOYL-COA-MONOOXYGENASE-RXN_NADPH	2 nadph_c + 2 h_c + o2_c + 2-AMINOBENZO
 RXN-12900	nadph_c + o2_c + TRIMETHYLAMINE_c  -> nadp_c + h2o_c + TRIMETHYLAMINE-N-O_c 	SCO0122 or SCO7468	 -0.00	1000.00	  0.00
 RXN-16262	nadph_c + h_c + CPD-13952_c  -> nadp_c + CPD-13381_c 	SCO2285	 -0.00	1000.00	  0.00
 RXN-8959	h_c + mscoa-S_c + ETF-Oxidized_c  -> CPD-9408_c + ETF-Reduced_c 	SCO6469	 -0.00	1000.00	  0.00
-RXN0-1134	h_c + pyr_c + Pyruvate-dehydrogenase-lipoate_c  -> co2_c + Pyruvate-dehydrogenase-acetylDHlipoyl_c 	SCO2183 or SCO2371 or SCO1269 or SCO1270 or SCO7124	 -0.00	1000.00	  0.00
 RXN-15131	cyst-L_c  -> h_c + hcys-L_c + 2-AMINOACRYLATE_c 	SCO0435	 -0.00	1000.00	  0.00
 CHOLESTEROL-OXIDASE-RXN	o2_c + CHOLESTEROL_c  -> h2o2_c + CPD-323_c 	SCO4781	 -0.00	1000.00	  0.00
 RXN-12707_NADPH	nadp_c + CPD-13696_c  -> nadph_c + CPD-13697_c 	SCO1198	 -0.00	1000.00	  0.00
@@ -1960,7 +1959,6 @@ RXN-15590	CPD0-1198_c  -> h2o_c + CPD-1134_c 	SCO7415	 -0.00	1000.00	  0.00
 TRANS-L-3-HYDROXYPROLINE-DEHYDRATASE-RXN	CPD-664_c  -> h_c + h2o_c + DELTA1-PYRROLINE_2-CARBOXYLATE_c 	SCO6293	 -0.00	1000.00	  0.00
 RXN-17982	amet_c + CPD-19275_c  -> h_c + ahcys_c + CPD-19273_c 	SCO7452	 -0.00	1000.00	  0.00
 BENZYL-ALC-DEHYDROGENASE-RXN	nad_c + BENZYL-ALCOHOL_c  <=> h_c + nadh_c + BENZALDEHYDE_c 	SCO6442	-1000.00	1000.00	  0.00
-RXN-7719	nad_c + BCAA-dehydrogenase-DH-lipoyl_c  <=> h_c + nadh_c + BCAA-dehydrogenase-lipoyl_c 	SCO3443 or SCO4919	-1000.00	1000.00	  0.00
 RXN-12654	nadph_c + h_c + o2_c + CPD-13625_c  -> nadp_c + h2o_c + CPD-13621_c 	SCO0300	 -0.00	1000.00	  0.00
 RXN-11566	nadph_c + h_c + ptrc_c + aspsa_c  -> nadp_c + h2o_c + CPD-10012_c 	SCO7644	 -0.00	1000.00	  0.00
 RXN-11187	aso4_c + CPD1G-2_c  -> h2o_c + CPD-12152_c 	SCO3698 or SCO6837	 -0.00	1000.00	  0.00
@@ -1979,7 +1977,6 @@ RXN-11861	o2_c + CPD-183_c  -> h_c + h2o_c + CPD-184_c 	SCO6700	 -0.00	1000.00	 
 4-NITROPHENOL-2-MONOOXYGENASE-RXN	2 h_c + o2_c + nadh_c + P-NITROPHENOL_c  -> h2o_c + nad_c + CPD-158_c 	SCO4280	 -0.00	1000.00	  0.00
 RXN-16310	CPD-17567_c + Reduced-Factor-F420_c  -> CPD-17570_c + Oxidized-Factor-F420_c 	SCO1453	 -0.00	1000.00	  0.00
 URPHOS-RXN	pi_c + uri_c  <=> r1p_c + ura_c 	SCO4890	-1000.00	1000.00	  0.00
-RXN0-1132	nad_c + Pyruvate-dehydrogenase-dihydrolipoate_c  -> h_c + nadh_c + Pyruvate-dehydrogenase-lipoate_c 	SCO3443 or SCO3460 or SCO0884 or SCO4919	 -0.00	1000.00	  0.00
 RXN-9933	nadph_c + h_c + o2_c + 2 CPD-10679_c  -> nadp_c + 2 h2o_c + CPD-10681_c 	SCO6998 or SCO1207	 -0.00	1000.00	  0.00
 RXN-8023_NADPH	nadp_c + CPD-12321_c  -> nadph_c + CPD-7408_c 	SCO0186	 -0.00	1000.00	  0.00
 RXN0-1862	10fthf_c + UDP-4-AMINO-4-DEOXY-L-ARABINOSE_c  -> h_c + thf_c + UDP-L-ARA4-FORMYL-N_c 	SCO0499	 -0.00	1000.00	  0.00
@@ -1989,7 +1986,6 @@ RXN-11002	nadph_c + h_c + sucsal_c  -> nadp_c + 4-HYDROXY-BUTYRATE_c 	SCO0645	 -
 RXN-9351	nadph_c + h_c + o2_c + CPD-9959_c  -> nadp_c + h2o_c + CPD-9961_c 	SCO5223	 -0.00	1000.00	  0.00
 RXN-8568	h_c + nadh_c + ACRYLYL-COA_c  -> nad_c + ppcoa_c 	SCO0312 or SCO6938 or SCO5984	 -0.00	1000.00	  0.00
 RXN0-1861	nad_c + udpglcur_c  -> nadh_c + co2_c + 5-BETA-L-THREO-PENTAPYRANOSYL-4-ULOSE-_c 	SCO0499	 -0.00	1000.00	  0.00
-2.3.1.168-RXN	ibcoa_c + BCAA-dehydrogenase-DH-lipoyl_c  <=> coa_c + BCAA-dehydrogenase-2MP-DH-lipoyl_c 	SCO3815 or SCO2181 or SCO7123	-1000.00	1000.00	  0.00
 6.3.5.7-RXN	h2o_c + atp_c + gln-L_c + L-glutamyl-tRNAGln_c  -> h_c + glu-L_c + adp_c + pi_c + Charged-GLN-tRNAs_c 	SCO6344 or SCO5499 or SCO5501 or SCO2825	 -0.00	1000.00	  0.00
 GLU6PDEHYDROG-RXN	nadp_c + g6p_c  -> nadph_c + h_c + 6pgl_c 	SCO6661 or SCO1937	 -0.00	1000.00	  0.00
 RXN-8781_NADPH	nadp_c + CPD-9055_c  -> nadph_c + h_c + ASCORBATE_c 	SCO5508	 -0.00	1000.00	  0.00
@@ -2019,7 +2015,6 @@ RXN-15893	CPD-17129_c  -> CPD-12349_c 	SCO0347 or SCO0358 or SCO3480 or SCO7629	
 BENZALDEHYDE-DEHYDROGENASE-NAD+-RXN	h2o_c + nad_c + BENZALDEHYDE_c  <=> 2 h_c + nadh_c + BENZOATE_c 	SCO7436	-1000.00	1000.00	  0.00
 RXN-8583	h2o_c + nad_c + CPD-8774_c  -> 2 h_c + nadh_c + CPD-8775_c 	SCO7436	 -0.00	1000.00	  0.00
 RXN-11968	nad_c + GERANIOL_c  <=> h_c + nadh_c + GERANIAL_c 	SCO6782	-1000.00	1000.00	  0.00
-RXN0-1133	accoa_c + Pyruvate-dehydrogenase-dihydrolipoate_c  -> coa_c + Pyruvate-dehydrogenase-acetylDHlipoyl_c 	SCO3829	 -0.00	1000.00	  0.00
 4-COUMARATE--COA-LIGASE-RXN	coa_c + atp_c + COUMARATE_c  -> amp_c + ppi_c + P-COUMAROYL-COA_c 	SCO4383	 -0.00	1000.00	  0.00
 DIHYDROPYRIMIDINASE-RXN	h2o_c + DI-H-URACIL_c  <=> h_c + 3-UREIDO-PROPIONATE_c 	SCO6415	-1000.00	1000.00	  0.00
 HISTOLDEHYD-RXN	nad_c + histd_c  <=> h_c + nadh_c + HISTIDINAL_c 	SCO2054	-1000.00	1000.00	  0.00
@@ -2040,7 +2035,6 @@ RXN-12735	CPD-13722_c  <=> pyr_c + CPD-665_c 	SCP1.53c or SCP1.301	-1000.00	1000
 RXN-11407	nad_c + CPD-12521_c  -> h_c + nadh_c + CPD-12595_c 	SCO1896	 -0.00	1000.00	  0.00
 GALLATE-DECARBOXYLASE-RXN	h_c + CPD-183_c  <=> co2_c + PYROGALLOL_c 	SCO4492	-1000.00	1000.00	  0.00
 ALANINE--GLYOXYLATE-AMINOTRANSFERASE-RXN	ala-L_c + glx_c  <=> pyr_c + gly_c 	SCO6412	-1000.00	1000.00	  0.00
-1.2.4.4-RXN	h_c + 3mob_c + BCAA-dehydrogenase-lipoyl_c  <=> co2_c + BCAA-dehydrogenase-2MP-DH-lipoyl_c 	SCO3817 or SCO3830 or SCO3831	-1000.00	1000.00	  0.00
 RXN-8	pyr_c + ptrc_c  <=> ala-L_c + 4abutn_c 	SCO5655	-1000.00	1000.00	  0.00
 RXN-6383	3-HYDROXY-PROPIONYL-COA_c  <=> h2o_c + ACRYLYL-COA_c 	SCO6748 or SCO0364	-1000.00	1000.00	  0.00
 COLCYD-RXN	nad_c + 4-CARBOXYBENZYL-ALCOHOL_c  <=> h_c + nadh_c + 4-CARBOXYBENZALDEHYDE_c 	SCO2477	-1000.00	1000.00	  0.00
