@@ -1187,7 +1187,7 @@ IG3PS	gln-L_c + prlp_c  -> h_c + glu-L_c + aicar_c + eig3p_c 	( SCO2048 and SCO2
 IGPDH	eig3p_c  -> h2o_c + imacp_c 	SCO2052	  0.00	1000.00	  0.00
 IZPN	h2o_c + 4izp_c  -> h_c + forglu_c 	SCO3070	  0.00	1000.00	  0.00
 PRAMPC	h2o_c + prbamp_c  -> prfp_c 	SCO2044	  0.00	1000.00	  0.00
-PRATPP	h2o_c + prbatp_c  -> h_c + ppi_c + prbamp_c 	SCO1439 	  0.00	1000.00	  0.00
+PRATPP	h2o_c + prbatp_c  -> h_c + ppi_c + prbamp_c 	SCO1439	  0.00	1000.00	  0.00
 PRMICIi	prfp_c  -> prlp_c 	SCO2050	  0.00	1000.00	  0.00
 PRPPS	atp_c + r5p_c  <=> h_c + amp_c + prpp_c 	( SCO0782 or SCO3123 )	-1000.00	1000.00	  0.00
 URCN	h2o_c + urcan_c  -> 4izp_c 	SCO3073	  0.00	1000.00	  0.00
