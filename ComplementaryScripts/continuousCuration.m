@@ -88,5 +88,5 @@ model = removeReactions(model,{'RXN-14570','6.3.5.6-RXN','6.3.5.7-RXN',...
 % Remove protein-modifying reactions, out of scope of metabolic model.
 model = removeReactions(model,{'RXN0-308'},true,true,true);
 
-exportForGit(model,'model')
+exportForGit(model,'Sco4')
 
