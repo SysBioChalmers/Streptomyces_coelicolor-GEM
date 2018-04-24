@@ -106,7 +106,7 @@ MLTP3	malthp_c + pi_c  <=> malthx_c + g1p_c 	SCO5444	-1000.00	1000.00	  0.00
 MNLD	nad_c + mnl_c  -> h_c + nadh_c + fru_c 		  0.00	1000.00	  0.00
 MTI	tre_c  <=> malt_c 	SCO5442 or SCO7334	-1000.00	1000.00	  0.00
 OXCDC	h_c + oxalcoa_c  -> co2_c + forcoa_c 	SCO6584	  0.00	1000.00	  0.00
-OXDHCOAT	coa_c + 3oxdhscoa_c  -> accoa_c + 23dhacoa_c 	( SCO5144 and ( SCO6701 ) or ( SCO6967 ) or ( SCO3079 ) or ( SCO6731 ))	  0.00	1000.00	  0.00
+OXDHCOAT	coa_c + 3oxdhscoa_c  -> accoa_c + 23dhacoa_c 	( SCO5144 and SCO6701 ) or ( SCO5144 and SCO6967 ) or ( SCO5144 and SCO3079 ) or ( SCO5144 and SCO6731 )	  0.00	1000.00	  0.00
 PACCOAE	nadph_c + h_c + o2_c + phaccoa_c  -> nadp_c + h2o_c + rephaccoa_c 	SCO7471 and SCO7472 and SCO7473 and SCO7474 and SCO7475	  0.00	1000.00	  0.00
 PACCOAL	coa_c + atp_c + pac_c  -> amp_c + ppi_c + phaccoa_c 	SCO7469	  0.00	1000.00	  0.00
 PACCOATE	h2o_c + phaccoa_c  -> coa_c + h_c + pac_c 	SCO7470	  0.00	1000.00	  0.00
@@ -194,7 +194,7 @@ PCADYOX	o2_c + 34dhbz_c  -> 2 h_c + CCbuttc_c 	SCO6699 and SCO6700	  0.00	1000.0
 VNTDM	h_c + o2_c + nadh_c + vanlt_c  -> h2o_c + nad_c + fald_c + 34dhbz_c 	SCO6680	  0.00	1000.00	  0.00
 AACOATi	coa_c + atp_c + acac_c  -> amp_c + ppi_c + aacoa_c 	SCO1393	  0.00	1000.00	  0.00
 BDH	nad_c + bhb_c  <=> h_c + nadh_c + acac_c 	SCO1012	-1000.00	1000.00	  0.00
-IBMi	ibcoa_c  -> btcoa_c 	( SCO5415 and ( SCO4800 ) or ( SCO6833 ))	  0.00	1000.00	  0.00
+IBMi	ibcoa_c  -> btcoa_c 	( SCO5415 and SCO4800 ) or ( SCO5415 and SCO6833 )	  0.00	1000.00	  0.00
 CDAS1	malcoa_c + ACPcda_c  <=> coa_c + malACPcda_c 	SCO2387 and SCO3249	-1000.00	1000.00	  0.00
 CDAS10	h2o_c + hexACPcda_c  -> h_c + ACPcda_c + hxa_c 		  0.00	1000.00	  0.00
 CDAS11	o2_c + hxcoa_c  -> h2o2_c + hx2coa_c 	SCO3247	  0.00	1000.00	  0.00
@@ -457,8 +457,8 @@ UDPGD	h2o_c + 2 nad_c + udpg_c  -> 3 h_c + 2 nadh_c + udpglcur_c 	SCO3052	  0.00
 UGMDDS	atp_c + alaala_c + ugmd_c  -> h_c + adp_c + pi_c + ugmda_c 	SCO2088	  0.00	1000.00	  0.00
 ACONTa	cit_c  <=> h2o_c + acon-C_c 	SCO5999	-1000.00	1000.00	  0.00
 ACONTb	h2o_c + acon-C_c  <=> icit_c 	SCO5999	-1000.00	1000.00	  0.00
-AKGDH	coa_c + nad_c + akg_c  -> nadh_c + co2_c + succoa_c 	( SCO5281 and ( SCO2181 ) or ( SCO7123 ) and ( SCO0884 ) or ( SCO2180 ) or ( SCO4919 ))	  0.00	1000.00	  0.00
-AKGDH2	coa_c + nadp_c + akg_c  -> nadph_c + co2_c + succoa_c 	(( SCO4594 and SCO4595 ) or ( SCO6269 and SCO6270 ) and SCO0681 )	  0.00	1000.00	  0.00
+AKGDH	coa_c + nad_c + akg_c  -> nadh_c + co2_c + succoa_c 	( SCO5281 and SCO2181 and SCO0884 ) or ( SCO5281 and SCO2181 and SCO2180 ) or ( SCO5281 and SCO2181 and SCO4919 ) or ( SCO5281 and SCO7123 and SCO0884 ) or ( SCO5281 and SCO7123 and SCO2180 ) or ( SCO5281 and SCO7123 and SCO4919 )	  0.00	1000.00	  0.00
+AKGDH2	coa_c + nadp_c + akg_c  -> nadph_c + co2_c + succoa_c 	( SCO4594 and SCO4595 and SCO0681 ) or ( SCO6269 and SCO6270 and SCO0681 )	  0.00	1000.00	  0.00
 CITL	cit_c  -> oaa_c + ac_c 	SCO2033 or SCO6471	  0.00	1000.00	  0.00
 CS	h2o_c + accoa_c + oaa_c  -> coa_c + h_c + cit_c 	SCO2736 or SCO4388 or SCO5832	  0.00	1000.00	  0.00
 FUM	h2o_c + fum_c  <=> mal-L_c 	SCO5042 or SCO5044	-1000.00	1000.00	  0.00
@@ -685,7 +685,7 @@ CYSDS	h2o_c + cys-L_c  -> nh4_c + pyr_c + h2s_c 	SCO0435 or SCO0731 or SCO3920	 
 CYSS	h2s_c + acser_c  -> h_c + ac_c + cys-L_c 	SCO0992 or SCO1028 or SCO2910	  0.00	1000.00	  0.00
 CYSTGL	h2o_c + cyst-L_c  -> nh4_c + cys-L_c + 2obut_c 	SCO3920	  0.00	1000.00	  0.00
 CYSTS	ser-L_c + hcys-L_c  -> h2o_c + cyst-L_c 	SCO3077	  0.00	1000.00	  0.00
-PAPSR	paps_c + trdrd_c  -> 2 h_c + so3_c + pap_c + trdox_c 	( SCO6100 and ( SCO0885 ) or ( SCO3889 ) or ( SCO5419 ) or ( SCO5438 ))	  0.00	1000.00	  0.00
+PAPSR	paps_c + trdrd_c  -> 2 h_c + so3_c + pap_c + trdox_c 	( SCO6100 and SCO0885 ) or ( SCO6100 and SCO3889 ) or ( SCO6100 and SCO5419 ) or ( SCO6100 and SCO5438 )	  0.00	1000.00	  0.00
 PAPSR3	2 msh_c + paps_c  -> 2 h_c + so3_c + pap_c + mssg_c 	SCO6100	  0.00	1000.00	  0.00
 SADT2	h2o_c + atp_c + gtp_c + so4_c  -> ppi_c + pi_c + gdp_c + aps_c 	SCO6097 and SCO6098	  0.00	1000.00	  0.00
 SULRi	3 nadph_c + 5 h_c + so3_c  -> 3 nadp_c + 3 h2o_c + h2s_c 	SCO6102	  0.00	1000.00	  0.00
@@ -912,7 +912,7 @@ EX_zn2(e)	zn2_e  <=> 		-1000.00	1000.00	  0.00
 FOMETRi	h_c + 5fthf_c  -> h2o_c + methf_c 	SCO3183	  0.00	1000.00	  0.00
 FTHFD	h2o_c + 10fthf_c  -> h_c + for_c + thf_c 	SCO4403	  0.00	1000.00	  0.00
 GCALDD	h2o_c + nad_c + gcald_c  -> 2 h_c + nadh_c + glyclt_c 	SCO3486	  0.00	1000.00	  0.00
-GLYCL	nad_c + gly_c + thf_c  -> nadh_c + co2_c + nh4_c + mlthf_c 	( SCO5471 and SCO1378 and SCO5472 and ( SCO0884 ) or ( SCO2180 ) or ( SCO4919 ))	  0.00	1000.00	  0.00
+GLYCL	nad_c + gly_c + thf_c  -> nadh_c + co2_c + nh4_c + mlthf_c 	( SCO5471 and SCO1378 and SCO5472 and SCO0884 ) or ( SCO5471 and SCO1378 and SCO5472 and SCO2180 ) or ( SCO5471 and SCO1378 and SCO5472 and SCO4919 )	  0.00	1000.00	  0.00
 MTHFC	h2o_c + methf_c  <=> h_c + 10fthf_c 	SCO4824	-1000.00	1000.00	  0.00
 MTHFD	nadp_c + mlthf_c  <=> nadph_c + methf_c 	SCO4824	-1000.00	1000.00	  0.00
 MTHFR2	2 h_c + nadh_c + mlthf_c  -> nad_c + 5mthf_c 	SCO2103	  0.00	1000.00	  0.00
@@ -1166,7 +1166,7 @@ GLDBRAN2	bglycogen_c  -> glycogen_c 	SCO7338 or SCO5456 or SCO6082	  0.00	1000.0
 GLGC	h_c + atp_c + g1p_c  -> ppi_c + adpglc_c 	SCO0961	  0.00	1000.00	  0.00
 GLGCc	h_c + g1p_c + ctp_c  -> ppi_c + cdpglc_c 	SCO0393	  0.00	1000.00	  0.00
 HEX1	atp_c + glc-D_c  -> h_c + g6p_c + adp_c 	SCO2126 or SCO6260 or SCO1077 or ( SCO4145 and SCO5059 )	  0.00	1000.00	  0.00
-PDH	coa_c + nad_c + pyr_c  -> nadh_c + accoa_c + co2_c 	( SCO2183 ) or ( SCO2371 ) or ( SCO7124 ) or (( SCO1269 and SCO1270 )) and ( SCO3815 ) or ( SCO3829 ) and ( SCO0884 ) or ( SCO2180 ) or ( SCO4919 )	  0.00	1000.00	  0.00
+PDH	coa_c + nad_c + pyr_c  -> nadh_c + accoa_c + co2_c 	( SCO1269 and SCO1270 and SCO2183 and SCO0884 and SCO1268 ) or ( SCO1269 and SCO1270 and SCO2183 and SCO0884 and SCO7123 ) or ( SCO1269 and SCO1270 and SCO2183 and SCO0884 and SCO2181 ) or ( SCO1269 and SCO1270 and SCO2183 and SCO2180 and SCO1268 ) or ( SCO1269 and SCO1270 and SCO2183 and SCO2180 and SCO7123 ) or ( SCO1269 and SCO1270 and SCO2183 and SCO2180 and SCO2181 ) or ( SCO1269 and SCO1270 and SCO2183 and SCO4919 and SCO1268 ) or ( SCO1269 and SCO1270 and SCO2183 and SCO4919 and SCO7123 ) or ( SCO1269 and SCO1270 and SCO2183 and SCO4919 and SCO2181 ) or ( SCO1269 and SCO1270 and SCO2371 and SCO0884 and SCO1268 ) or ( SCO1269 and SCO1270 and SCO2371 and SCO0884 and SCO7123 ) or ( SCO1269 and SCO1270 and SCO2371 and SCO0884 and SCO2181 ) or ( SCO1269 and SCO1270 and SCO2371 and SCO2180 and SCO1268 ) or ( SCO1269 and SCO1270 and SCO2371 and SCO2180 and SCO7123 ) or ( SCO1269 and SCO1270 and SCO2371 and SCO2180 and SCO2181 ) or ( SCO1269 and SCO1270 and SCO2371 and SCO4919 and SCO1268 ) or ( SCO1269 and SCO1270 and SCO2371 and SCO4919 and SCO7123 ) or ( SCO1269 and SCO1270 and SCO2371 and SCO4919 and SCO2181 ) or ( SCO1269 and SCO1270 and SCO7124 and SCO0884 and SCO1268 ) or ( SCO1269 and SCO1270 and SCO7124 and SCO0884 and SCO7123 ) or ( SCO1269 and SCO1270 and SCO7124 and SCO0884 and SCO2181 ) or ( SCO1269 and SCO1270 and SCO7124 and SCO2180 and SCO1268 ) or ( SCO1269 and SCO1270 and SCO7124 and SCO2180 and SCO7123 ) or ( SCO1269 and SCO1270 and SCO7124 and SCO2180 and SCO2181 ) or ( SCO1269 and SCO1270 and SCO7124 and SCO4919 and SCO1268 ) or ( SCO1269 and SCO1270 and SCO7124 and SCO4919 and SCO7123 ) or ( SCO1269 and SCO1270 and SCO7124 and SCO4919 and SCO2181 )	  0.00	1000.00	  0.00
 PFK	atp_c + f6p_c  -> h_c + adp_c + fdp_c 	SCO5426 or SCO2119 or SCO1214	  0.00	1000.00	  0.00
 PGI	g6p_c  <=> f6p_c 	SCO1942 or SCO6659	-1000.00	1000.00	  0.00
 PGK	atp_c + 3pg_c  <=> adp_c + 13dpg_c 	SCO1946	-1000.00	1000.00	  0.00
@@ -1258,7 +1258,7 @@ INSDH	2ins_c  <=> h2o_c + thchd_c 	SCO6982	-1000.00	1000.00	  0.00
 MI1PS	g6p_c  -> mi1p-D_c 	SCO3243 or SCO3899 or SCO6573	  0.00	1000.00	  0.00
 MI1PS2	g6p_c  -> mi1p-L_c 	SCO3243 or SCO3899 or SCO6573	  0.00	1000.00	  0.00
 THCHDH	h2o_c + thchd_c  <=> h_c + 5doglcn_c 	SCO6975	-1000.00	1000.00	  0.00
-2MBCOATA	ACP_c + 2mbcoa_c  <=> coa_c + 2mbACP_c 	( SCO1271 ) or ( SCO2388 ) or ( SCO6564 ) and ( SCO2389 ) or ( SCO0549 ) or ( SCO1267 ) or ( SCO1272 )	-1000.00	1000.00	  0.00
+2MBCOATA	ACP_c + 2mbcoa_c  <=> coa_c + 2mbACP_c 	( SCO1271 and SCO2389 ) or ( SCO1271 and SCO0549 ) or ( SCO1271 and SCO1267 ) or ( SCO1271 and SCO1272 ) or ( SCO2388 and SCO2389 ) or ( SCO2388 and SCO0549 ) or ( SCO2388 and SCO1267 ) or ( SCO2388 and SCO1272 ) or ( SCO6564 and SCO2389 ) or ( SCO6564 and SCO0549 ) or ( SCO6564 and SCO1267 ) or ( SCO6564 and SCO1272 )	-1000.00	1000.00	  0.00
 ACACT1r	2 accoa_c  <=> coa_c + aacoa_c 	SCO5399 or SCO6788 or SCO1324 or SCO4502 or SCO6027	-1000.00	1000.00	  0.00
 ACACT2r	accoa_c + btcoa_c  <=> coa_c + 3ohcoa_c 	SCO6788 or SCO1324 or SCO4502 or SCO6027	-1000.00	1000.00	  0.00
 ACACT3r	accoa_c + hxcoa_c  <=> coa_c + 3oocoa_c 	SCO6788 or SCO1324 or SCO4502 or SCO6027	-1000.00	1000.00	  0.00
@@ -1267,7 +1267,7 @@ ACACT5r	accoa_c + dcacoa_c  <=> coa_c + 3oddcoa_c 	SCO6788 or SCO1324 or SCO4502
 ACACT6r	accoa_c + ddcacoa_c  <=> coa_c + 3otdcoa_c 	SCO6788 or SCO1324 or SCO4502 or SCO6027	-1000.00	1000.00	  0.00
 ACACT7r	accoa_c + tdcoa_c  <=> coa_c + 3ohdcoa_c 	SCO6788 or SCO1324 or SCO4502 or SCO6027	-1000.00	1000.00	  0.00
 ACACT8r	coa_c + 3oodcoa_c  <=> accoa_c + pmtcoa_c 	SCO6788 or SCO1324 or SCO4502 or SCO6027	-1000.00	1000.00	  0.00
-ACCOAC	accoa_c + atp_c + hco3_c  -> malcoa_c + h_c + adp_c + pi_c 	( SCO2445 ) or (( SCO5535 and SCO5536 )) and ( SCO2777 ) or ( SCO4921 ) or ( SCO6271 )	  0.00	1000.00	  0.00
+ACCOAC	accoa_c + atp_c + hco3_c  -> malcoa_c + h_c + adp_c + pi_c 	( SCO2445 and SCO2777 ) or ( SCO2445 and SCO4921 ) or ( SCO2445 and SCO6271 ) or ( SCO5535 and SCO5536 and SCO2777 ) or ( SCO5535 and SCO5536 and SCO4921 ) or ( SCO5535 and SCO5536 and SCO6271 )	  0.00	1000.00	  0.00
 ACOAD1f	fad_c + btcoa_c  <=> fadh2_c + b2coa_c 	SCO1690 or SCO2774 or SCO6787 or SCO2779	-1000.00	1000.00	  0.00
 ACOAD2f	fad_c + hxcoa_c  <=> fadh2_c + hx2coa_c 	SCO1690 or SCO2774 or SCO6787 or SCO2779	-1000.00	1000.00	  0.00
 ACOAD3f	fad_c + occoa_c  <=> fadh2_c + oc2coa_c 	SCO1690 or SCO2774 or SCO6787	-1000.00	1000.00	  0.00
@@ -1276,8 +1276,8 @@ ACOAD5f	fad_c + ddcacoa_c  <=> fadh2_c + dd2coa_c 	SCO1690 or SCO2774 or SCO6787
 ACOAD6f	fad_c + tdcoa_c  <=> fadh2_c + td2coa_c 	SCO1690 or SCO2774 or SCO6787	-1000.00	1000.00	  0.00
 ACOAD7f	fad_c + pmtcoa_c  <=> fadh2_c + hdd2coa_c 	SCO1690 or SCO2774 or SCO6787	-1000.00	1000.00	  0.00
 ACOAD8f	fad_c + stcoa_c  <=> fadh2_c + od2coa_c 	SCO1690 or SCO2774 or SCO6787	-1000.00	1000.00	  0.00
-ACOATA	accoa_c + ACP_c  <=> coa_c + acACP_c 	( SCO1271 ) or ( SCO2388 ) or ( SCO6564 ) and ( SCO2389 ) or ( SCO0549 ) or ( SCO1267 ) or ( SCO1272 )	-1000.00	1000.00	  0.00
-BCOATA	btcoa_c + ACP_c  <=> coa_c + butACP_c 	( SCO1271 ) or ( SCO2388 ) or ( SCO6564 ) and ( SCO2389 ) or ( SCO0549 ) or ( SCO1267 ) or ( SCO1272 )	-1000.00	1000.00	  0.00
+ACOATA	accoa_c + ACP_c  <=> coa_c + acACP_c 	( SCO1271 and SCO2389 ) or ( SCO1271 and SCO0549 ) or ( SCO1271 and SCO1267 ) or ( SCO1271 and SCO1272 ) or ( SCO2388 and SCO2389 ) or ( SCO2388 and SCO0549 ) or ( SCO2388 and SCO1267 ) or ( SCO2388 and SCO1272 ) or ( SCO6564 and SCO2389 ) or ( SCO6564 and SCO0549 ) or ( SCO6564 and SCO1267 ) or ( SCO6564 and SCO1272 )	-1000.00	1000.00	  0.00
+BCOATA	btcoa_c + ACP_c  <=> coa_c + butACP_c 	( SCO1271 and SCO2389 ) or ( SCO1271 and SCO0549 ) or ( SCO1271 and SCO1267 ) or ( SCO1271 and SCO1272 ) or ( SCO2388 and SCO2389 ) or ( SCO2388 and SCO0549 ) or ( SCO2388 and SCO1267 ) or ( SCO2388 and SCO1272 ) or ( SCO6564 and SCO2389 ) or ( SCO6564 and SCO0549 ) or ( SCO6564 and SCO1267 ) or ( SCO6564 and SCO1272 )	-1000.00	1000.00	  0.00
 CTECOAI6	tdecoa_c  <=> td2coa_c 	SCO6732	-1000.00	1000.00	  0.00
 CTECOAI7	hdcoa_c  <=> hdd2coa_c 	SCO6732	-1000.00	1000.00	  0.00
 CTECOAI8	odecoa_c  <=> od2coa_c 	SCO6732	-1000.00	1000.00	  0.00
@@ -1296,13 +1296,13 @@ HACD5	h_c + nadh_c + 3oddcoa_c  <=> nad_c + 3hddcoa_c 	SCO6732	-1000.00	1000.00	
 HACD6	h_c + nadh_c + 3otdcoa_c  <=> nad_c + 3htdcoa_c 	SCO6732	-1000.00	1000.00	  0.00
 HACD7	h_c + nadh_c + 3ohdcoa_c  <=> nad_c + 3hhdcoa_c 	SCO6732	-1000.00	1000.00	  0.00
 HACD8	h_c + nadh_c + 3oodcoa_c  <=> nad_c + 3hodcoa_c 	SCO6732	-1000.00	1000.00	  0.00
-IBCOATA	ibcoa_c + ACP_c  <=> coa_c + ibACP_c 	( SCO1271 ) or ( SCO2388 ) or ( SCO6564 ) and ( SCO2389 ) or ( SCO0549 ) or ( SCO1267 ) or ( SCO1272 )	-1000.00	1000.00	  0.00
-IVCOATA	ACP_c + ivcoa_c  <=> coa_c + ivACP_c 	( SCO1271 ) or ( SCO2388 ) or ( SCO6564 ) and ( SCO2389 ) or ( SCO0549 ) or ( SCO1267 ) or ( SCO1272 )	-1000.00	1000.00	  0.00
+IBCOATA	ibcoa_c + ACP_c  <=> coa_c + ibACP_c 	( SCO1271 and SCO2389 ) or ( SCO1271 and SCO0549 ) or ( SCO1271 and SCO1267 ) or ( SCO1271 and SCO1272 ) or ( SCO2388 and SCO2389 ) or ( SCO2388 and SCO0549 ) or ( SCO2388 and SCO1267 ) or ( SCO2388 and SCO1272 ) or ( SCO6564 and SCO2389 ) or ( SCO6564 and SCO0549 ) or ( SCO6564 and SCO1267 ) or ( SCO6564 and SCO1272 )	-1000.00	1000.00	  0.00
+IVCOATA	ACP_c + ivcoa_c  <=> coa_c + ivACP_c 	( SCO1271 and SCO2389 ) or ( SCO1271 and SCO0549 ) or ( SCO1271 and SCO1267 ) or ( SCO1271 and SCO1272 ) or ( SCO2388 and SCO2389 ) or ( SCO2388 and SCO0549 ) or ( SCO2388 and SCO1267 ) or ( SCO2388 and SCO1272 ) or ( SCO6564 and SCO2389 ) or ( SCO6564 and SCO0549 ) or ( SCO6564 and SCO1267 ) or ( SCO6564 and SCO1272 )	-1000.00	1000.00	  0.00
 KAS14	h_c + malACP_c + acACP_c  -> co2_c + actACP_c + ACP_c 	SCO0548 or SCO2390 or SCO1266	  0.00	1000.00	  0.00
-KAS15	h_c + accoa_c + malACP_c  -> coa_c + co2_c + actACP_c 	( SCO1271 ) or ( SCO2388 ) or ( SCO6564 ) and ( SCO2389 ) or ( SCO0549 ) or ( SCO1267 ) or ( SCO1272 )	  0.00	1000.00	  0.00
+KAS15	h_c + accoa_c + malACP_c  -> coa_c + co2_c + actACP_c 	SCO1271 or SCO2388 or ( SCO6564 and SCO2389 ) or SCO0549 or SCO1267 or SCO1272	  0.00	1000.00	  0.00
 MACPD	h_c + malACP_c  -> co2_c + acACP_c 	SCO0548	  0.00	1000.00	  0.00
-MCOATA	malcoa_c + ACP_c  <=> coa_c + malACP_c 	( SCO2387 and ( SCO2389 ) or ( SCO0549 ) or ( SCO1267 ) or ( SCO1272 ))	-1000.00	1000.00	  0.00
-PCOATA	ppcoa_c + ACP_c  <=> coa_c + ppACP_c 	( SCO1271 ) or ( SCO2388 ) or ( SCO6564 ) and ( SCO2389 ) or ( SCO0549 ) or ( SCO1267 ) or ( SCO1272 )	-1000.00	1000.00	  0.00
+MCOATA	malcoa_c + ACP_c  <=> coa_c + malACP_c 	( SCO2387 and SCO2389 ) or ( SCO2387 and SCO0549 ) or ( SCO2387 and SCO1267 ) or ( SCO2387 and SCO1272 )	-1000.00	1000.00	  0.00
+PCOATA	ppcoa_c + ACP_c  <=> coa_c + ppACP_c 	( SCO1271 and SCO2389 ) or ( SCO1271 and SCO0549 ) or ( SCO1271 and SCO1267 ) or ( SCO1271 and SCO1272 ) or ( SCO2388 and SCO2389 ) or ( SCO2388 and SCO0549 ) or ( SCO2388 and SCO1267 ) or ( SCO2388 and SCO1272 ) or ( SCO6564 and SCO2389 ) or ( SCO6564 and SCO0549 ) or ( SCO6564 and SCO1267 ) or ( SCO6564 and SCO1272 )	-1000.00	1000.00	  0.00
 AHC	h2o_c + ahcys_c  <=> adn_c + hcys-L_c 	SCO3023	-1000.00	1000.00	  0.00
 AHSERL2r	h2s_c + achms_c  <=> h_c + ac_c + hcys-L_c 	SCO1294 or SCO4958	-1000.00	1000.00	  0.00
 CYSTL	h2o_c + cyst-L_c  -> nh4_c + pyr_c + hcys-L_c 	SCO0435 or SCO0731	  0.00	1000.00	  0.00
@@ -1313,8 +1313,8 @@ METB1r	cys-L_c + achms_c  <=> h_c + ac_c + cyst-L_c 	SCO1294 or SCO4958	-1000.00
 METOX1s	h2o2_c + met-L_c  -> h2o_c + metsox-S-L_c 		  0.00	1000.00	  0.00
 METOX2s	h2o2_c + met-L_c  -> h2o_c + metsox-R-L_c 		  0.00	1000.00	  0.00
 METS	5mthf_c + hcys-L_c  -> h_c + thf_c + met-L_c 	SCO1657	  0.00	1000.00	  0.00
-METSOXR1	trdrd_c + metsox-S-L_c  -> h2o_c + met-L_c + trdox_c 	( SCO4956 and ( SCO0885 ) or ( SCO3889 ) or ( SCO5419 ) or ( SCO5438 ))	  0.00	1000.00	  0.00
-METSOXR2	trdrd_c + metsox-R-L_c  -> h2o_c + met-L_c + trdox_c 	( SCO6061 and ( SCO0885 ) or ( SCO3889 ) or ( SCO5419 ) or ( SCO5438 ))	  0.00	1000.00	  0.00
+METSOXR1	trdrd_c + metsox-S-L_c  -> h2o_c + met-L_c + trdox_c 	( SCO4956 and SCO0885 ) or ( SCO4956 and SCO3889 ) or ( SCO4956 and SCO5419 ) or ( SCO4956 and SCO5438 )	  0.00	1000.00	  0.00
+METSOXR2	trdrd_c + metsox-R-L_c  -> h2o_c + met-L_c + trdox_c 	( SCO6061 and SCO0885 ) or ( SCO6061 and SCO3889 ) or ( SCO6061 and SCO5419 ) or ( SCO6061 and SCO5438 )	  0.00	1000.00	  0.00
 MHPGLUT	hcys-L_c + mhpglu_c  -> met-L_c + hpglu_c 	SCO0985	  0.00	1000.00	  0.00
 MTAP	pi_c + 5mta_c  -> ade_c + 5mdr1p_c 	SCO3188	  0.00	1000.00	  0.00
 MTRI	5mdr1p_c  <=> 5mdru1p_c 	SCO3014	-1000.00	1000.00	  0.00
@@ -1331,8 +1331,8 @@ MDDCP2	h2o_c + murein5px4px4p_c  -> ala-D_c + murein4px4px4p_c 	SCO3408 or SCO38
 MDDCP3	h2o_c + murein5p5p_c  -> ala-D_c + murein5p4p_c 	SCO3408 or SCO3811 or SCO4847 or SCO6131	  0.00	1000.00	  0.00
 MDDCP4	h2o_c + murein5p4p_c  -> ala-D_c + murein4p4p_c 	SCO3408 or SCO3811 or SCO4847 or SCO6131	  0.00	1000.00	  0.00
 MDDCP5	h2o_c + murein5p3p_c  -> ala-D_c + murein4p3p_c 	SCO3408 or SCO3811 or SCO4847 or SCO6131	  0.00	1000.00	  0.00
-MPTG	2 uaagmda_c  -> 2 h_c + 2 udcpdp_c + murein5p5p_c 	( SCO3847 ) or ( SCO5301 ) and ( SCO2709 ) or ( SCO3894 )	  0.00	1000.00	  0.00
-MPTG2	uaagmda_c + murein5p5p_c  -> h_c + udcpdp_c + murein5p5p5p_c 	( SCO3847 ) or ( SCO5301 ) and ( SCO2709 ) or ( SCO3894 )	  0.00	1000.00	  0.00
+MPTG	2 uaagmda_c  -> 2 h_c + 2 udcpdp_c + murein5p5p_c 	( SCO3847 and SCO2709 ) or ( SCO3847 and SCO3894 ) or ( SCO5301 and SCO2709 ) or ( SCO5301 and SCO3894 )	  0.00	1000.00	  0.00
+MPTG2	uaagmda_c + murein5p5p_c  -> h_c + udcpdp_c + murein5p5p5p_c 	( SCO3847 and SCO2709 ) or ( SCO3847 and SCO3894 ) or ( SCO5301 and SCO2709 ) or ( SCO5301 and SCO3894 )	  0.00	1000.00	  0.00
 4PCP	h2o_c + LalaDgluMdapDala_c  -> ala-D_c + LalaDgluMdap_c 	SCO6489	  0.00	1000.00	  0.00
 ACGAMK	atp_c + acgam_c  -> h_c + acgam6p_c + adp_c 	SCO4285	  0.00	1000.00	  0.00
 AGM4PCP	h2o_c + anhgm4p_c  -> ala-D_c + anhgm3p_c 	SCO6489	  0.00	1000.00	  0.00
@@ -1439,13 +1439,13 @@ PUNP4	pi_c + dgsn_c  <=> 2dr1p_c + gua_c 	SCO4917	-1000.00	1000.00	  0.00
 PUNP5	pi_c + ins_c  <=> r1p_c + hxan_c 	SCO4917	-1000.00	1000.00	  0.00
 PUNP6	pi_c + din_c  <=> 2dr1p_c + hxan_c 	SCO4917	-1000.00	1000.00	  0.00
 PUNP7	pi_c + xtsn_c  <=> r1p_c + xan_c 	SCO4917	-1000.00	1000.00	  0.00
-RNDR1	adp_c + trdrd_c  -> h2o_c + trdox_c + dadp_c 	(( SCO5225 and SCO5226 )) or ( SCO5805 ) and ( SCO0885 ) or ( SCO3889 ) or ( SCO5419 ) or ( SCO5438 )	  0.00	1000.00	  0.00
+RNDR1	adp_c + trdrd_c  -> h2o_c + trdox_c + dadp_c 	( SCO5225 and SCO5226 and SCO0885 ) or ( SCO5225 and SCO5226 and SCO3889 ) or ( SCO5225 and SCO5226 and SCO5419 ) or ( SCO5225 and SCO5226 and SCO5438 ) or ( SCO5805 and SCO0885 ) or ( SCO5805 and SCO3889 ) or ( SCO5805 and SCO5419 ) or ( SCO5805 and SCO5438 )	  0.00	1000.00	  0.00
 RNDR1c	adp_c + 2 msh_c  -> h2o_c + mssg_c + dadp_c 	( SCO5225 and SCO5226 ) or SCO5805	  0.00	1000.00	  0.00
-RNDR2	gdp_c + trdrd_c  -> h2o_c + trdox_c + dgdp_c 	(( SCO5225 and SCO5226 )) or ( SCO5805 ) and ( SCO0885 ) or ( SCO3889 ) or ( SCO5419 ) or ( SCO5438 )	  0.00	1000.00	  0.00
+RNDR2	gdp_c + trdrd_c  -> h2o_c + trdox_c + dgdp_c 	( SCO5225 and SCO5226 and SCO0885 ) or ( SCO5225 and SCO5226 and SCO3889 ) or ( SCO5225 and SCO5226 and SCO5419 ) or ( SCO5225 and SCO5226 and SCO5438 ) or ( SCO5805 and SCO0885 ) or ( SCO5805 and SCO3889 ) or ( SCO5805 and SCO5419 ) or ( SCO5805 and SCO5438 )	  0.00	1000.00	  0.00
 RNDR2c	gdp_c + 2 msh_c  -> h2o_c + mssg_c + dgdp_c 	( SCO5225 and SCO5226 ) or SCO5805	  0.00	1000.00	  0.00
-RNDR3	cdp_c + trdrd_c  -> h2o_c + trdox_c + dcdp_c 	(( SCO5225 and SCO5226 )) or ( SCO5805 ) and ( SCO0885 ) or ( SCO3889 ) or ( SCO5419 ) or ( SCO5438 )	  0.00	1000.00	  0.00
+RNDR3	cdp_c + trdrd_c  -> h2o_c + trdox_c + dcdp_c 	( SCO5225 and SCO5226 and SCO0885 ) or ( SCO5225 and SCO5226 and SCO3889 ) or ( SCO5225 and SCO5226 and SCO5419 ) or ( SCO5225 and SCO5226 and SCO5438 ) or ( SCO5805 and SCO0885 ) or ( SCO5805 and SCO3889 ) or ( SCO5805 and SCO5419 ) or ( SCO5805 and SCO5438 )	  0.00	1000.00	  0.00
 RNDR3c	cdp_c + 2 msh_c  -> h2o_c + mssg_c + dcdp_c 	( SCO5225 and SCO5226 ) or SCO5805	  0.00	1000.00	  0.00
-RNDR4	udp_c + trdrd_c  -> h2o_c + trdox_c + dudp_c 	(( SCO5225 and SCO5226 )) or ( SCO5805 ) and ( SCO0885 ) or ( SCO3889 ) or ( SCO5419 ) or ( SCO5438 )	  0.00	1000.00	  0.00
+RNDR4	udp_c + trdrd_c  -> h2o_c + trdox_c + dudp_c 	( SCO5225 and SCO5226 and SCO0885 ) or ( SCO5225 and SCO5226 and SCO3889 ) or ( SCO5225 and SCO5226 and SCO5419 ) or ( SCO5225 and SCO5226 and SCO5438 ) or ( SCO5805 and SCO0885 ) or ( SCO5805 and SCO3889 ) or ( SCO5805 and SCO5419 ) or ( SCO5805 and SCO5438 )	  0.00	1000.00	  0.00
 RNDR4c	udp_c + 2 msh_c  -> h2o_c + mssg_c + dudp_c 	( SCO5225 and SCO5226 ) or SCO5805	  0.00	1000.00	  0.00
 TMDK1	atp_c + thymd_c  -> h_c + adp_c + dtmp_c 	SCO5845	  0.00	1000.00	  0.00
 TMDPP	pi_c + thymd_c  <=> 2dr1p_c + thym_c 	SCO4890	-1000.00	1000.00	  0.00
@@ -1455,22 +1455,22 @@ UPPRT	ura_c + prpp_c  -> ppi_c + ump_c 	SCO1488 or SCO4041	  0.00	1000.00	  0.00
 XAND	h2o_c + nad_c + xan_c  -> h_c + nadh_c + urate_c 	( SCO4971 and SCO4972 ) or ( SCO0690 and SCO0691 )	  0.00	1000.00	  0.00
 XTSNH	h2o_c + xtsn_c  -> rib-D_c + xan_c 	SCO3779	  0.00	1000.00	  0.00
 ATPS4r	adp_c + pi_c + 4 h_e  <=> 3 h_c + h2o_c + atp_c 	( SCO5369 and SCO5368 and SCO5367 and SCO5374 and SCO5373 and SCO5372 and SCO5371 and SCO5370 and SCO5366 ) or ( SCO5369 and SCO5368 and SCO5367 and SCO5374 and SCO5373 and SCO5372 and SCO5371 and SCO5370 )	-1000.00	1000.00	  0.00
-CYO2a	6 h_c + mql9_c + 2 ficytc_c  -> mqn9_c + 6 h_e + 2 focytc_c 	( SCO2150 and SCO2149 and ( SCO7236 ) or ( SCO2148 ) or ( SCO7120 ))	  0.00	1000.00	  0.00
-CYO2b	0.5 o2_c + 2 focytc_c  -> h2o_c + 2 ficytc_c 	( SCO1934 and SCO2156 and ( SCO7234 ) or ( SCO2155 ) and SCO2151 and SCO1930 )	  0.00	1000.00	  0.00
+CYO2a	6 h_c + mql9_c + 2 ficytc_c  -> mqn9_c + 6 h_e + 2 focytc_c 	( SCO2150 and SCO2149 and SCO7236 ) or ( SCO2150 and SCO2149 and SCO2148 ) or ( SCO2150 and SCO2149 and SCO7120 )	  0.00	1000.00	  0.00
+CYO2b	0.5 o2_c + 2 focytc_c  -> h2o_c + 2 ficytc_c 	( SCO1934 and SCO2156 and SCO2151 and SCO1930 and SCO7234 ) or ( SCO1934 and SCO2156 and SCO2151 and SCO1930 and SCO2155 )	  0.00	1000.00	  0.00
 CYTBD2	2 h_c + 0.5 o2_c + mql9_c  -> h2o_c + mqn9_c + 2 h_e 	SCO3945 and SCO3946	  0.00	1000.00	  0.00
 FRD8	mql9_c + fum_c  -> mqn9_c + succ_c 	SCO0923 and SCO0922 and SCO0924	  0.00	1000.00	  0.00
 G3PD6	glyc3p_c + mqn9_c  -> dhap_c + mql9_c 	SCO0670 or SCO1661 or SCO4774 or ( SCO7005 and SCO7006 )	  0.00	1000.00	  0.00
 L-LACD4	mqn9_c + lac-L_c  -> pyr_c + mql9_c 	SCO0763 or ( SCO0815 and SCO0816 and SCO0817 )	  0.00	1000.00	  0.00
 NADH10	h_c + nadh_c + mqn9_c  -> nad_c + mql9_c 	SCO3092 or SCO7101 or SCO7319 or SCO6496 or SCO0158 or SCO4119	  0.00	1000.00	  0.00
-NADH17	4 h_c + nadh_c + mqn9_c  -> nad_c + mql9_c + 3 h_e 	( SCO4562 ) or ( SCO4599 ) and ( SCO4563 ) or ( SCO4600 ) and SCO4564 and ( SCO3392 ) or ( SCO4565 ) and SCO4566 and ( SCO4567 ) or ( SCO6560 ) and SCO4568 and ( SCO4569 ) or ( SCO4602 ) and ( SCO4570 ) or ( SCO4603 ) and ( SCO4571 ) or ( SCO4604 ) and ( SCO4572 ) or ( SCO4605 ) and ( SCO4573 ) or ( SCO4606 ) or ( SCO6954 ) and ( SCO4574 ) or ( SCO4607 ) and ( SCO4575 ) or ( SCO4608 )	  0.00	1000.00	  0.00
+NADH17	4 h_c + nadh_c + mqn9_c  -> nad_c + mql9_c + 3 h_e 	SCO4564 and SCO4566 and SCO4568 and ( SCO4562 or SCO4599 ) and ( SCO4563 or SCO4600 ) and ( SCO3392 or SCO4565 ) and ( SCO4567 or SCO6560 ) and ( SCO4569 or SCO4602 ) and ( SCO4570 or SCO4603 ) and ( SCO4571 or SCO4604 ) and ( SCO4572 or SCO4605 ) and ( SCO4573 or SCO4606 or SCO6954 ) and ( SCO4574 or SCO4607 ) and ( SCO4575 or SCO4608 )	  0.00	1000.00	  0.00
 NADTRHD	nadph_c + nad_c  -> nadp_c + nadh_c 	SCO7622 and SCO7623	  0.00	1000.00	  0.00
 NTRIR2x	5 h_c + 3 nadh_c + no2_c  -> 2 h2o_c + 3 nad_c + nh4_c 	SCO2487 and SCO2488	  0.00	1000.00	  0.00
 POX3	h2o_c + pyr_c + fad_c  -> co2_c + ac_c + fadh2_c 	SCO6155 or SCO7412	  0.00	1000.00	  0.00
 PPK2r	atp_c + ppi_c  <=> adp_c + pppi_c 	SCO4145	-1000.00	1000.00	  0.00
 QMO3	2 o2_c + mql9_c  -> 2 h_c + mqn9_c + 2 o2s_c 		  0.00	1000.00	  0.00
-SUCD3	mqn9_c + succ_c + 2 h_e  -> 2 h_c + mql9_c + fum_c 	(( SCO4856 ) or ( SCO5107 ) or ( SCO7109 ) and ( SCO4855 ) or ( SCO5106 ) and SCO4858 and SCO4857 )	  0.00	1000.00	  0.00
+SUCD3	mqn9_c + succ_c + 2 h_e  -> 2 h_c + mql9_c + fum_c 	( SCO4856 and SCO4855 and SCO4858 and SCO4857 ) or ( SCO4856 and SCO5106 and SCO4858 and SCO4857 ) or ( SCO5107 and SCO4855 and SCO4858 and SCO4857 ) or ( SCO5107 and SCO5106 and SCO4858 and SCO4857 ) or ( SCO7109 and SCO4855 and SCO4858 and SCO4857 ) or ( SCO7109 and SCO5106 and SCO4858 and SCO4857 )	  0.00	1000.00	  0.00
 THD2	nadp_c + nadh_c + 2 h_e  -> nadph_c + 2 h_c + nad_c 	SCO7622 and SCO7623	  0.00	1000.00	  0.00
-TRDR	nadph_c + h_c + trdox_c  -> nadp_c + trdrd_c 	( SCO3890 ) or ( SCO6834 ) or ( SCO7298 ) and ( SCO0885 ) or ( SCO3889 ) or ( SCO5419 ) or ( SCO5438 )	  0.00	1000.00	  0.00
+TRDR	nadph_c + h_c + trdox_c  -> nadp_c + trdrd_c 	( SCO3890 and SCO0885 ) or ( SCO3890 and SCO3889 ) or ( SCO3890 and SCO5419 ) or ( SCO3890 and SCO5438 ) or ( SCO6834 and SCO0885 ) or ( SCO6834 and SCO3889 ) or ( SCO6834 and SCO5419 ) or ( SCO6834 and SCO5438 ) or ( SCO7298 and SCO0885 ) or ( SCO7298 and SCO3889 ) or ( SCO7298 and SCO5419 ) or ( SCO7298 and SCO5438 )	  0.00	1000.00	  0.00
 EDA	2ddg6p_c  -> pyr_c + g3p_c 	SCO0852 or SCO2298 or SCO3473 or SCO3495	  0.00	1000.00	  0.00
 FBA3	s17bp_c  <=> dhap_c + e4p_c 	SCO3649	-1000.00	1000.00	  0.00
 G1DH	nad_c + glc-D_c  -> h_c + nadh_c + g15l_c 	SCO1335	  0.00	1000.00	  0.00
@@ -1491,7 +1491,7 @@ MMM	succoa_c  <=> mmcoa-R_c 	SCO6832 or SCO4869	-1000.00	1000.00	  0.00
 MMSAD3	coa_c + nad_c + msa_c  -> nadh_c + accoa_c + co2_c 	SCO2726	  0.00	1000.00	  0.00
 MMSAD4	coa_c + nad_c + mmtsa_c  -> nadh_c + co2_c + ppcoa_c 	SCO2726	  0.00	1000.00	  0.00
 MMSAD5	coa_c + nad_c + mmtsa_c  -> h_c + nadh_c + mmcoa-R_c 	SCO2726	  0.00	1000.00	  0.00
-PPCOAC	atp_c + ppcoa_c + hco3_c  -> h_c + adp_c + pi_c + mmcoa-S_c 	( SCO2776 and SCO2777 ) or ( SCO4380 and SCO4381 ) or (( SCO4921 ) or ( SCO6271 ) and SCO4925 and SCO4926 )	  0.00	1000.00	  0.00
+PPCOAC	atp_c + ppcoa_c + hco3_c  -> h_c + adp_c + pi_c + mmcoa-S_c 	( SCO2776 and SCO2777 ) or ( SCO4380 and SCO4381 ) or ( SCO4921 and SCO4925 ) or ( SCO4921 and SCO4926 ) or ( SCO6271 and SCO4925 ) or ( SCO6271 and SCO4926 )	  0.00	1000.00	  0.00
 ADSL1r	dcamp_c  <=> amp_c + fum_c 	SCO1254	-1000.00	1000.00	  0.00
 ADSL2r	25aics_c  <=> fum_c + aicar_c 	SCO1254	-1000.00	1000.00	  0.00
 ADSS	asp-L_c + gtp_c + imp_c  -> 2 h_c + pi_c + gdp_c + dcamp_c 	SCO3629	  0.00	1000.00	  0.00
@@ -1525,7 +1525,7 @@ TAGO	2 h2o_c + uacgam_c  -> 2 h_c + acgam_c + pi_c + ump_c 		  0.00	1000.00	  0.
 TECA1S	acgam_c + uacmam_c + 25 cdpglyc_c  -> 26 h_c + udp_c + 25 cmp_c + gtca1_c 		  0.00	1000.00	  0.00
 TECA2S	25 ala-D_c + 25 atp_c + acgam_c + uacmam_c + 25 cdpglyc_c  -> 26 h_c + 25 amp_c + 25 ppi_c + udp_c + 25 cmp_c + gtca2_c 		  0.00	1000.00	  0.00
 TECA3S	acgam_c + 25 udpg_c + uacmam_c + 25 cdpglyc_c  -> 51 h_c + 26 udp_c + 25 cmp_c + gtca3_c 		  0.00	1000.00	  0.00
-2OXOADOX	coa_c + nad_c + 2oxoadp_c  -> nadh_c + co2_c + glutcoa_c 	( SCO5281 and ( SCO2181 ) or ( SCO7123 ) and ( SCO0884 ) or ( SCO2180 ) or ( SCO4919 ))	  0.00	1000.00	  0.00
+2OXOADOX	coa_c + nad_c + 2oxoadp_c  -> nadh_c + co2_c + glutcoa_c 	( SCO5281 and SCO2181 and SCO0884 ) or ( SCO5281 and SCO2181 and SCO2180 ) or ( SCO5281 and SCO2181 and SCO4919 ) or ( SCO5281 and SCO7123 and SCO0884 ) or ( SCO5281 and SCO7123 and SCO2180 ) or ( SCO5281 and SCO7123 and SCO4919 )	  0.00	1000.00	  0.00
 AOBUTDs	h_c + 2aobut_c  -> co2_c + aact_c 		  0.00	1000.00	  0.00
 APTNAT	akg_c + 5aptn_c  <=> glu-L_c + oxptn_c 		-1000.00	1000.00	  0.00
 ASAD	nadp_c + pi_c + aspsa_c  <=> nadph_c + h_c + 4pasp_c 	SCO2640 or SCO3614	-1000.00	1000.00	  0.00
@@ -1781,7 +1781,7 @@ GTHPi	h2o2_c + 2 gthrd_c  -> 2 h2o_c + gthox_c 	SCO4444	  0.00	1000.00	  0.00
 HCO3E	h2o_c + co2_c  <=> h_c + hco3_c 	SCO2093 or SCO3562 or SCO3721 or SCO6055	-1000.00	1000.00	  0.00
 PRDX	h2o2_c + meoh_c  -> 2 h2o_c + fald_c 	SCO0560	  0.00	1000.00	  0.00
 SPODM	2 h_c + 2 o2s_c  -> o2_c + h2o2_c 	SCO0999 or SCO2633 or SCO5254	  0.00	1000.00	  0.00
-THIORDXi	h2o2_c + trdrd_c  -> 2 h2o_c + trdox_c 	(( SCO2901 ) or ( SCO7353 ) and ( SCO0885 ) or ( SCO3889 ) or ( SCO5419 ) or ( SCO5438 )) or ( SCO4444 )	  0.00	1000.00	  0.00
+THIORDXi	h2o2_c + trdrd_c  -> 2 h2o_c + trdox_c 	( SCO2901 and SCO0885 ) or ( SCO7353 and SCO0885 ) or ( SCO2901 and SCO3889 ) or ( SCO7353 and SCO3889 ) or ( SCO2901 and SCO5419 ) or ( SCO7353 and SCO5419 ) or ( SCO2901 and SCO5438 ) or ( SCO7353 and SCO5438 ) or SCO4444	  0.00	1000.00	  0.00
 URIC	2 h2o_c + o2_c + urate_c  -> co2_c + h2o2_c + alltn_c 	SCO6210 and SCO6211	  0.00	1000.00	  0.00
 REDS1	malcoa_c + ACPredQ_c  <=> coa_c + malACPredQ_c 	SCO2387 and SCO5887	-1000.00	1000.00	  0.00
 REDS10	h_c + malACPredQ_c + hexACPredQ_c  -> co2_c + ACPredQ_c + 3ooctACPredQ_c 	SCO5886	  0.00	1000.00	  0.00
@@ -1851,9 +1851,9 @@ LEUTA	akg_c + leu-L_c  <=> glu-L_c + 4mop_c 	SCO1546 or SCO5523	-1000.00	1000.00
 MCCC	atp_c + hco3_c + 3mb2coa_c  -> h_c + adp_c + pi_c + 3mgcoa_c 	SCO2776 and SCO2777	  0.00	1000.00	  0.00
 MGCH	h2o_c + 3mgcoa_c  <=> hmgcoa_c 		-1000.00	1000.00	  0.00
 OCOAT1	succoa_c + acac_c  -> succ_c + aacoa_c 	SCO6702 and SCO6703	  0.00	1000.00	  0.00
-OIVD1	coa_c + nad_c + 4mop_c  -> nadh_c + co2_c + ivcoa_c 	(( SCO3816 and SCO3817 ) or ( SCO3830 and SCO3831 )) and ( SCO3815 ) or ( SCO3829 ) and ( SCO0884 ) or ( SCO2180 ) or ( SCO4919 )	  0.00	1000.00	  0.00
-OIVD2	coa_c + nad_c + 3mob_c  -> nadh_c + co2_c + ibcoa_c 	(( SCO3816 and SCO3817 ) or ( SCO3830 and SCO3831 )) and ( SCO3815 ) or ( SCO3829 ) and ( SCO0884 ) or ( SCO2180 ) or ( SCO4919 )	  0.00	1000.00	  0.00
-OIVD3	coa_c + nad_c + 3mop_c  -> nadh_c + co2_c + 2mbcoa_c 	(( SCO3816 and SCO3817 ) or ( SCO3830 and SCO3831 )) and ( SCO3815 ) or ( SCO3829 ) and ( SCO0884 ) or ( SCO2180 ) or ( SCO4919 )	  0.00	1000.00	  0.00
+OIVD1	coa_c + nad_c + 4mop_c  -> nadh_c + co2_c + ivcoa_c 	( SCO3816 and SCO3817 and SCO3815 and SCO0884 ) or ( SCO3816 and SCO3817 and SCO3815 and SCO2180 ) or ( SCO3816 and SCO3817 and SCO3815 and SCO4919 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO0884 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO2180 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO4919 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO0884 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO2180 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO4919 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO0884 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO2180 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO4919 )	  0.00	1000.00	  0.00
+OIVD2	coa_c + nad_c + 3mob_c  -> nadh_c + co2_c + ibcoa_c 	( SCO3816 and SCO3817 and SCO3815 and SCO0884 ) or ( SCO3816 and SCO3817 and SCO3815 and SCO2180 ) or ( SCO3816 and SCO3817 and SCO3815 and SCO4919 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO0884 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO2180 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO4919 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO0884 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO2180 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO4919 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO0884 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO2180 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO4919 )	  0.00	1000.00	  0.00
+OIVD3	coa_c + nad_c + 3mop_c  -> nadh_c + co2_c + 2mbcoa_c 	( SCO3816 and SCO3817 and SCO3815 and SCO0884 ) or ( SCO3816 and SCO3817 and SCO3815 and SCO2180 ) or ( SCO3816 and SCO3817 and SCO3815 and SCO4919 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO0884 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO2180 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO4919 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO0884 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO2180 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO4919 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO0884 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO2180 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO4919 )	  0.00	1000.00	  0.00
 OMCDC	h_c + 3c4mop_c  -> co2_c + 4mop_c 		  0.00	1000.00	  0.00
 THRD_L	thr-L_c  -> nh4_c + 2obut_c 	SCO0821 or SCO4962	  0.00	1000.00	  0.00
 VALDxi	h2o_c + nad_c + val-L_c  -> h_c + nadh_c + nh4_c + 3mob_c 	SCO4089	  0.00	1000.00	  0.00

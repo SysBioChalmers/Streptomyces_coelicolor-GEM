@@ -15944,7 +15944,7 @@
       - coa_c: 1
     - lower_bound: -1000
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO1271) or (SCO2388) or (SCO6564) and (SCO2389) or (SCO0549) or (SCO1267) or (SCO1272)
+    - gene_reaction_rule: (SCO1271 and SCO2389) or (SCO1271 and SCO0549) or (SCO1271 and SCO1267) or (SCO1271 and SCO1272) or (SCO2388 and SCO2389) or (SCO2388 and SCO0549) or (SCO2388 and SCO1267) or (SCO2388 and SCO1272) or (SCO6564 and SCO2389) or (SCO6564 and SCO0549) or (SCO6564 and SCO1267) or (SCO6564 and SCO1272)
     - subsystem: Membrane Lipid Metabolism
     - confidence_score: 3
   - !!omap
@@ -15959,7 +15959,7 @@
       - nadh_c: 1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO5281 and (SCO2181) or (SCO7123) and (SCO0884) or (SCO2180) or (SCO4919))
+    - gene_reaction_rule: (SCO5281 and SCO2181 and SCO0884) or (SCO5281 and SCO2181 and SCO2180) or (SCO5281 and SCO2181 and SCO4919) or (SCO5281 and SCO7123 and SCO0884) or (SCO5281 and SCO7123 and SCO2180) or (SCO5281 and SCO7123 and SCO4919)
     - subsystem: Threonine and Lysine Metabolism
     - annotation: !!omap
       - ec-code: 1.2.4.2
@@ -18513,7 +18513,7 @@
       - pi_c: 1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO2445) or ((SCO5535 and SCO5536)) and (SCO2777) or (SCO4921) or (SCO6271)
+    - gene_reaction_rule: (SCO2445 and SCO2777) or (SCO2445 and SCO4921) or (SCO2445 and SCO6271) or (SCO5535 and SCO5536 and SCO2777) or (SCO5535 and SCO5536 and SCO4921) or (SCO5535 and SCO5536 and SCO6271)
     - subsystem: Membrane Lipid Metabolism
     - annotation: !!omap
       - ec-code: 6.4.1.2
@@ -18884,7 +18884,7 @@
       - coa_c: 1
     - lower_bound: -1000
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO1271) or (SCO2388) or (SCO6564) and (SCO2389) or (SCO0549) or (SCO1267) or (SCO1272)
+    - gene_reaction_rule: (SCO1271 and SCO2389) or (SCO1271 and SCO0549) or (SCO1271 and SCO1267) or (SCO1271 and SCO1272) or (SCO2388 and SCO2389) or (SCO2388 and SCO0549) or (SCO2388 and SCO1267) or (SCO2388 and SCO1272) or (SCO6564 and SCO2389) or (SCO6564 and SCO0549) or (SCO6564 and SCO1267) or (SCO6564 and SCO1272)
     - subsystem: Membrane Lipid Metabolism
     - annotation: !!omap
       - ec-code: 2.3.1.38
@@ -20448,7 +20448,7 @@
       - succoa_c: 1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO5281 and (SCO2181) or (SCO7123) and (SCO0884) or (SCO2180) or (SCO4919))
+    - gene_reaction_rule: (SCO5281 and SCO2181 and SCO0884) or (SCO5281 and SCO2181 and SCO2180) or (SCO5281 and SCO2181 and SCO4919) or (SCO5281 and SCO7123 and SCO0884) or (SCO5281 and SCO7123 and SCO2180) or (SCO5281 and SCO7123 and SCO4919)
     - subsystem: Citric Acid Cycle
     - confidence_score: 2
   - !!omap
@@ -20463,7 +20463,7 @@
       - succoa_c: 1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: ((SCO4594 and SCO4595) or (SCO6269 and SCO6270) and SCO0681)
+    - gene_reaction_rule: (SCO4594 and SCO4595 and SCO0681) or (SCO6269 and SCO6270 and SCO0681)
     - subsystem: Citric Acid Cycle
     - confidence_score: 2
   - !!omap
@@ -22250,7 +22250,7 @@
       - coa_c: 1
     - lower_bound: -1000
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO1271) or (SCO2388) or (SCO6564) and (SCO2389) or (SCO0549) or (SCO1267) or (SCO1272)
+    - gene_reaction_rule: (SCO1271 and SCO2389) or (SCO1271 and SCO0549) or (SCO1271 and SCO1267) or (SCO1271 and SCO1272) or (SCO2388 and SCO2389) or (SCO2388 and SCO0549) or (SCO2388 and SCO1267) or (SCO2388 and SCO1272) or (SCO6564 and SCO2389) or (SCO6564 and SCO0549) or (SCO6564 and SCO1267) or (SCO6564 and SCO1272)
     - subsystem: Membrane Lipid Metabolism
     - confidence_score: 3
   - !!omap
@@ -24546,7 +24546,7 @@
       - mqn9_c: 1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO2150 and SCO2149 and (SCO7236) or (SCO2148) or (SCO7120))
+    - gene_reaction_rule: (SCO2150 and SCO2149 and SCO7236) or (SCO2150 and SCO2149 and SCO2148) or (SCO2150 and SCO2149 and SCO7120)
     - subsystem: Oxidative Phosphorylation
     - confidence_score: 2
   - !!omap
@@ -24559,7 +24559,7 @@
       - o2_c: -0.5
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO1934 and SCO2156 and (SCO7234) or (SCO2155) and SCO2151 and SCO1930)
+    - gene_reaction_rule: (SCO1934 and SCO2156 and SCO2151 and SCO1930 and SCO7234) or (SCO1934 and SCO2156 and SCO2151 and SCO1930 and SCO2155)
     - subsystem: Oxidative Phosphorylation
     - confidence_score: 2
   - !!omap
@@ -32263,7 +32263,7 @@
       - thf_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO5471 and SCO1378 and SCO5472 and (SCO0884) or (SCO2180) or (SCO4919))
+    - gene_reaction_rule: (SCO5471 and SCO1378 and SCO5472 and SCO0884) or (SCO5471 and SCO1378 and SCO5472 and SCO2180) or (SCO5471 and SCO1378 and SCO5472 and SCO4919)
     - subsystem: Folate Metabolism
     - confidence_score: 2
   - !!omap
@@ -33821,7 +33821,7 @@
       - ibcoa_c: -1
     - lower_bound: -1000
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO1271) or (SCO2388) or (SCO6564) and (SCO2389) or (SCO0549) or (SCO1267) or (SCO1272)
+    - gene_reaction_rule: (SCO1271 and SCO2389) or (SCO1271 and SCO0549) or (SCO1271 and SCO1267) or (SCO1271 and SCO1272) or (SCO2388 and SCO2389) or (SCO2388 and SCO0549) or (SCO2388 and SCO1267) or (SCO2388 and SCO1272) or (SCO6564 and SCO2389) or (SCO6564 and SCO0549) or (SCO6564 and SCO1267) or (SCO6564 and SCO1272)
     - subsystem: Membrane Lipid Metabolism
     - confidence_score: 4
   - !!omap
@@ -33832,7 +33832,7 @@
       - ibcoa_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO5415 and (SCO4800) or (SCO6833))
+    - gene_reaction_rule: (SCO5415 and SCO4800) or (SCO5415 and SCO6833)
     - subsystem: Butanoate Metabolism
     - annotation: !!omap
       - ec-code: 5.4.99.13
@@ -34290,7 +34290,7 @@
       - ivcoa_c: -1
     - lower_bound: -1000
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO1271) or (SCO2388) or (SCO6564) and (SCO2389) or (SCO0549) or (SCO1267) or (SCO1272)
+    - gene_reaction_rule: (SCO1271 and SCO2389) or (SCO1271 and SCO0549) or (SCO1271 and SCO1267) or (SCO1271 and SCO1272) or (SCO2388 and SCO2389) or (SCO2388 and SCO0549) or (SCO2388 and SCO1267) or (SCO2388 and SCO1272) or (SCO6564 and SCO2389) or (SCO6564 and SCO0549) or (SCO6564 and SCO1267) or (SCO6564 and SCO1272)
     - subsystem: Membrane Lipid Metabolism
     - confidence_score: 3
   - !!omap
@@ -34369,7 +34369,7 @@
       - malACP_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO1271) or (SCO2388) or (SCO6564) and (SCO2389) or (SCO0549) or (SCO1267) or (SCO1272)
+    - gene_reaction_rule: SCO1271 or SCO2388 or (SCO6564 and SCO2389) or SCO0549 or SCO1267 or SCO1272
     - subsystem: Membrane Lipid Metabolism
     - confidence_score: 4
   - !!omap
@@ -35233,7 +35233,7 @@
       - malcoa_c: -1
     - lower_bound: -1000
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO2387 and (SCO2389) or (SCO0549) or (SCO1267) or (SCO1272))
+    - gene_reaction_rule: (SCO2387 and SCO2389) or (SCO2387 and SCO0549) or (SCO2387 and SCO1267) or (SCO2387 and SCO1272)
     - subsystem: Membrane Lipid Metabolism
     - annotation: !!omap
       - ec-code: 2.3.1.39
@@ -35676,7 +35676,7 @@
       - trdrd_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO4956 and (SCO0885) or (SCO3889) or (SCO5419) or (SCO5438))
+    - gene_reaction_rule: (SCO4956 and SCO0885) or (SCO4956 and SCO3889) or (SCO4956 and SCO5419) or (SCO4956 and SCO5438)
     - subsystem: Methionine Metabolism
     - annotation: !!omap
       - ec-code: 1.8.4.5
@@ -35692,7 +35692,7 @@
       - trdrd_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO6061 and (SCO0885) or (SCO3889) or (SCO5419) or (SCO5438))
+    - gene_reaction_rule: (SCO6061 and SCO0885) or (SCO6061 and SCO3889) or (SCO6061 and SCO5419) or (SCO6061 and SCO5438)
     - subsystem: Methionine Metabolism
     - confidence_score: 2
   - !!omap
@@ -36262,7 +36262,7 @@
       - udcpdp_c: 2
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO3847) or (SCO5301) and (SCO2709) or (SCO3894)
+    - gene_reaction_rule: (SCO3847 and SCO2709) or (SCO3847 and SCO3894) or (SCO5301 and SCO2709) or (SCO5301 and SCO3894)
     - subsystem: Murein Biosynthesis
     - confidence_score: 2
   - !!omap
@@ -36276,7 +36276,7 @@
       - udcpdp_c: 1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO3847) or (SCO5301) and (SCO2709) or (SCO3894)
+    - gene_reaction_rule: (SCO3847 and SCO2709) or (SCO3847 and SCO3894) or (SCO5301 and SCO2709) or (SCO5301 and SCO3894)
     - subsystem: Murein Biosynthesis
     - confidence_score: 2
   - !!omap
@@ -36549,7 +36549,7 @@
       - nadh_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO4562) or (SCO4599) and (SCO4563) or (SCO4600) and SCO4564 and (SCO3392) or (SCO4565) and SCO4566 and (SCO4567) or (SCO6560) and SCO4568 and (SCO4569) or (SCO4602) and (SCO4570) or (SCO4603) and (SCO4571) or (SCO4604) and (SCO4572) or (SCO4605) and (SCO4573) or (SCO4606) or (SCO6954) and (SCO4574) or (SCO4607) and (SCO4575) or (SCO4608)
+    - gene_reaction_rule: SCO4564 and SCO4566 and SCO4568 and (SCO4562 or SCO4599) and (SCO4563 or SCO4600) and (SCO3392 or SCO4565) and (SCO4567 or SCO6560) and (SCO4569 or SCO4602) and (SCO4570 or SCO4603) and (SCO4571 or SCO4604) and (SCO4572 or SCO4605) and (SCO4573 or SCO4606 or SCO6954) and (SCO4574 or SCO4607) and (SCO4575 or SCO4608)
     - subsystem: Oxidative Phosphorylation
     - annotation: !!omap
       - ec-code: 1.6.5.3
@@ -37653,7 +37653,7 @@
       - nadh_c: 1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: ((SCO3816 and SCO3817) or (SCO3830 and SCO3831)) and (SCO3815) or (SCO3829) and (SCO0884) or (SCO2180) or (SCO4919)
+    - gene_reaction_rule: (SCO3816 and SCO3817 and SCO3815 and SCO0884) or (SCO3816 and SCO3817 and SCO3815 and SCO2180) or (SCO3816 and SCO3817 and SCO3815 and SCO4919) or (SCO3816 and SCO3817 and SCO3829 and SCO0884) or (SCO3816 and SCO3817 and SCO3829 and SCO2180) or (SCO3816 and SCO3817 and SCO3829 and SCO4919) or (SCO3830 and SCO3831 and SCO3815 and SCO0884) or (SCO3830 and SCO3831 and SCO3815 and SCO2180) or (SCO3830 and SCO3831 and SCO3815 and SCO4919) or (SCO3830 and SCO3831 and SCO3829 and SCO0884) or (SCO3830 and SCO3831 and SCO3829 and SCO2180) or (SCO3830 and SCO3831 and SCO3829 and SCO4919)
     - subsystem: Valine, Leucine, and Isoleucine Metabolism
     - annotation: !!omap
       - ec-code: 1.2.1.25
@@ -37670,7 +37670,7 @@
       - nadh_c: 1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: ((SCO3816 and SCO3817) or (SCO3830 and SCO3831)) and (SCO3815) or (SCO3829) and (SCO0884) or (SCO2180) or (SCO4919)
+    - gene_reaction_rule: (SCO3816 and SCO3817 and SCO3815 and SCO0884) or (SCO3816 and SCO3817 and SCO3815 and SCO2180) or (SCO3816 and SCO3817 and SCO3815 and SCO4919) or (SCO3816 and SCO3817 and SCO3829 and SCO0884) or (SCO3816 and SCO3817 and SCO3829 and SCO2180) or (SCO3816 and SCO3817 and SCO3829 and SCO4919) or (SCO3830 and SCO3831 and SCO3815 and SCO0884) or (SCO3830 and SCO3831 and SCO3815 and SCO2180) or (SCO3830 and SCO3831 and SCO3815 and SCO4919) or (SCO3830 and SCO3831 and SCO3829 and SCO0884) or (SCO3830 and SCO3831 and SCO3829 and SCO2180) or (SCO3830 and SCO3831 and SCO3829 and SCO4919)
     - subsystem: Valine, Leucine, and Isoleucine Metabolism
     - annotation: !!omap
       - ec-code: 1.2.1.25
@@ -37687,7 +37687,7 @@
       - nadh_c: 1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: ((SCO3816 and SCO3817) or (SCO3830 and SCO3831)) and (SCO3815) or (SCO3829) and (SCO0884) or (SCO2180) or (SCO4919)
+    - gene_reaction_rule: (SCO3816 and SCO3817 and SCO3815 and SCO0884) or (SCO3816 and SCO3817 and SCO3815 and SCO2180) or (SCO3816 and SCO3817 and SCO3815 and SCO4919) or (SCO3816 and SCO3817 and SCO3829 and SCO0884) or (SCO3816 and SCO3817 and SCO3829 and SCO2180) or (SCO3816 and SCO3817 and SCO3829 and SCO4919) or (SCO3830 and SCO3831 and SCO3815 and SCO0884) or (SCO3830 and SCO3831 and SCO3815 and SCO2180) or (SCO3830 and SCO3831 and SCO3815 and SCO4919) or (SCO3830 and SCO3831 and SCO3829 and SCO0884) or (SCO3830 and SCO3831 and SCO3829 and SCO2180) or (SCO3830 and SCO3831 and SCO3829 and SCO4919)
     - subsystem: Valine, Leucine, and Isoleucine Metabolism
     - annotation: !!omap
       - ec-code: 1.2.1.25
@@ -37879,7 +37879,7 @@
       - coa_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO5144 and (SCO6701) or (SCO6967) or (SCO3079) or (SCO6731))
+    - gene_reaction_rule: (SCO5144 and SCO6701) or (SCO5144 and SCO6967) or (SCO5144 and SCO3079) or (SCO5144 and SCO6731)
     - subsystem: Alternate Carbon Metabolism
     - confidence_score: 2
   - !!omap
@@ -38275,7 +38275,7 @@
       - trdrd_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO6100 and (SCO0885) or (SCO3889) or (SCO5419) or (SCO5438))
+    - gene_reaction_rule: (SCO6100 and SCO0885) or (SCO6100 and SCO3889) or (SCO6100 and SCO5419) or (SCO6100 and SCO5438)
     - subsystem: Cysteine Metabolism
     - annotation: !!omap
       - ec-code: 1.8.4.8
@@ -38463,7 +38463,7 @@
       - ppcoa_c: -1
     - lower_bound: -1000
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO1271) or (SCO2388) or (SCO6564) and (SCO2389) or (SCO0549) or (SCO1267) or (SCO1272)
+    - gene_reaction_rule: (SCO1271 and SCO2389) or (SCO1271 and SCO0549) or (SCO1271 and SCO1267) or (SCO1271 and SCO1272) or (SCO2388 and SCO2389) or (SCO2388 and SCO0549) or (SCO2388 and SCO1267) or (SCO2388 and SCO1272) or (SCO6564 and SCO2389) or (SCO6564 and SCO0549) or (SCO6564 and SCO1267) or (SCO6564 and SCO1272)
     - subsystem: Membrane Lipid Metabolism
     - confidence_score: 3
   - !!omap
@@ -38540,7 +38540,7 @@
       - pyr_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO2183) or (SCO2371) or (SCO7124) or ((SCO1269 and SCO1270)) and (SCO3815) or (SCO3829) and (SCO0884) or (SCO2180) or (SCO4919)
+    - gene_reaction_rule: (SCO1269 and SCO1270 and SCO2183 and SCO0884 and SCO1268) or (SCO1269 and SCO1270 and SCO2183 and SCO0884 and SCO7123) or (SCO1269 and SCO1270 and SCO2183 and SCO0884 and SCO2181) or (SCO1269 and SCO1270 and SCO2183 and SCO2180 and SCO1268) or (SCO1269 and SCO1270 and SCO2183 and SCO2180 and SCO7123) or (SCO1269 and SCO1270 and SCO2183 and SCO2180 and SCO2181) or (SCO1269 and SCO1270 and SCO2183 and SCO4919 and SCO1268) or (SCO1269 and SCO1270 and SCO2183 and SCO4919 and SCO7123) or (SCO1269 and SCO1270 and SCO2183 and SCO4919 and SCO2181) or (SCO1269 and SCO1270 and SCO2371 and SCO0884 and SCO1268) or (SCO1269 and SCO1270 and SCO2371 and SCO0884 and SCO7123) or (SCO1269 and SCO1270 and SCO2371 and SCO0884 and SCO2181) or (SCO1269 and SCO1270 and SCO2371 and SCO2180 and SCO1268) or (SCO1269 and SCO1270 and SCO2371 and SCO2180 and SCO7123) or (SCO1269 and SCO1270 and SCO2371 and SCO2180 and SCO2181) or (SCO1269 and SCO1270 and SCO2371 and SCO4919 and SCO1268) or (SCO1269 and SCO1270 and SCO2371 and SCO4919 and SCO7123) or (SCO1269 and SCO1270 and SCO2371 and SCO4919 and SCO2181) or (SCO1269 and SCO1270 and SCO7124 and SCO0884 and SCO1268) or (SCO1269 and SCO1270 and SCO7124 and SCO0884 and SCO7123) or (SCO1269 and SCO1270 and SCO7124 and SCO0884 and SCO2181) or (SCO1269 and SCO1270 and SCO7124 and SCO2180 and SCO1268) or (SCO1269 and SCO1270 and SCO7124 and SCO2180 and SCO7123) or (SCO1269 and SCO1270 and SCO7124 and SCO2180 and SCO2181) or (SCO1269 and SCO1270 and SCO7124 and SCO4919 and SCO1268) or (SCO1269 and SCO1270 and SCO7124 and SCO4919 and SCO7123) or (SCO1269 and SCO1270 and SCO7124 and SCO4919 and SCO2181)
     - subsystem: Glycolysis/Gluconeogenesis
     - confidence_score: 2
   - !!omap
@@ -39599,7 +39599,7 @@
       - ppcoa_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO2776 and SCO2777) or (SCO4380 and SCO4381) or ((SCO4921) or (SCO6271) and SCO4925 and SCO4926)
+    - gene_reaction_rule: (SCO2776 and SCO2777) or (SCO4380 and SCO4381) or (SCO4921 and SCO4925) or (SCO4921 and SCO4926) or (SCO6271 and SCO4925) or (SCO6271 and SCO4926)
     - subsystem: Propanoate Metabolism
     - annotation: !!omap
       - ec-code: 6.4.1.3
@@ -42424,7 +42424,7 @@
       - trdrd_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: ((SCO5225 and SCO5226)) or (SCO5805) and (SCO0885) or (SCO3889) or (SCO5419) or (SCO5438)
+    - gene_reaction_rule: (SCO5225 and SCO5226 and SCO0885) or (SCO5225 and SCO5226 and SCO3889) or (SCO5225 and SCO5226 and SCO5419) or (SCO5225 and SCO5226 and SCO5438) or (SCO5805 and SCO0885) or (SCO5805 and SCO3889) or (SCO5805 and SCO5419) or (SCO5805 and SCO5438)
     - subsystem: Nucleotide Salvage Pathway
     - annotation: !!omap
       - ec-code: 1.17.4.1
@@ -42456,7 +42456,7 @@
       - trdrd_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: ((SCO5225 and SCO5226)) or (SCO5805) and (SCO0885) or (SCO3889) or (SCO5419) or (SCO5438)
+    - gene_reaction_rule: (SCO5225 and SCO5226 and SCO0885) or (SCO5225 and SCO5226 and SCO3889) or (SCO5225 and SCO5226 and SCO5419) or (SCO5225 and SCO5226 and SCO5438) or (SCO5805 and SCO0885) or (SCO5805 and SCO3889) or (SCO5805 and SCO5419) or (SCO5805 and SCO5438)
     - subsystem: Nucleotide Salvage Pathway
     - annotation: !!omap
       - ec-code: 1.17.4.1
@@ -42488,7 +42488,7 @@
       - trdrd_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: ((SCO5225 and SCO5226)) or (SCO5805) and (SCO0885) or (SCO3889) or (SCO5419) or (SCO5438)
+    - gene_reaction_rule: (SCO5225 and SCO5226 and SCO0885) or (SCO5225 and SCO5226 and SCO3889) or (SCO5225 and SCO5226 and SCO5419) or (SCO5225 and SCO5226 and SCO5438) or (SCO5805 and SCO0885) or (SCO5805 and SCO3889) or (SCO5805 and SCO5419) or (SCO5805 and SCO5438)
     - subsystem: Nucleotide Salvage Pathway
     - annotation: !!omap
       - ec-code: 1.17.4.1
@@ -42520,7 +42520,7 @@
       - udp_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: ((SCO5225 and SCO5226)) or (SCO5805) and (SCO0885) or (SCO3889) or (SCO5419) or (SCO5438)
+    - gene_reaction_rule: (SCO5225 and SCO5226 and SCO0885) or (SCO5225 and SCO5226 and SCO3889) or (SCO5225 and SCO5226 and SCO5419) or (SCO5225 and SCO5226 and SCO5438) or (SCO5805 and SCO0885) or (SCO5805 and SCO3889) or (SCO5805 and SCO5419) or (SCO5805 and SCO5438)
     - subsystem: Nucleotide Salvage Pathway
     - annotation: !!omap
       - ec-code: 1.17.4.1
@@ -47324,7 +47324,7 @@
       - succ_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: ((SCO4856) or (SCO5107) or (SCO7109) and (SCO4855) or (SCO5106) and SCO4858 and SCO4857)
+    - gene_reaction_rule: (SCO4856 and SCO4855 and SCO4858 and SCO4857) or (SCO4856 and SCO5106 and SCO4858 and SCO4857) or (SCO5107 and SCO4855 and SCO4858 and SCO4857) or (SCO5107 and SCO5106 and SCO4858 and SCO4857) or (SCO7109 and SCO4855 and SCO4858 and SCO4857) or (SCO7109 and SCO5106 and SCO4858 and SCO4857)
     - subsystem: Oxidative Phosphorylation
     - annotation: !!omap
       - ec-code: 1.3.99.1
@@ -47901,7 +47901,7 @@
       - trdrd_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: ((SCO2901) or (SCO7353) and (SCO0885) or (SCO3889) or (SCO5419) or (SCO5438)) or (SCO4444)
+    - gene_reaction_rule: (SCO2901 and SCO0885) or (SCO7353 and SCO0885) or (SCO2901 and SCO3889) or (SCO7353 and SCO3889) or (SCO2901 and SCO5419) or (SCO7353 and SCO5419) or (SCO2901 and SCO5438) or (SCO7353 and SCO5438) or SCO4444
     - subsystem: Unassigned
     - confidence_score: 2
   - !!omap
@@ -48320,7 +48320,7 @@
       - trdrd_c: 1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: (SCO3890) or (SCO6834) or (SCO7298) and (SCO0885) or (SCO3889) or (SCO5419) or (SCO5438)
+    - gene_reaction_rule: (SCO3890 and SCO0885) or (SCO3890 and SCO3889) or (SCO3890 and SCO5419) or (SCO3890 and SCO5438) or (SCO6834 and SCO0885) or (SCO6834 and SCO3889) or (SCO6834 and SCO5419) or (SCO6834 and SCO5438) or (SCO7298 and SCO0885) or (SCO7298 and SCO3889) or (SCO7298 and SCO5419) or (SCO7298 and SCO5438)
     - subsystem: Oxidative Phosphorylation
     - annotation: !!omap
       - ec-code: 1.8.1.9
@@ -49907,6 +49907,8 @@
     - id: SCO1266
   - !!omap
     - id: SCO1267
+  - !!omap
+    - id: SCO1268
   - !!omap
     - id: SCO1269
   - !!omap
