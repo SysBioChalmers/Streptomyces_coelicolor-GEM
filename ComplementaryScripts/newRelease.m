@@ -17,7 +17,7 @@ if ~strcmp(currentBranch,'master')
 end
 
 %Bump version number:
-oldModel   = load('ModelFiles/mat/Sco.mat');
+oldModel   = load('../ModelFiles/mat/Sco.mat');
 oldVersion = oldModel.model.description;
 oldVersion = oldVersion(strfind(oldVersion,'_v')+2:end);
 oldVersion = str2double(strsplit(oldVersion,'.'));
@@ -38,7 +38,7 @@ end
 newVersion = num2str(newVersion,'%d.%d.%d');
 
 %Check if history has been updated:
-fid     = fopen('history.md','r');
+fid     = fopen('../history.md','r');
 history = fscanf(fid,'%s');
 fclose(fid);
 if ~contains(history,['Sco' newVersion ':'])
@@ -46,16 +46,16 @@ if ~contains(history,['Sco' newVersion ':'])
 end
 
 %Load model:
-model = importModel('ModelFiles/xml/Sco.xml');
+model = importModel('../ModelFiles/xml/Sco.xml');
 
 %Include tag and save model:
-model.description = ['v' newVersion];
+model.description = ['Streptomyces coelicolor-GEM_v' newVersion];
 
 %Save model
-exportForGit(model,'Sco','',{'mat', 'txt', 'xlsx', 'xml', 'yml'});
+exportForGit(model,'Sco','..',{'mat', 'txt', 'xlsx', 'xml', 'yml'});
 
 %Update version file:
-fid = fopen('version.txt','wt');
+fid = fopen('../version.txt','wt');
 fprintf(fid,newVersion);
 fclose(fid);
 end
