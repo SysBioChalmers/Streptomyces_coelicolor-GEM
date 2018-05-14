@@ -36549,7 +36549,7 @@
       - nadh_c: -1
     - lower_bound: 0
     - upper_bound: 1000
-    - gene_reaction_rule: SCO4564 and SCO4566 and SCO4568 and (SCO4562 or SCO4599) and (SCO4563 or SCO4600) and (SCO3392 or SCO4565) and (SCO4567 or SCO6560) and (SCO4569 or SCO4602) and (SCO4570 or SCO4603) and (SCO4571 or SCO4604) and (SCO4572 or SCO4605) and (SCO4573 or SCO4606 or SCO6954) and (SCO4574 or SCO4607) and (SCO4575 or SCO4608)
+    - gene_reaction_rule: (SCO4564 and SCO4566 and SCO4568 and (SCO4562 or SCO4599) and (SCO4563 or SCO4600) and (SCO3392 or SCO4565) and (SCO4567 or SCO6560) and (SCO4569 or SCO4602) and (SCO4570 or SCO4603) and (SCO4571 or SCO4604) and (SCO4572 or SCO4605) and (SCO4573 or SCO4606 or SCO6954) and (SCO4574 or SCO4607) and (SCO4575 or SCO4608))
     - subsystem: Oxidative Phosphorylation
     - annotation: !!omap
       - ec-code: 1.6.5.3

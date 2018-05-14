@@ -1462,7 +1462,7 @@ FRD8	mql9_c + fum_c  -> mqn9_c + succ_c 	SCO0923 and SCO0922 and SCO0924	  0.00	
 G3PD6	glyc3p_c + mqn9_c  -> dhap_c + mql9_c 	SCO0670 or SCO1661 or SCO4774 or ( SCO7005 and SCO7006 )	  0.00	1000.00	  0.00
 L-LACD4	mqn9_c + lac-L_c  -> pyr_c + mql9_c 	SCO0763 or ( SCO0815 and SCO0816 and SCO0817 )	  0.00	1000.00	  0.00
 NADH10	h_c + nadh_c + mqn9_c  -> nad_c + mql9_c 	SCO3092 or SCO7101 or SCO7319 or SCO6496 or SCO0158 or SCO4119	  0.00	1000.00	  0.00
-NADH17	4 h_c + nadh_c + mqn9_c  -> nad_c + mql9_c + 3 h_e 	SCO4564 and SCO4566 and SCO4568 and ( SCO4562 or SCO4599 ) and ( SCO4563 or SCO4600 ) and ( SCO3392 or SCO4565 ) and ( SCO4567 or SCO6560 ) and ( SCO4569 or SCO4602 ) and ( SCO4570 or SCO4603 ) and ( SCO4571 or SCO4604 ) and ( SCO4572 or SCO4605 ) and ( SCO4573 or SCO4606 or SCO6954 ) and ( SCO4574 or SCO4607 ) and ( SCO4575 or SCO4608 )	  0.00	1000.00	  0.00
+NADH17	4 h_c + nadh_c + mqn9_c  -> nad_c + mql9_c + 3 h_e 	( SCO4564 and SCO4566 and SCO4568 and ( SCO4562 or SCO4599 ) and ( SCO4563 or SCO4600 ) and ( SCO3392 or SCO4565 ) and ( SCO4567 or SCO6560 ) and ( SCO4569 or SCO4602 ) and ( SCO4570 or SCO4603 ) and ( SCO4571 or SCO4604 ) and ( SCO4572 or SCO4605 ) and ( SCO4573 or SCO4606 or SCO6954 ) and ( SCO4574 or SCO4607 ) and ( SCO4575 or SCO4608 ))	  0.00	1000.00	  0.00
 NADTRHD	nadph_c + nad_c  -> nadp_c + nadh_c 	SCO7622 and SCO7623	  0.00	1000.00	  0.00
 NTRIR2x	5 h_c + 3 nadh_c + no2_c  -> 2 h2o_c + 3 nad_c + nh4_c 	SCO2487 and SCO2488	  0.00	1000.00	  0.00
 POX3	h2o_c + pyr_c + fad_c  -> co2_c + ac_c + fadh2_c 	SCO6155 or SCO7412	  0.00	1000.00	  0.00
