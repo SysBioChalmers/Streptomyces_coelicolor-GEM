@@ -40,7 +40,7 @@ This repository is administered by Hao Wang ([@SysBioChalmers](https://github.co
 * Clone the [master](https://github.com/SysBioChalmers/Streptomyces_coelicolor-GEM) branch from [SysBioChalmers GitHub](https://github.com/SysBioChalmers).
 * Add the directory to your Matlab path, instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com).
 
-### Contribute to development
+### Contribute To Development
 1. Fork the repository to your own Github account
 2. Create a new branch from [`devel`](https://github.com/SysBioChalmers/Streptomyces_coelicolor-GEM/tree/devel).
 3. Make changes to the model
