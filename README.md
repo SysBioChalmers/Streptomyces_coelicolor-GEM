@@ -13,40 +13,40 @@ _Streptomyces coelicolor_ is a representative species of soil-dwelling, filament
 **GEM Category:** Species; **Utilisation:** Predictive simulation; **Field:** Metabolic-network reconstruction; **Type of Model:** Reconstruction and refinement; **Model Source:** [iMK1208](http://dx.doi.org/10.1002/biot.201300539); **Omic Source:** [Genomics](http://dx.doi.org/10.1038/417141a); **Taxonomy:** _Streptomyces coelicolor_; **Metabolic System:** General Metabolism; **Strain:** A3(2); **Condition:** Complex medium;
 
 - Reference:
-> Wang H _et al_. (2018) "RAVEN 2.0: a versatile platform for metabolic network reconstruction and a case study on Streptomyces coelicolor" bioRxiv doi:[https://doi.org/10.1101/321067}(10.1101/321067)
+> Wang H _et al_. (2018) "RAVEN 2.0: a versatile platform for metabolic network reconstruction and a case study on Streptomyces coelicolor" bioRxiv doi:[10.1101/321067](https://doi.org/10.1101/321067)
 
 - Pubmed ID: TBA
 
-- Last update: 2018-01-11
+- Last update: 2018-05-14
 
 - The model contains:
 
 | Taxonomy | Template Model | Reactions | Metabolites| Genes |
 | ------------- |:-------------:|:-------------:|:-------------:|-----:|
-| _Streptomyces coelicolor_ A3(2) | iMK1208 | 2304 | 1927 | 1522 |
+| _Streptomyces coelicolor_ A3(2) | iMK1208 | 2322 | 1906 | 1506 |
 
 This repository is administered by Hao Wang ([@SysBioChalmers](https://github.com/SysBioChalmers)), Division of Systems and Synthetic Biology, Department of Biology and Biological Engineering, Chalmers University of Technology
 
-
-
 ## Installation
 
-### Required Software:
-
+### Recommended Software:
 * A functional Matlab installation (MATLAB 7.3 or higher).
-* The model was developed and also recommended to be used with the [RAVEN](https://github.com/SysBioChalmers/RAVEN) Toolbox ver 2.0 for MATLAB. 
-* An up-to-date version from COBRA GitHub repository is strongly recommended.
-* Add the directories to your Matlab path, instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com).
-
-### Dependencies - Recommended Software:
-* libSBML MATLAB API ([version 5.13.0](https://sourceforge.net/projects/sbml/files/libsbml/5.13.0/stable/MATLAB%20interface/)  is recommended).
+* [RAVEN Toolbox 2](https://github.com/SysBioChalmers/RAVEN) for MATLAB (required for contributing to development). 
+* libSBML MATLAB API ([version 5.16.0](https://sourceforge.net/projects/sbml/files/libsbml/5.13.0/stable/MATLAB%20interface/)  is recommended).
 * [Gurobi Optimizer for MATLAB](http://www.gurobi.com/registration/download-reg).
-
+* For contributing to development: a [git wrapper](https://github.com/manur/MATLAB-git) added to the search path.
 
 ### Installation Instructions
 * Clone the [master](https://github.com/SysBioChalmers/Streptomyces_coelicolor-GEM) branch from [SysBioChalmers GitHub](https://github.com/SysBioChalmers).
 * Add the directory to your Matlab path, instructions [here](https://se.mathworks.com/help/matlab/ref/addpath.html?requestedDomain=www.mathworks.com).
 
+### Contribute To Development
+1. Fork the repository to your own Github account
+2. Create a new branch from [`devel`](https://github.com/SysBioChalmers/Streptomyces_coelicolor-GEM/tree/devel).
+3. Make changes to the model
+    + [RAVEN Toolbox 2](https://github.com/SysBioChalmers/RAVEN) for MATLAB is highly recommended for making changes
+    + Before each commit, run in Matlab the `newCommit(model)` function from the `ComplementaryScripts` folder
+    + Make a Pull Request to the `devel` folder, including changed `txt`, `yml` and `xml` files
 
 ## Contributors
 * [Hao Wang](https://www.chalmers.se/en/staff/Pages/hao-wang.aspx) ([@Hao-Chalmers](https://github.com/Hao-Chalmers)), Chalmers University of Technology, Göteborg, Sweden

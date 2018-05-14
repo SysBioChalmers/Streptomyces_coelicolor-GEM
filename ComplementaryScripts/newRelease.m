@@ -8,7 +8,7 @@ function newRelease(bumpType)
 %
 %   Usage: newRelease(bumpType)
 %
-% Eduard Kerkhoven, 2018-15-08
+% Eduard Kerkhoven, 2018-05-14
 
 %Check if in master:
 currentBranch = git('rev-parse --abbrev-ref HEAD');
@@ -19,7 +19,7 @@ end
 %Bump version number:
 oldModel   = load('ModelFiles/mat/Sco.mat');
 oldVersion = oldModel.model.description;
-oldVersion = oldVersion(2:end);
+oldVersion = oldVersion(strfind(oldVersion,'_v')+2:end);
 oldVersion = str2double(strsplit(oldVersion,'.'));
 newVersion = oldVersion;
 switch bumpType

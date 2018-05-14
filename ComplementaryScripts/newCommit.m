@@ -11,7 +11,7 @@ function newCommit(model)
 %
 %   Usage: newCommit(model)
 %
-% Eduard Kerkhoven, 2018-15-08
+% Eduard Kerkhoven, 2018-05-14
 
 %Check if in master:
 currentBranch = git('rev-parse --abbrev-ref HEAD');
