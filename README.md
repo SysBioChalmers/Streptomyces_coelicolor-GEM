@@ -10,9 +10,10 @@ _Streptomyces coelicolor_ is a representative species of soil-dwelling, filament
 
 - Model KeyWords:
 
-**GEM Category:** Species; **Utilisation:** Predictive simulation; **Field:** Metabolic-network reconstruction; **Type of Model:** Reconstruction and refinement; **Model Source:** [iMK1208](http://dx.doi.org/10.1002/biot.201300539); **Omic Source:** [Genomics](http://dx.doi.org/10.1038/417141a); **Taxonomy:** _Streptomyces coelicolor_; **Metabolic System:** General Metabolism; **Strain:** A3(2);
+**GEM Category:** Species; **Utilisation:** Predictive simulation; **Field:** Metabolic-network reconstruction; **Type of Model:** Reconstruction and refinement; **Model Source:** [iMK1208](http://dx.doi.org/10.1002/biot.201300539); **Omic Source:** [Genomics](http://dx.doi.org/10.1038/417141a); **Taxonomy:** _Streptomyces coelicolor_; **Metabolic System:** General Metabolism; **Strain:** A3(2); **Condition:** Complex medium;
 
-- Reference: TBA
+- Reference:
+> Wang H _et al_. (2018) "RAVEN 2.0: a versatile platform for metabolic network reconstruction and a case study on Streptomyces coelicolor" bioRxiv doi:[https://doi.org/10.1101/321067}(10.1101/321067)
 
 - Pubmed ID: TBA
 
