@@ -2231,12 +2231,9 @@ R02457	h2o_c + o2_c + CPD-217_c  <=> h2o2_c + 5-AMINO-2-OXOPENTANOATE_c + AMMONI
 R02894	o2_c + D-PROLINE_c  -> h2o2_c + DELTA1-PYRROLINE_2-CARBOXYLATE_c 	SCO6740	  0.00	1000.00	  0.00
 R02923	h2o_c + o2_c + CPD-220_c  <=> h2o2_c + AMMONIA_c + CPD-824_c 	SCO6740	-1000.00	1000.00	  0.00
 R03105	3-MERCAPTO-PYRUVATE_c + H2SO3_c  <=> pyr_c + S2O3_c 	SCO4164 or SCO5854	-1000.00	1000.00	  0.00
-R03998	2 h_c + o2_c + 2 nadh_c + 2-AMINOBENZOYL-COA_c  <=> h2o_c + 2 nad_c + 2-AMINO-5-OXOCYCLOHEX-1-ENECARBOXYL-COA_c 	SCO1109 or SCO5980 or SCO7285	-1000.00	1000.00	  0.00
-R03999	2 nadph_c + 2 h_c + o2_c + 2-AMINOBENZOYL-COA_c  <=> 2 nadp_c + h2o_c + 2-AMINO-5-OXOCYCLOHEX-1-ENECARBOXYL-COA_c 	SCO1109 or SCO5980 or SCO7285	-1000.00	1000.00	  0.00
 R04221	o2_c + CIS-4-HYDROXY-D-PROLINE_c  -> h2o2_c + CPD-1128_c 	SCO6740	  0.00	1000.00	  0.00
 R04800_NADPH	nadph_c + o2_c + NEUROSPORENE_c  <=> nadp_c + 2 h2o_c + CPD1F-114_c 	SCO0186 or SCO2101	-1000.00	1000.00	  0.00
 R05590	h2o_c + CPD-17683_c  <=> AMMONIA_c + BENZOATE_c 	SCO6344 or SCO7601	-1000.00	1000.00	  0.00
-R09692_NADPH	nadp_c + CPD-12321_c  <=> nadph_c + CPD-7408_c 	SCO0186 or SCO2101	-1000.00	1000.00	  0.00
 R01176	coa_c + atp_c + BUTYRIC_ACID_c  <=> amp_c + ppi_c + btcoa_c 	SCO6195	-1000.00	1000.00	  0.00
 R01785	CPD0-1115_c  <=> dhap_c + gcald_c 	SCO0813	-1000.00	1000.00	  0.00
 R02252	nad_c + 3-PHENYLPROPIONATE_c  <=> h_c + nadh_c + CPD-674_c 	SCO4297 or SCO7066	-1000.00	1000.00	  0.00
@@ -2311,7 +2308,6 @@ RXN-10995_NADH	o2_c + nadh_c + 15dap_c  -> h_c + h2o_c + nad_c + CPD-11953_c 	SC
 RXN-12703_NADH	nad_c + CPD-13691_c  -> nadh_c + CPD-13692_c 	SCO1197	  0.00	1000.00	  0.00
 RXN-8022_NADH	nad_c + CPD1F-98_c  -> nadh_c + NEUROSPORENE_c 	SCO0186 or SCO2101	  0.00	1000.00	  0.00
 R04800_NADH	o2_c + nadh_c + NEUROSPORENE_c  <=> 2 h2o_c + nad_c + CPD1F-114_c 	SCO0186 or SCO2101	-1000.00	1000.00	  0.00
-R09692_NADH	nad_c + CPD-12321_c  <=> nadh_c + CPD-7408_c 	SCO0186 or SCO2101	-1000.00	1000.00	  0.00
 RXN-8406_NADH	nadh_c + 2 CPD-8214_c  -> 2 h_c + nad_c + 2 cl_c + 2 CPD-8225_c 		  0.00	1000.00	  0.00
 RXN-7593_NADH	h2o_c + o2_c + nadh_c + 4izp_c  -> nad_c + nh4_c + for_c + 4-OXOGLUTARAMATE_c 		  0.00	1000.00	  0.00
 RXN-6081_NADH	h_c + nad_c + alac-S_c  -> nadh_c + co2_c + DIACETYL_c 		  0.00	1000.00	  0.00

@@ -145,3 +145,22 @@ model = removeReactions(model, '1.17.1.1-RXN_NADH', true, true, true);
 model = removeReactions(model, '1.14.13.84-RXN_NADPH', true, true, true);
 
 newCommit(model)
+
+%% fix-rxns remove additional duplicate reactions
+% Overlap between ANTHRANILOYL-COA-MONOOXYGENASE-RXN_NADPH and R03999;
+% ANTHRANILOYL-COA-MONOOXYGENASE-RXN_NADH and R03998. Reversible in KEGG,
+% MetaCyc directio more likely.
+i = getIndexes(model,{'ANTHRANILOYL-COA-MONOOXYGENASE-RXN_NADPH','R03999'},'rxns');
+model = combineMiriams(model,i);
+i = getIndexes(model,{'ANTHRANILOYL-COA-MONOOXYGENASE-RXN_NADH','R03998'},'rxns');
+model = combineMiriams(model,i);
+model = removeReactions(model, {'R03998','R03999'}, true, true, true);
+
+% Same for RXN-8023_NADPH and R09692_NADPH; RXN-8023_NADH and R09692_NADH
+i = getIndexes(model,{'RXN-8023_NADPH','R09692_NADPH'},'rxns');
+model = combineMiriams(model,i);
+i = getIndexes(model,{'RXN-8023_NADH','R09692_NADH'},'rxns');
+model = combineMiriams(model,i);
+model = removeReactions(model, {'R09692_NADPH', 'R09692_NADH'}, true, true, true);
+
+newCommit(model)

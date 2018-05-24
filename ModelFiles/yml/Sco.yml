@@ -21110,6 +21110,10 @@
     - subsystem: Aromatic Compound Degradation
     - annotation: !!omap
       - ec-code: 1.14.13.40
+      - kegg.orthology: K09461
+      - kegg.pathway:
+        - rn00627
+        - rn01120
       - rhea:
         - 16000
         - 15996
@@ -21131,6 +21135,10 @@
     - subsystem: Aromatic Compound Degradation
     - annotation: !!omap
       - ec-code: 1.14.13.40
+      - kegg.orthology: K09461
+      - kegg.pathway:
+        - rn00627
+        - rn01120
       - rhea:
         - 16000
         - 15996
@@ -41145,50 +41153,6 @@
       - kegg.pathway: rn00520
     - confidence_score: 2
   - !!omap
-    - id: R03998
-    - name: anthranilyl-CoA,NADH:oxygen oxidoreductase (de-aromatizing)
-    - metabolites: !!omap
-      - 2-AMINO-5-OXOCYCLOHEX-1-ENECARBOXYL-COA_c: 1
-      - 2-AMINOBENZOYL-COA_c: -1
-      - h2o_c: 1
-      - h_c: -2
-      - nad_c: 2
-      - nadh_c: -2
-      - o2_c: -1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO1109 or SCO5980 or SCO7285
-    - subsystem: Aromatic Compound Degradation
-    - annotation: !!omap
-      - ec-code: 1.14.13.40
-      - kegg.orthology: K09461
-      - kegg.pathway:
-        - rn00627
-        - rn01120
-    - confidence_score: 2
-  - !!omap
-    - id: R03999
-    - name: anthranilyl-CoA,NADH:oxygen oxidoreductase (de-aromatizing)
-    - metabolites: !!omap
-      - 2-AMINO-5-OXOCYCLOHEX-1-ENECARBOXYL-COA_c: 1
-      - 2-AMINOBENZOYL-COA_c: -1
-      - h2o_c: 1
-      - h_c: -2
-      - nadp_c: 2
-      - nadph_c: -2
-      - o2_c: -1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO1109 or SCO5980 or SCO7285
-    - subsystem: Aromatic Compound Degradation
-    - annotation: !!omap
-      - ec-code: 1.14.13.40
-      - kegg.orthology: K09461
-      - kegg.pathway:
-        - rn00627
-        - rn01120
-    - confidence_score: 2
-  - !!omap
     - id: R04215
     - name: CTP:N-glycoloylneuraminate cytidylyltransferase
     - metabolites: !!omap
@@ -41296,56 +41260,6 @@
       - kegg.pathway:
         - rn00627
         - rn01120
-    - confidence_score: 2
-  - !!omap
-    - id: R09692_NADH
-    - name: 15-cis-phytoene:acceptor oxidoreductase (NADH)
-    - metabolites: !!omap
-      - CPD-12321_c: -1
-      - CPD-7408_c: 1
-      - nad_c: -1
-      - nadh_c: 1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO0186 or SCO2101
-    - subsystem: Secondary Metabolite Biosynthesis
-    - annotation: !!omap
-      - ec-code:
-        - 1.3.99.28
-        - 1.3.99.29
-        - 1.3.99.30
-        - 1.3.99.31
-      - kegg.orthology:
-        - K10027
-        - K15745
-      - kegg.pathway:
-        - rn00906
-        - rn01110
-    - confidence_score: 2
-  - !!omap
-    - id: R09692_NADPH
-    - name: 15-cis-phytoene:acceptor oxidoreductase (NADPH)
-    - metabolites: !!omap
-      - CPD-12321_c: -1
-      - CPD-7408_c: 1
-      - nadp_c: -1
-      - nadph_c: 1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO0186 or SCO2101
-    - subsystem: Secondary Metabolite Biosynthesis
-    - annotation: !!omap
-      - ec-code:
-        - 1.3.99.28
-        - 1.3.99.29
-        - 1.3.99.30
-        - 1.3.99.31
-      - kegg.orthology:
-        - K10027
-        - K15745
-      - kegg.pathway:
-        - rn00906
-        - rn01110
     - confidence_score: 2
   - !!omap
     - id: R11-RXN
@@ -45229,6 +45143,12 @@
     - gene_reaction_rule: SCO0186
     - subsystem: Secondary Metabolite Biosynthesis
     - annotation: !!omap
+      - kegg.orthology:
+        - K10027
+        - K15745
+      - kegg.pathway:
+        - rn00906
+        - rn01110
       - rhea: 30606
     - confidence_score: 2
   - !!omap
@@ -45244,6 +45164,12 @@
     - gene_reaction_rule: SCO0186
     - subsystem: Secondary Metabolite Biosynthesis
     - annotation: !!omap
+      - kegg.orthology:
+        - K10027
+        - K15745
+      - kegg.pathway:
+        - rn00906
+        - rn01110
       - rhea: 30606
     - confidence_score: 2
   - !!omap
