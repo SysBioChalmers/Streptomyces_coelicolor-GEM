@@ -15458,46 +15458,6 @@
       - rhea: 22916
     - confidence_score: 2
   - !!omap
-    - id: 1.14.13.84-RXN_NADPH
-    - name: 1.14.13.84-RXN (NADPH)
-    - metabolites: !!omap
-      - 4-HYDROXYPHENYLACETATE_c: 1
-      - CPD-10598_c: -1
-      - h2o_c: 1
-      - nadp_c: 1
-      - nadph_c: -1
-      - o2_c: -1
-    - lower_bound: 0
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO3172
-    - subsystem: Unassigned
-    - annotation: !!omap
-      - ec-code: 1.14.13.84
-      - kegg.reaction: R06892
-      - rhea: 22916
-    - confidence_score: 2
-  - !!omap
-    - id: 1.17.1.1-RXN_NADH
-    - name: CDP-4-dehydro-6-deoxyglucose reductase (NADH)
-    - metabolites: !!omap
-      - CPD-1078_c: 1
-      - CPD-658_c: -1
-      - h2o_c: 1
-      - h_c: -1
-      - nad_c: 1
-      - nadh_c: -1
-    - lower_bound: 0
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO0103
-    - subsystem: Cell Envelope Biosynthesis
-    - annotation: !!omap
-      - ec-code: 1.17.1.1
-      - kegg.reaction: R03392
-      - rhea:
-        - 19659
-        - 19655
-    - confidence_score: 2
-  - !!omap
     - id: 1.17.1.1-RXN_NADPH
     - name: CDP-4-dehydro-6-deoxyglucose reductase (NADPH)
     - metabolites: !!omap
@@ -21150,6 +21110,10 @@
     - subsystem: Aromatic Compound Degradation
     - annotation: !!omap
       - ec-code: 1.14.13.40
+      - kegg.orthology: K09461
+      - kegg.pathway:
+        - rn00627
+        - rn01120
       - rhea:
         - 16000
         - 15996
@@ -21171,6 +21135,10 @@
     - subsystem: Aromatic Compound Degradation
     - annotation: !!omap
       - ec-code: 1.14.13.40
+      - kegg.orthology: K09461
+      - kegg.pathway:
+        - rn00627
+        - rn01120
       - rhea:
         - 16000
         - 15996
@@ -31124,6 +31092,8 @@
     - subsystem: Pentose Phosphate Pathway
     - annotation: !!omap
       - ec-code: 1.1.1.49
+      - kegg.reaction: R02736
+      - rhea: 15841
     - confidence_score: 3
   - !!omap
     - id: GAL6PI
@@ -31853,24 +31823,6 @@
     - subsystem: Arginine and Proline Metabolism
     - annotation: !!omap
       - ec-code: 2.7.2.11
-    - confidence_score: 2
-  - !!omap
-    - id: GLU6PDEHYDROG-RXN
-    - name: glucose-6-phosphate dehydrogenase;glucose-6-phosphate 1-dehydrogenase;NADP+-dependent glucose-6-phosphate dehydrogenase
-    - metabolites: !!omap
-      - 6pgl_c: 1
-      - g6p_c: -1
-      - h_c: 1
-      - nadp_c: -1
-      - nadph_c: 1
-    - lower_bound: 0
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO6661 or SCO1937
-    - subsystem: Pentose Phosphate Pathway
-    - annotation: !!omap
-      - ec-code: 1.1.1.49
-      - kegg.reaction: R02736
-      - rhea: 15841
     - confidence_score: 2
   - !!omap
     - id: GLUDC
@@ -33173,6 +33125,7 @@
     - subsystem: Unassigned
     - annotation: !!omap
       - ec-code: 4.2.1.1
+      - rhea: 10748
     - confidence_score: 2
   - !!omap
     - id: HCYSMT
@@ -35610,22 +35563,6 @@
       - kegg.reaction: R00203
     - confidence_score: 2
   - !!omap
-    - id: METHYLGLUTACONYL-COA-HYDRATASE-RXN
-    - name: methylglutaconyl-CoA hydratase;3-methylglutaconyl-CoA hydratase;methylglutaconyl-CoA hydratase, mitochondrial
-    - metabolites: !!omap
-      - 3mgcoa_c: 1
-      - h2o_c: 1
-      - hmgcoa_c: -1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO4930
-    - subsystem: Secondary Metabolite Biosynthesis
-    - annotation: !!omap
-      - ec-code: 4.2.1.18
-      - kegg.reaction: R02085
-      - rhea: 21536
-    - confidence_score: 2
-  - !!omap
     - id: METOX1s
     - name: methionine oxidation (spontaneous)
     - metabolites: !!omap
@@ -35764,9 +35701,12 @@
       - hmgcoa_c: 1
     - lower_bound: -1000
     - upper_bound: 1000
+    - gene_reaction_rule: SCO4930
     - subsystem: Valine, Leucine, and Isoleucine Metabolism
     - annotation: !!omap
       - ec-code: 4.2.1.18
+      - kegg.reaction: R02085
+      - rhea: 21536
     - confidence_score: 1
   - !!omap
     - id: MHPELY-RXN
@@ -41201,50 +41141,6 @@
       - kegg.pathway: rn00520
     - confidence_score: 2
   - !!omap
-    - id: R03998
-    - name: anthranilyl-CoA,NADH:oxygen oxidoreductase (de-aromatizing)
-    - metabolites: !!omap
-      - 2-AMINO-5-OXOCYCLOHEX-1-ENECARBOXYL-COA_c: 1
-      - 2-AMINOBENZOYL-COA_c: -1
-      - h2o_c: 1
-      - h_c: -2
-      - nad_c: 2
-      - nadh_c: -2
-      - o2_c: -1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO1109 or SCO5980 or SCO7285
-    - subsystem: Aromatic Compound Degradation
-    - annotation: !!omap
-      - ec-code: 1.14.13.40
-      - kegg.orthology: K09461
-      - kegg.pathway:
-        - rn00627
-        - rn01120
-    - confidence_score: 2
-  - !!omap
-    - id: R03999
-    - name: anthranilyl-CoA,NADH:oxygen oxidoreductase (de-aromatizing)
-    - metabolites: !!omap
-      - 2-AMINO-5-OXOCYCLOHEX-1-ENECARBOXYL-COA_c: 1
-      - 2-AMINOBENZOYL-COA_c: -1
-      - h2o_c: 1
-      - h_c: -2
-      - nadp_c: 2
-      - nadph_c: -2
-      - o2_c: -1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO1109 or SCO5980 or SCO7285
-    - subsystem: Aromatic Compound Degradation
-    - annotation: !!omap
-      - ec-code: 1.14.13.40
-      - kegg.orthology: K09461
-      - kegg.pathway:
-        - rn00627
-        - rn01120
-    - confidence_score: 2
-  - !!omap
     - id: R04215
     - name: CTP:N-glycoloylneuraminate cytidylyltransferase
     - metabolites: !!omap
@@ -41352,56 +41248,6 @@
       - kegg.pathway:
         - rn00627
         - rn01120
-    - confidence_score: 2
-  - !!omap
-    - id: R09692_NADH
-    - name: 15-cis-phytoene:acceptor oxidoreductase (NADH)
-    - metabolites: !!omap
-      - CPD-12321_c: -1
-      - CPD-7408_c: 1
-      - nad_c: -1
-      - nadh_c: 1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO0186 or SCO2101
-    - subsystem: Secondary Metabolite Biosynthesis
-    - annotation: !!omap
-      - ec-code:
-        - 1.3.99.28
-        - 1.3.99.29
-        - 1.3.99.30
-        - 1.3.99.31
-      - kegg.orthology:
-        - K10027
-        - K15745
-      - kegg.pathway:
-        - rn00906
-        - rn01110
-    - confidence_score: 2
-  - !!omap
-    - id: R09692_NADPH
-    - name: 15-cis-phytoene:acceptor oxidoreductase (NADPH)
-    - metabolites: !!omap
-      - CPD-12321_c: -1
-      - CPD-7408_c: 1
-      - nadp_c: -1
-      - nadph_c: 1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO0186 or SCO2101
-    - subsystem: Secondary Metabolite Biosynthesis
-    - annotation: !!omap
-      - ec-code:
-        - 1.3.99.28
-        - 1.3.99.29
-        - 1.3.99.30
-        - 1.3.99.31
-      - kegg.orthology:
-        - K10027
-        - K15745
-      - kegg.pathway:
-        - rn00906
-        - rn01110
     - confidence_score: 2
   - !!omap
     - id: R11-RXN
@@ -44177,21 +44023,6 @@
       - ec-code: 1.2.1
     - confidence_score: 2
   - !!omap
-    - id: RXN-15856
-    - name: glutathione hydrolase
-    - metabolites: !!omap
-      - cgly_c: 1
-      - glu-L_c: 1
-      - gthrd_c: -1
-      - h2o_c: -1
-    - lower_bound: 0
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO7508
-    - subsystem: Cofactor Biosynthesis
-    - annotation: !!omap
-      - ec-code: 3.4.19
-    - confidence_score: 2
-  - !!omap
     - id: RXN-15892_NADH
     - name: 3,6-anhydro-L-galactose dehydrogenase (NADH)
     - metabolites: !!omap
@@ -45300,6 +45131,12 @@
     - gene_reaction_rule: SCO0186
     - subsystem: Secondary Metabolite Biosynthesis
     - annotation: !!omap
+      - kegg.orthology:
+        - K10027
+        - K15745
+      - kegg.pathway:
+        - rn00906
+        - rn01110
       - rhea: 30606
     - confidence_score: 2
   - !!omap
@@ -45315,6 +45152,12 @@
     - gene_reaction_rule: SCO0186
     - subsystem: Secondary Metabolite Biosynthesis
     - annotation: !!omap
+      - kegg.orthology:
+        - K10027
+        - K15745
+      - kegg.pathway:
+        - rn00906
+        - rn01110
       - rhea: 30606
     - confidence_score: 2
   - !!omap
@@ -46185,18 +46028,6 @@
       - ec-code: 1.2.1.28
     - confidence_score: 2
   - !!omap
-    - id: RXN-9930
-    - metabolites: !!omap
-      - CPD-10679_c: 1
-      - TETRAHYD-CPD_c: -1
-      - h2o_c: 1
-      - h_c: 1
-      - o2_c: -1
-    - lower_bound: 0
-    - upper_bound: 1000
-    - subsystem: flaviolin dimer and mompain biosynthesis
-    - confidence_score: 2
-  - !!omap
     - id: RXN-9931
     - name: 1,3,6,8-tetrahydroxynaphthalene synthase
     - metabolites: !!omap
@@ -46429,22 +46260,6 @@
     - annotation: !!omap
       - kegg.reaction: R07316
       - rhea: 15649
-    - confidence_score: 2
-  - !!omap
-    - id: RXN0-5224
-    - name: carbonate dehydratase;beta-carbonic anhydrase
-    - metabolites: !!omap
-      - co2_c: 1
-      - h2o_c: 1
-      - h_c: -1
-      - hco3_c: -1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO3562 or SCO6055
-    - subsystem: Citric Acid Cycle
-    - annotation: !!omap
-      - ec-code: 4.2.1.1
-      - rhea: 10748
     - confidence_score: 2
   - !!omap
     - id: RXN0-5306
@@ -53946,9 +53761,6 @@
   - !!omap
     - id: SCO7507
     - name: SCO7507
-  - !!omap
-    - id: SCO7508
-    - name: SCO7508
   - !!omap
     - id: SCO7511
     - name: SCO7511

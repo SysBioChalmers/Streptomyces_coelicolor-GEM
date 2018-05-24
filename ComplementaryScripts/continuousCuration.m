@@ -121,3 +121,61 @@ model = changeGeneAssoc(model, 'PDH', '(SCO1269 and SCO1270 and SCO2183 and SCO0
 model = changeGeneAssoc(model, 'NADH17', 'SCO4564 and SCO4566 and SCO4568 and (SCO4562 or SCO4599) and (SCO4563 or SCO4600) and (SCO3392 or SCO4565) and (SCO4567 or SCO6560) and (SCO4569 or SCO4602) and (SCO4570 or SCO4603) and (SCO4571 or SCO4604) and (SCO4572 or SCO4605) and (SCO4573 or SCO4606 or SCO6954) and (SCO4574 or SCO4607) and (SCO4575 or SCO4608)');
 
 exportForGit(model,'Sco4')
+
+%% fix-rxns remove duplicate reactions
+% GTHRDH and RXN-15856 are identical. SCO7508 annotated to RXN-15856 has
+% more sequence similarity to glutamine amidotransferases, remove reaction.
+model = removeReactions(model, 'RXN-15856', true, true, true);
+
+% RXN-15586 and RXN-9930 are identical, remove the reaction with gene.
+model = removeReactions(model, 'RXN-9930', true, true, true);
+
+% G6PDH2 and GLU6PDEHYDROG-RXN are identical, keep iMK1208 reaction, while
+% keeping rxnMiriams from MetaCyc reaction
+i = getIndexes(model,{'GLU6PDEHYDROG-RXN','G6PDH2'},'rxns');
+model.rxnMiriams(i(2)) = model.rxnMiriams(i(1));
+model = removeReactions(model, 'GLU6PDEHYDROG-RXN', true, true, true);
+
+% R03391 and 1.17.1.1-RXN_NADH are identical, second one was from reaction
+% with unspecified NAD(P)H.
+model = removeReactions(model, '1.17.1.1-RXN_NADH', true, true, true);
+
+% RXN-13129 and 1.14.13.84-RXN_NADPH are identical, second one was from reaction
+% with unspecified NAD(P)H.
+model = removeReactions(model, '1.14.13.84-RXN_NADPH', true, true, true);
+
+newCommit(model)
+
+%% fix-rxns remove additional duplicate reactions
+% Overlap between ANTHRANILOYL-COA-MONOOXYGENASE-RXN_NADPH and R03999;
+% ANTHRANILOYL-COA-MONOOXYGENASE-RXN_NADH and R03998. Reversible in KEGG,
+% MetaCyc directio more likely.
+i = getIndexes(model,{'ANTHRANILOYL-COA-MONOOXYGENASE-RXN_NADPH','R03999'},'rxns');
+model = combineMiriams(model,i);
+i = getIndexes(model,{'ANTHRANILOYL-COA-MONOOXYGENASE-RXN_NADH','R03998'},'rxns');
+model = combineMiriams(model,i);
+model = removeReactions(model, {'R03998','R03999'}, true, true, true);
+
+% Same for RXN-8023_NADPH and R09692_NADPH; RXN-8023_NADH and R09692_NADH
+i = getIndexes(model,{'RXN-8023_NADPH','R09692_NADPH'},'rxns');
+model = combineMiriams(model,i);
+i = getIndexes(model,{'RXN-8023_NADH','R09692_NADH'},'rxns');
+model = combineMiriams(model,i);
+model = removeReactions(model, {'R09692_NADPH', 'R09692_NADH'}, true, true, true);
+
+newCommit(model)
+
+%% fix-rxns remove additional duplicate reactions
+% HCO3E and RXN0-5224 are identical
+i = getIndexes(model,{'HCO3E','RXN0-5224'},'rxns');
+model.rxnMiriams(i(1)) = model.rxnMiriams(i(2));
+model = removeReactions(model, 'RXN0-5224', true, true, true);
+
+% MGCH and METHYLGLUTACONYL-COA-HYDRATASE-RXN are identical, keep gene
+% annotation from second reaction
+i = getIndexes(model,{'MGCH','METHYLGLUTACONYL-COA-HYDRATASE-RXN'},'rxns');
+model.rxnMiriams(i(1)) = model.rxnMiriams(i(2));
+model = removeReactions(model, 'METHYLGLUTACONYL-COA-HYDRATASE-RXN', true, true, true);
+model = changeGeneAssoc(model, 'MGCH', 'SCO4930');
+
+newCommit(model)
