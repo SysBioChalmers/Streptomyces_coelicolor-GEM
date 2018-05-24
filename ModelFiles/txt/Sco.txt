@@ -1983,7 +1983,6 @@ RXN-11002	nadph_c + h_c + sucsal_c  -> nadp_c + 4-HYDROXY-BUTYRATE_c 	SCO0645	  
 RXN-9351	nadph_c + h_c + o2_c + CPD-9959_c  -> nadp_c + h2o_c + CPD-9961_c 	SCO5223	  0.00	1000.00	  0.00
 RXN-8568	h_c + nadh_c + ACRYLYL-COA_c  -> nad_c + ppcoa_c 	SCO0312 or SCO6938 or SCO5984	  0.00	1000.00	  0.00
 RXN0-1861	nad_c + udpglcur_c  -> nadh_c + co2_c + 5-BETA-L-THREO-PENTAPYRANOSYL-4-ULOSE-_c 	SCO0499	  0.00	1000.00	  0.00
-GLU6PDEHYDROG-RXN	nadp_c + g6p_c  -> nadph_c + h_c + 6pgl_c 	SCO6661 or SCO1937	  0.00	1000.00	  0.00
 RXN-8781_NADPH	nadp_c + CPD-9055_c  -> nadph_c + h_c + ASCORBATE_c 	SCO5508	  0.00	1000.00	  0.00
 RXN-10898	nad_c + CPD-11867_c  -> h_c + nadh_c + CPD-11872_c 	SCO3954	  0.00	1000.00	  0.00
 GDP-MANNOSE-6-DEHYDROGENASE-RXN	h2o_c + 2 nad_c + gdpmann_c  -> 3 h_c + 2 nadh_c + CPD-1828_c 	SCO0382	  0.00	1000.00	  0.00
@@ -2049,7 +2048,6 @@ RXN-13142	CPD-14133_c  -> CPD0-2474_c 	SCO4742	  0.00	1000.00	  0.00
 R364-RXN_NADPH	2 nadph_c + 2 h_c + CPD-704_c  -> 2 nadp_c + h2o_c + CPD-705_c 	SCO0044	  0.00	1000.00	  0.00
 FERREDOXIN--NITRITE-REDUCTASE-RXN	8 h_c + no2_c + 6 Reduced-ferredoxins_c  -> 2 h2o_c + nh4_c + 6 Oxidized-ferredoxins_c 	SCO6102	  0.00	1000.00	  0.00
 RXN-14670	o2_c + CPD-15502_c  -> h2o_c + co2_c + CPD-15423_c 	SCO4787	  0.00	1000.00	  0.00
-RXN-15856	h2o_c + gthrd_c  -> glu-L_c + cgly_c 	SCO7508	  0.00	1000.00	  0.00
 2.1.1.138-RXN	amet_c + METHYLARSONITE_c  -> 2 h_c + ahcys_c + DIMETHYLARSINATE_c 	SCO3452	  0.00	1000.00	  0.00
 RXN-13141	adp_c + CPD0-2474_c  -> nadph_c + h_c + amp_c + pi_c 	SCO4742	  0.00	1000.00	  0.00
 RXN-14430	o2_c + CPD-15280_c + L-GAMMA-GLUTAMYLCYSTEINE_c  -> h2o_c + CPD-15279_c 	SCO0911	  0.00	1000.00	  0.00
@@ -2212,7 +2210,6 @@ RXN-902	h2o_c + E-PHENYLITACONYL-COA_c  -> CARBOXYMETHYL-HYDROXYPHENYLPROPCOA_c 
 R282-RXN	h_c + CPD-577_c + ETF-Oxidized_c  <=> CPD-533_c + ETF-Reduced_c 	SCO6938	-1000.00	1000.00	  0.00
 RXN-11689	nad_c + CPD-11799_c  <=> h_c + nadh_c + CPD-380_c 	SCO0348 or SCO0663 or SCO2696 or SCO3478	-1000.00	1000.00	  0.00
 RXN-5285	nadph_c + h_c + DIVINYL-PROTOCHLOROPHYLLIDE-A_c  -> nadp_c + DIVINYLCHLOROPHYLLIDE-A_c 	SCO0235 or SCO0240 or SCO2491 or SCO7693	  0.00	1000.00	  0.00
-1.14.13.84-RXN_NADPH	nadph_c + o2_c + CPD-10598_c  -> nadp_c + h2o_c + 4-HYDROXYPHENYLACETATE_c 	SCO3172	  0.00	1000.00	  0.00
 HYDROXYHEPTA-DIENEDIOATE-HYDROXY-RXN	h2o_c + CPD-786_c  -> CPD-804_c 		  0.00	1000.00	  0.00
 RXN-14147	akg_c + met-L_c  <=> glu-L_c + CPD-479_c 	SCO5136	-1000.00	1000.00	  0.00
 RXN0-3922	h2o_c + nad_c + GAMMA-GLUTAMYL-GAMMA-AMINOBUTYRALDEH_c  -> 2 h_c + nadh_c + CPD-9000_c 	SCO1612 or SCO1706 or SCO4913 or SCO5666 or SCO6793 or SCO7139	  0.00	1000.00	  0.00
@@ -2265,7 +2262,6 @@ RXN-15124	2-AMINOACRYLATE_c  -> CPD-16015_c 		  0.00	1000.00	  0.00
 RXN-13068_NADPH	2 nadp_c + 2 CPD-14083_c  -> 2 nadph_c + CPD-14081_c 		  0.00	1000.00	  0.00
 RXN-9193	GERANIAL_c  <=> CPD-9762_c 		-1000.00	1000.00	  0.00
 RXN0-5222	2 h_c + CARBAMATE_c  -> co2_c + nh4_c 		  0.00	1000.00	  0.00
-RXN-9930	o2_c + TETRAHYD-CPD_c  -> h_c + h2o_c + CPD-10679_c 		  0.00	1000.00	  0.00
 RXN-5721	2-AMINO-3-3-OXOPROP-2-ENYL-BUT-2-ENEDI_c  -> h2o_c + quln_c 		  0.00	1000.00	  0.00
 RXN-2961	S-HYDROXYMETHYLGLUTATHIONE_c  -> fald_c + gthrd_c 		  0.00	1000.00	  0.00
 RXN-6581	fald_c + CPD1G-2_c  -> S-HYDROXYMETHYLMYCOTHIOL_c 		  0.00	1000.00	  0.00
@@ -2302,7 +2298,6 @@ RXN-5921_NADH	h_c + o2_c + nadh_c + CARNITINE_c  -> h2o_c + nad_c + CPD-16618_c 
 R364-RXN_NADH	2 h_c + 2 nadh_c + CPD-704_c  -> h2o_c + 2 nad_c + CPD-705_c 	SCO0044	  0.00	1000.00	  0.00
 1.14.12.1-RXN_NADH	3 h_c + o2_c + nadh_c + anth_c  -> nad_c + co2_c + nh4_c + CATECHOL_c 	SCO7117	  0.00	1000.00	  0.00
 RXN-2962_NADH	nad_c + S-HYDROXYMETHYLGLUTATHIONE_c  -> h_c + nadh_c + CPD-548_c 	SCO1705	  0.00	1000.00	  0.00
-1.17.1.1-RXN_NADH	h_c + nadh_c + CPD-658_c  -> h2o_c + nad_c + CPD-1078_c 	SCO0103	  0.00	1000.00	  0.00
 1.14.13.84-RXN_NADH	o2_c + nadh_c + CPD-10598_c  -> h2o_c + nad_c + 4-HYDROXYPHENYLACETATE_c 	SCO3172	  0.00	1000.00	  0.00
 RXN-8024_NADH	nad_c + CPD-7408_c  -> nadh_c + CPD1F-98_c 	SCO0186	  0.00	1000.00	  0.00
 RXN-8003_NADH	o2_c + nadh_c + CIS-4-HYDROXY-D-PROLINE_c  -> h_c + 2 h2o_c + nad_c + CPD-1128_c 	SCO6289	  0.00	1000.00	  0.00
