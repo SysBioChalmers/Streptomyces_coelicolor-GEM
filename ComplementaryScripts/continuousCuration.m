@@ -164,3 +164,18 @@ model = combineMiriams(model,i);
 model = removeReactions(model, {'R09692_NADPH', 'R09692_NADH'}, true, true, true);
 
 newCommit(model)
+
+%% fix-rxns remove additional duplicate reactions
+% HCO3E and RXN0-5224 are identical
+i = getIndexes(model,{'HCO3E','RXN0-5224'},'rxns');
+model.rxnMiriams(i(1)) = model.rxnMiriams(i(2));
+model = removeReactions(model, 'RXN0-5224', true, true, true);
+
+% MGCH and METHYLGLUTACONYL-COA-HYDRATASE-RXN are identical, keep gene
+% annotation from second reaction
+i = getIndexes(model,{'MGCH','METHYLGLUTACONYL-COA-HYDRATASE-RXN'},'rxns');
+model.rxnMiriams(i(1)) = model.rxnMiriams(i(2));
+model = removeReactions(model, 'METHYLGLUTACONYL-COA-HYDRATASE-RXN', true, true, true);
+model = changeGeneAssoc(model, 'MGCH', 'SCO4930');
+
+newCommit(model)

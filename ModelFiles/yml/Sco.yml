@@ -33125,6 +33125,7 @@
     - subsystem: Unassigned
     - annotation: !!omap
       - ec-code: 4.2.1.1
+      - rhea: 10748
     - confidence_score: 2
   - !!omap
     - id: HCYSMT
@@ -35562,22 +35563,6 @@
       - kegg.reaction: R00203
     - confidence_score: 2
   - !!omap
-    - id: METHYLGLUTACONYL-COA-HYDRATASE-RXN
-    - name: methylglutaconyl-CoA hydratase;3-methylglutaconyl-CoA hydratase;methylglutaconyl-CoA hydratase, mitochondrial
-    - metabolites: !!omap
-      - 3mgcoa_c: 1
-      - h2o_c: 1
-      - hmgcoa_c: -1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO4930
-    - subsystem: Secondary Metabolite Biosynthesis
-    - annotation: !!omap
-      - ec-code: 4.2.1.18
-      - kegg.reaction: R02085
-      - rhea: 21536
-    - confidence_score: 2
-  - !!omap
     - id: METOX1s
     - name: methionine oxidation (spontaneous)
     - metabolites: !!omap
@@ -35716,9 +35701,12 @@
       - hmgcoa_c: 1
     - lower_bound: -1000
     - upper_bound: 1000
+    - gene_reaction_rule: SCO4930
     - subsystem: Valine, Leucine, and Isoleucine Metabolism
     - annotation: !!omap
       - ec-code: 4.2.1.18
+      - kegg.reaction: R02085
+      - rhea: 21536
     - confidence_score: 1
   - !!omap
     - id: MHPELY-RXN
@@ -46272,22 +46260,6 @@
     - annotation: !!omap
       - kegg.reaction: R07316
       - rhea: 15649
-    - confidence_score: 2
-  - !!omap
-    - id: RXN0-5224
-    - name: carbonate dehydratase;beta-carbonic anhydrase
-    - metabolites: !!omap
-      - co2_c: 1
-      - h2o_c: 1
-      - h_c: -1
-      - hco3_c: -1
-    - lower_bound: -1000
-    - upper_bound: 1000
-    - gene_reaction_rule: SCO3562 or SCO6055
-    - subsystem: Citric Acid Cycle
-    - annotation: !!omap
-      - ec-code: 4.2.1.1
-      - rhea: 10748
     - confidence_score: 2
   - !!omap
     - id: RXN0-5306

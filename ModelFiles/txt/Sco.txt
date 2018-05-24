@@ -1849,7 +1849,7 @@ KARA1i	nadph_c + h_c + alac-S_c  -> nadp_c + 23dhmb_c 	SCO5514 or SCO7154	  0.00
 KARA2i	nadph_c + h_c + 2ahbut_c  -> nadp_c + 23dhmp_c 	SCO5514 or SCO7154	  0.00	1000.00	  0.00
 LEUTA	akg_c + leu-L_c  <=> glu-L_c + 4mop_c 	SCO1546 or SCO5523	-1000.00	1000.00	  0.00
 MCCC	atp_c + hco3_c + 3mb2coa_c  -> h_c + adp_c + pi_c + 3mgcoa_c 	SCO2776 and SCO2777	  0.00	1000.00	  0.00
-MGCH	h2o_c + 3mgcoa_c  <=> hmgcoa_c 		-1000.00	1000.00	  0.00
+MGCH	h2o_c + 3mgcoa_c  <=> hmgcoa_c 	SCO4930	-1000.00	1000.00	  0.00
 OCOAT1	succoa_c + acac_c  -> succ_c + aacoa_c 	SCO6702 and SCO6703	  0.00	1000.00	  0.00
 OIVD1	coa_c + nad_c + 4mop_c  -> nadh_c + co2_c + ivcoa_c 	( SCO3816 and SCO3817 and SCO3815 and SCO0884 ) or ( SCO3816 and SCO3817 and SCO3815 and SCO2180 ) or ( SCO3816 and SCO3817 and SCO3815 and SCO4919 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO0884 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO2180 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO4919 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO0884 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO2180 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO4919 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO0884 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO2180 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO4919 )	  0.00	1000.00	  0.00
 OIVD2	coa_c + nad_c + 3mob_c  -> nadh_c + co2_c + ibcoa_c 	( SCO3816 and SCO3817 and SCO3815 and SCO0884 ) or ( SCO3816 and SCO3817 and SCO3815 and SCO2180 ) or ( SCO3816 and SCO3817 and SCO3815 and SCO4919 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO0884 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO2180 ) or ( SCO3816 and SCO3817 and SCO3829 and SCO4919 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO0884 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO2180 ) or ( SCO3830 and SCO3831 and SCO3815 and SCO4919 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO0884 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO2180 ) or ( SCO3830 and SCO3831 and SCO3829 and SCO4919 )	  0.00	1000.00	  0.00
@@ -1914,7 +1914,6 @@ RXN-663	h2o_c + nad_c + CPD-1003_c  -> 2 h_c + nadh_c + CPD-1004_c 	SCO1612 or S
 LINC-RXN	nad_c + 25-DDOL_c  <=> h_c + nadh_c + 25-DICHLOROHYDROQUINONE_c 	SCO4169	-1000.00	1000.00	  0.00
 RXN0-6727	adp_c + CPD-653_c  -> h_c + nadh_c + amp_c + pi_c 	SCO4742	  0.00	1000.00	  0.00
 RXN-11211	h2o_c + DIHYDRO-THYMINE_c  <=> h_c + 3-UREIDO-ISOBUTYRATE_c 	SCO6415	-1000.00	1000.00	  0.00
-RXN0-5224	h_c + hco3_c  <=> h2o_c + co2_c 	SCO3562 or SCO6055	-1000.00	1000.00	  0.00
 1.2.1.66-RXN	nad_c + S-HYDROXYMETHYLMYCOTHIOL_c  -> h_c + nadh_c + CPD1G-121_c 	SCO1705 or SCO0741	  0.00	1000.00	  0.00
 RXN-16308	2 h_c + CPD-17565_c + Reduced-Factor-F420_c  -> CPD-17568_c + Oxidized-Factor-F420_c 	SCO1453	  0.00	1000.00	  0.00
 DARABALDOL-RXN	D-RIBULOSE-1-P_c  <=> dhap_c + gcald_c 	SCO1844	-1000.00	1000.00	  0.00
@@ -1963,7 +1962,6 @@ RXN-15924	nadp_c + L-Galactopyranose_c  -> nadph_c + h_c + CPD-17157_c 	SCO7162	
 4.1.1.86-RXN	h_c + 24dab_c  -> co2_c + CPD-313_c 	SCO2017	  0.00	1000.00	  0.00
 RXN-16964	nad_c + CPD-12349_c  -> h_c + nadh_c + CPD-343_c 	SCO3477	  0.00	1000.00	  0.00
 RXN-8079	2 amet_c + 4r5au_c + tyr-L_c  -> 3 h_c + nh4_c + 2 dad-5_c + 2 met-L_c + dhgly_c + CPD-7602_c 	SCO4429	  0.00	1000.00	  0.00
-METHYLGLUTACONYL-COA-HYDRATASE-RXN	hmgcoa_c  <=> h2o_c + 3mgcoa_c 	SCO4930	-1000.00	1000.00	  0.00
 4-HYDROXYBENZOATE-3-MONOOXYGENASE-RXN	nadph_c + h_c + o2_c + 4-hydroxybenzoate_c  -> nadp_c + h2o_c + 34dhbz_c 	SCO3084 or SCO1308	  0.00	1000.00	  0.00
 RXN-12399	h2o_c + CPD-13377_c  -> gal_c + CPD-13375_c 	SCO2430	  0.00	1000.00	  0.00
 RXN-12975	amet_c + grdp_c  -> h_c + ahcys_c + CPD-14015_c 	SCO7701	  0.00	1000.00	  0.00
