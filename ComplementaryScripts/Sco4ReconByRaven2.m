@@ -75,8 +75,8 @@ exportToExcelFormat(ScoCombinedDraftModel,'ScoCombinedModel.xlsx');
 
 % a. Read in the list of manually selected reactions
 [~, textData]=xlsread('SupportingTables.xlsx','TableS3');
-selectedNewRxns.rxns=textData(3:end,1);
-selectedNewRxns.subSystems=textData(3:end,3);
+selectedNewRxns.rxns=textData(2:end,1);
+selectedNewRxns.subSystems=textData(2:end,3);
 % b. Remove non-selected reactions from combined model and unused fields
 rxnsToRemove=setdiff(ScoCombinedDraftModel.rxns,selectedNewRxns.rxns);
 newRxnSubModel=removeReactions(ScoCombinedDraftModel,rxnsToRemove,true,true);
@@ -131,12 +131,12 @@ load('metaCycRxns.mat');
 load('metaCycMets.mat');
 % b. Read in the mapped MetaCyc reactions in iMK1208
 [~, textData]=xlsread('SupportingTables.xlsx','TableS1');
-metaCycRxnsIniMK=textData(4:end,8);
+metaCycRxnsIniMK=textData(3:end,8);
 metaCycRxnsIniMK=metaCycRxnsIniMK(~cellfun(@isempty, metaCycRxnsIniMK));  %Remove empty elements
 % c. Read in the mapped MetaCyc metabolites in iMK1208
 [~, textData]=xlsread('SupportingTables.xlsx','TableS2');
-metaCycMetsIniMK=textData(3:end,4);
-keggMetsIniMK=textData(3:end,3);
+metaCycMetsIniMK=textData(2:end,4);
+keggMetsIniMK=textData(2:end,3);
 metaCycMetsIniMK=metaCycMetsIniMK(~cellfun(@isempty, metaCycMetsIniMK));  %Remove empty elements
 % d. Retrieve associated spontaneous reactions and obtain the submodel
 % Get the list of all MetaCyc reactions
@@ -206,8 +206,8 @@ Sco4=mergeModels({model newRxnModel4Merge spRxnModel4Merge});
 % 8. Gap-filling for missing gene-associations in iMK1208
 % a. New gene-associations from RAVEN2 reconstruction
 [~, textData]=xlsread('SupportingTables.xlsx','TableS4');
-gapfilling.rxns=textData(4:end,2);
-gapfilling.grRules=textData(4:end,4);
+gapfilling.rxns=textData(3:end,2);
+gapfilling.grRules=textData(3:end,4);
 % b. New gene-association for transport reactions
 [~, textData]=xlsread('SupportingTables.xlsx','TableS6');
 gapfilling.rxns=[gapfilling.rxns;textData(2:6,2)];
