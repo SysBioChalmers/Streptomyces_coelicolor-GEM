@@ -1,15 +1,13 @@
 %
-% FILE NAME:    Sco4ReconstrctionByRaven2.m
+% FILE NAME:    Sco4Reconstrction.m
 % 
-% DATE CREATED: 2018-01-08
-%     MODIFIED: 2018-08-12
+% LAST MODIFIED: 2018-08-12
 % 
 % PROGRAMMER:   Hao Wang
 %               Department of Biology and Biological Engineering
 %               Chalmers University of Technology
-% 
-% 
-% PURPOSE: The script conducts automated genome-scale model generation for
+%  
+% PURPOSE: The script conducts semi-automated genome-scale model generation for
 %          Streptomyces coelicolor A3(2) using the RAVEN Toolbox version 2.0.
 %          It can be divided into two parts: de novo GEM reconstruciton and
 %          model refinement based on manual curation.
@@ -18,7 +16,7 @@
 %       is required and accesible to MATLAB. 
 % 
 % Input files:
-%	  Sco_all_protein.faa   S. coelicolor proteome sequences in FASTA format
+%	Sco_all_protein.faa   S. coelicolor proteome sequences in FASTA format
 %           iMK1208.mat   The MATLAB file of iMK1208 model in RAVEN format
 % SupportingTables.xlsx   Manual curation results in Excel format
 %
@@ -27,14 +25,13 @@
 %   newRxnSubModel.xlsx   The sub-model of new reacctions in Excel format
 %
 
-% Part One: De novo GEM Reconstruction
+%% Part One: De novo GEM Reconstruction
 
-% 1. Draft GEM reconstruction using MetaCyc database
+%% 1. Draft GEM reconstruction using MetaCyc database
 
 ScoMetaCycDraftModel=getMetaCycModelForOrganism('ScoMetaCyc','Sco_all_protein.faa',1);
 
-
-% 2. Draft GEM reconstruction using KEGG database
+%% 2. Draft GEM reconstruction using KEGG database
 
 % a. Draft GEM based on the genome information annotated by KEGG
 ScoKEGGAnnotation=getKEGGModelForOrganism('sco','','','',0,0);
@@ -57,24 +54,24 @@ ScoKEGGDraftModel=contractModel(ScoKEGGDraftModel);
 ScoKEGGDraftModel.id='mergedKEGG';
 ScoKEGGDraftModel.description='Merged from reconstructions of KEGG annoation and homology search';
 
-
-% 3. Combine the two draft GEMs obtained from KEGG and MetaCyc
+%% 3. Combine the two draft GEMs obtained from KEGG and MetaCyc
 
 ScoCombinedDraftModel=combineMetaCycKEGGModels(ScoMetaCycDraftModel, ScoKEGGDraftModel);
 
 % Export the combined model into Excel format and subject for manual curation
-exportToExcelFormat(ScoCombinedDraftModel,'ScoCombinedModel.xlsx');
+% !! This is provided as S1 Data in the RAVEN 2.0 manuscript !!
+exportToExcelFormat(ScoCombinedDraftModel,'../ComplementaryData/ScoCombinedDraftModel.xlsx');
+save('../ComplementaryData/ScoCombinedDraftModel.mat','ScoCombinedDraftModel');
 
+%% Part Two: Model Refinements Based on Manual Curation
 
-
-% Part Two: Model Refinements Based on Manual Curation
-
-% 4. A total of 398 reactions in the combined draft model were determined
-% as new pathways that are absent from the iMK1208. They were extracted
-% out as a sub model.
-
+%% 4. Through manual evaluation of the reactions in the combined draft model,
+% a total of 398 reactions were identified as constituting new pathways
+% that were absent from the iMK1208. These reactions were extracted as a
+% submodel and added to iMK1208.
 % a. Read in the list of manually selected reactions
-[~, textData]=xlsread('SupportingTables.xlsx','TableS3');
+% !! This is provided as S3 Table in the RAVEN 2.0 manuscript !!
+[~, textData]=xlsread('../ComplementaryData/SupportingTables.xlsx','TableS3');
 selectedNewRxns.rxns=textData(2:end,1);
 selectedNewRxns.subSystems=textData(2:end,3);
 % b. Remove non-selected reactions from combined model and unused fields
@@ -120,21 +117,22 @@ metARxnIndex=find(newRxnSubModel.S(metAIndex,:));
 metBIndex=find(strcmp(newRxnSubModel.mets,'DELTA1-PYRROLINE_2-CARBOXYLATE'));
 newRxnSubModel.S(metBIndex,metARxnIndex)=newRxnSubModel.S(metAIndex,metARxnIndex);
 newRxnSubModel=removeMets(newRxnSubModel,{'C00028','C00030','C03564'});
-
-exportToExcelFormat(newRxnSubModel,'newRxnSubModel.xlsx');
+exportToExcelFormat(newRxnSubModel,'../ComplementaryData/newRxnSubModel.xlsx');
 %newRxnSubModel: #Rxns 398, #Mets 650(187), #Gene 404(106)
 
-
-% 5. Generate the subModel of retrieved spontaneous reactions
-% a. Load MetaCyc reactions and metabolites for model refinements
+%% 5. Generate the subModel of retrieved spontaneous reactions
+% a. Load MetaCyc reactions and metabolites that are provided with RAVEN 2.0,
+% for further model refinements.
 load('metaCycRxns.mat');
 load('metaCycMets.mat');
 % b. Read in the mapped MetaCyc reactions in iMK1208
-[~, textData]=xlsread('SupportingTables.xlsx','TableS1');
+% !! This is provided as S1 Table in the RAVEN 2.0 manuscript !!
+[~, textData]=xlsread('../ComplementaryData/SupportingTables.xlsx','TableS1');
 metaCycRxnsIniMK=textData(3:end,8);
 metaCycRxnsIniMK=metaCycRxnsIniMK(~cellfun(@isempty, metaCycRxnsIniMK));  %Remove empty elements
 % c. Read in the mapped MetaCyc metabolites in iMK1208
-[~, textData]=xlsread('SupportingTables.xlsx','TableS2');
+% !! This is provided as S2 Table in the RAVEN 2.0 manuscript !!
+[~, textData]=xlsread('../ComplementaryData/SupportingTables.xlsx','TableS2');
 metaCycMetsIniMK=textData(2:end,4);
 keggMetsIniMK=textData(2:end,3);
 metaCycMetsIniMK=metaCycMetsIniMK(~cellfun(@isempty, metaCycMetsIniMK));  %Remove empty elements
@@ -145,6 +143,7 @@ rxnList=unique([metaCycRxnsIniMK;newRxnSubModel.rxns]);
 metList=unique([metaCycMetsIniMK;newRxnSubModel.mets]);
 % Get the associated spontaneous reactions
 spRxnList=retrieveSpontaneous(rxnList,metList);
+% !! This list is provided as S5 Table in the RAVEN 2.0 manuscript !!
 % e. Generate spontaneous reaction submodel
 rxnsToRemove=setdiff(metaCycRxns.rxns,spRxnList);
 spRxnSubModel=removeReactions(metaCycRxns,rxnsToRemove,true,true);
@@ -166,10 +165,9 @@ I=cellfun(@isempty,spRxnSubModel.metNames);
 spRxnSubModel.metNames(I)=spRxnSubModel.mets(I);
 %spRxnSubModel: #Rxns 34(34), #Mets 77, #Gene 1
 
-
-% 6. Prepare the metabolites for merge
-% a. Load the iMK1208 model
-model=load('iMK1208.mat');
+%% 6. Prepare the metabolites for merge
+% a. Load the iMK1208 model that is provided here in RAVEN 2.0 format.
+model=load('../ComplementaryData/iMK1208.mat');
 % b. Match metabolites in newRxnSubModel to iMK1208
 [a, b]=ismember(newRxnSubModel.mets,metaCycMetsIniMK);
 I=find(a);
@@ -198,18 +196,18 @@ spRxnModel4Merge.comps=newRxnModel4Merge.comps;
 spRxnModel4Merge.compNames=newRxnModel4Merge.compNames;
 spRxnModel4Merge.metComps=ones(numel(spRxnModel4Merge.mets),1);
 
-
-% 7. Generate Sco4 model by adding up new metabolic and spontaneous reactions
+%% 7. Generate Sco4 model by adding up new metabolic and spontaneous reactions
 Sco4=mergeModels({model newRxnModel4Merge spRxnModel4Merge});
 
-
-% 8. Gap-filling for missing gene-associations in iMK1208
+%% 8. Gap-filling for missing gene-associations in iMK1208
 % a. New gene-associations from RAVEN2 reconstruction
-[~, textData]=xlsread('SupportingTables.xlsx','TableS4');
+% !! This is provided as S4 Table in the RAVEN 2.0 manuscript !!
+[~, textData]=xlsread('../ComplementaryData/SupportingTables.xlsx','TableS4');
 gapfilling.rxns=textData(3:end,2);
 gapfilling.grRules=textData(3:end,4);
 % b. New gene-association for transport reactions
-[~, textData]=xlsread('SupportingTables.xlsx','TableS6');
+% !! This is provided as S6 Table in the RAVEN 2.0 manuscript !!
+[~, textData]=xlsread('../ComplementaryData/SupportingTables.xlsx','TableS6');
 gapfilling.rxns=[gapfilling.rxns;textData(2:6,2)];
 gapfilling.grRules=[gapfilling.grRules;textData(2:6,3)];
 % c. Use new grRules from RAVEN2 reconstruction to fill gaps in iMK1208
@@ -225,8 +223,7 @@ Sco4.geneMiriams=cell(numel(Sco4.genes),1);
 Sco4.geneShortNames=Sco4.genes;
 Sco4.rxnGeneMat=getRxnGeneMat(Sco4);
 
-
-% 9. Add new transport reactions from MetaCyc reconstruction
+%% 9. Add new transport reactions from MetaCyc reconstruction
 % based on the curated transport reactions in Table S6
 % a. First add new metabolites: gtca3[e], ENTEROBACTIN[c] and ENTEROBACTIN[e]
 A=find(strcmp('gtca3_c',Sco4.mets));  % Find index for gtca3[c]
@@ -268,8 +265,7 @@ Sco4=addGenes(Sco4,geneToAdd);
 % d. Add the new transport reactions
 Sco4=addRxns(Sco4,rxnToAdd,1,'',0);
 
-
-% 10. Add new exchange reactions
+%% 10. Add new exchange reactions
 % Add sink reactions for the newly includeded secondary metabolites
 Sco4=addExchangeRxns(Sco4,'out','CPD-14016_c');  % 2-methylisoborneol (RXN-12976)
 Sco4=addExchangeRxns(Sco4,'out','CPD-9962_c');   % Albaflavenone (RXB-9352,RXN-9353)
@@ -280,8 +276,7 @@ Sco4=addExchangeRxns(Sco4,'out','CPD-10158_c');  % Gemsmin (RXN-9476)
 Sco4=addExchangeRxns(Sco4,'out','ACETONE_c');    % Gemsmin (RXN-9476)
 Sco4=addExchangeRxns(Sco4,'out','CPD-14522_c');  % Hopanoid (RXN-13528)
 
-
-% 11. Miscellaneous 
+%% 11. Miscellaneous 
 % a. Updated metabolite identifiers
 newMets.metacyc=replace(Sco4.mets(1437:end),{'_c','_e'},'');
 newMets.kegg=cell(numel(newMets.metacyc),1);
@@ -293,8 +288,7 @@ Sco4.metMetaCycID=[metaCycMetsIniMK;newMets.metacyc];
 % b. Reformat confidence scores
 Sco4.rxnConfidenceScores(1860:end)={Sco4.rxnConfidenceScores{1859}};
 
-
-% 12. Add model information
+%% 12. Add model information
 Sco4.id='Sco4';
 Sco4.description='Streptomyces coelicolor genome-scale model';
 % Annotation
@@ -306,3 +300,6 @@ annotation.email='hao.wang@chalmers.se';
 annotation.organization='Chalmers University of Technology';
 annotation.taxonomy='100226';
 Sco4.annotation=annotation;
+
+%% 13. Submit model to GitHub
+newCommit(Sco4);
