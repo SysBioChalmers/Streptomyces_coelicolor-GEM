@@ -1,11 +1,12 @@
 %
-% FILE NAME:    Sco4Reconstrction.m
+% FILE NAME:     Sco4Reconstrction.m
 % 
+% DATE CREATED:  2018-01-08
 % LAST MODIFIED: 2018-08-12
 % 
-% PROGRAMMER:   Hao Wang
-%               Department of Biology and Biological Engineering
-%               Chalmers University of Technology
+% PROGRAMMER:    Hao Wang
+%                Department of Biology and Biological Engineering
+%                Chalmers University of Technology
 %  
 % PURPOSE: The script conducts semi-automated genome-scale model generation for
 %          Streptomyces coelicolor A3(2) using the RAVEN Toolbox version 2.0.
