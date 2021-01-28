@@ -1,3 +1,5 @@
+> Note that in 2020 Sco4 has been merged with other _Streptomyces coelicolor_ models to construct the consensus model [Sco-GEM](https://github.com/sysbiochalmers/sco-gem).
+
 # Streptomyces_coelicolor-GEM
 
 - Brief Repository Description
